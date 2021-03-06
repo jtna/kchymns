@@ -169,7 +169,7 @@
 
 			if (ABCJS.synth.supportsAudio()) {
 				synthControl = new ABCJS.synth.SynthController();
-				synthControl.load("#audio", cursorControl, {displayLoop: true, displayRestart: true, displayPlay: true, displayProgress: true, displayWarp: true});
+				synthControl.load("#audio", cursorControl, {displayLoop: false, displayRestart: false, displayPlay: true, displayProgress: true, displayWarp: false});
 			} else {
                 console.warn("Audio is not supported in this browser.")
 			}
