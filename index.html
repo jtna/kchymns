@@ -124,25 +124,26 @@
             'K:G\n' +
             '%%score (S A)(T B)\n' +
             'V:S\n' +
-            '%%MIDI program 48\n' +
+            //'%%MIDI program 48\n' +
             '[K: clef=treble] D/8 | G/4 A/8 B/8A/8 B/8 | C\'3/8 B/4 A/8 | G/4 F/8 E/4 A/8 | G/8F/8 E/8 D/4 D/8 |\n' +
             'w:구 세 주 빨 ― 리 오 사 어 두 움 을 없 이 ― 하 며 동\n' +
             'G/4 A/8 B/8A/8 B/8 | C\'3/8 B/4 D\'/8 | B/4 B/8 A/8G/8 A/8 | G3/8- G/4z/8 |]\n' +
             'w:정 마 리 ― 아 에 서 탄 생 하 옵 ― 소 서\n' +
             'V:A\n' +
-            '%%MIDI program 73\n' +
+            //'%%MIDI program 73\n' +
             '[K: clef=treble][K:G][M:6/8] D/8 | D/4 D/8 G/4 G/8 | G3/8 G/4 E/8 | D/4 D/8 C/4 C/8 | A,/4 A,/8 D/4 D/8 |\n' +
             'D/4 D/8 D/4 D/8 | E3/8 D/4 D/8 | G/4 G/8 F/8E/8 F/8 | D3/8- D/4z/8 |]\n' +
             'V:T\n' +
-            '%%MIDI program 57\n' +
+            //'%%MIDI program 57\n' +
             '[K: clef=bass][K:G][M:6/8] D,/8 | B,/4 C/8 D/8C/8 D/8 | ( E/4 _E/8) D/4 C/8 | B,/4 A,/8 G,/4 E,/8 | A,/4 G,/8 F,/4 F,/8 |\n' +
             'G,/4 F,/8 G,/4 G,/8 | G,3/8 G,/4 B,/8 | D/4 D/8 C/4 C/8 | B,3/8- B,/4z/8 |]\n' +
             'V:B\n' +
-            '%%MIDI program 60\n' +
+            //'%%MIDI program 60\n' +
             '[K: clef=bass][K:G][M:6/8] D,/8 | G,/4 G,/8 G,/4 G,/8 | G,3/8 G,/4 G,/8 | G,/4 G,/8 C,/4 C,/8 | ^C,/4 C,/8 D,/4 =C,/8 |\n' +
             'B,,/4 A,,/8 G,,/4 G,,/8 | ( C,/4 E,/8) G,/4 G,/8 | D,/4 D,/8 D,/4 D,/8 | G,3/8- G,/4z/8 |]\n'
     ];
             // TODO: using ascii hyphen in lyrics doesn't work as intended, but any other char (e.g. unicode hyphen) works
+            // TODO: with default soundfont, mixing instruments sounds terrible; they don't precisely start at the same time on each beat
 
         var synthControl; // visual widget that allows the user to control playback
         var midiBuffer; // object that caches and buffers the audio
@@ -189,7 +190,7 @@
 			midiBuffer.init({
                 visualObj: visualObj,
 				options: {
-                    soundFontUrl: "https://noteworthycomposer.org/z/FluidR3_GM/"
+                    //soundFontUrl: "https://noteworthycomposer.org/z/FluidR3_GM/"
 				}
 			}).then(function (response) {
 				console.log(response);
