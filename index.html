@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="abcjs-audio.css">
+
+    <title>Hymn Player</title>
+
+    <style>
+		main {
+			max-width: 770px;
+			margin: 0 auto;
+		}
+        .highlight {
+			fill: #0a9ecc;
+		}
+		.abcjs-cursor {
+			stroke: red;
+		}
+	</style>
+
+    <script src="abcjs-basic-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function CursorControl() {
+			var self = this;
+
+			self.onReady = function() {
+			};
+			self.onStart = function() {
+				var svg = document.querySelector("#paper svg");
+				var cursor = document.createElementNS("http://www.w3.org/2000/svg", "line");
+				cursor.setAttribute("class", "abcjs-cursor");
+				cursor.setAttributeNS(null, 'x1', 0);
+				cursor.setAttributeNS(null, 'y1', 0);
+				cursor.setAttributeNS(null, 'x2', 0);
+				cursor.setAttributeNS(null, 'y2', 0);
+				svg.appendChild(cursor);
+			};
+			self.beatSubdivisions = 2;
+			self.onEvent = function(ev) {
+				if (ev.measureStart && ev.left === null)
+					return; // this was the second part of a tie across a measure line. Just ignore it.
+
+				var lastSelection = document.querySelectorAll("#paper svg .highlight");
+				for (var k = 0; k < lastSelection.length; k++)
+					lastSelection[k].classList.remove("highlight");
+
+				for (var i = 0; i < ev.elements.length; i++ ) {
+					var note = ev.elements[i];
+					for (var j = 0; j < note.length; j++) {
+						note[j].classList.add("highlight");
+					}
+				}
+
+				var cursor = document.querySelector("#paper svg .abcjs-cursor");
+				if (cursor) {
+					cursor.setAttribute("x1", ev.left - 2);
+					cursor.setAttribute("x2", ev.left - 2);
+					cursor.setAttribute("y1", ev.top);
+					cursor.setAttribute("y2", ev.top + ev.height);
+				}
+			};
+			self.onFinished = function() {
+				var els = document.querySelectorAll("svg .highlight");
+				for (var i = 0; i < els.length; i++ ) {
+					els[i].classList.remove("highlight");
+				}
+				var cursor = document.querySelector("#paper svg .abcjs-cursor");
+				if (cursor) {
+					cursor.setAttribute("x1", 0);
+					cursor.setAttribute("x2", 0);
+					cursor.setAttribute("y1", 0);
+					cursor.setAttribute("y2", 0);
+				}
+			};
+		}
+
+		var cursorControl = new CursorControl();
+
+        var abc = [
+            '%abc-2.2\n' +
+            '%%titlefont Jua\n' +
+            '%%vocalfont Jua\n' +
+            'T:001 나는 믿나이다\n' +
+            'C:A.G.Stein\n' +
+            'L:1/1\n' +
+            'Q:1/4=86\n' +
+            'K:Eb\n' +
+            'M:3/4\n' +
+            '%%score (S A)(T B)\n' +
+            'V:S\n' +
+            '%%MIDI program 48\n' +
+            '[K: clef=treble] B/4 G/4 E/4 | ( E/4 D/4) E/4 | ( F/4 B/4) A/4 | ( A/4 G/4)z/4 |\n' +
+            'w:나 는 굳 게 ― 믿 나 ― 이 다 ―\n' +
+            'G/4 F/4 E/4 | ( C/4 A/4) F/4 | E/2 D/4 | E/2z/4 :|\n' +
+            'w:진 심 감 사 ― 하 나 이 다\n' +
+            'V:A\n' +
+            '%%MIDI program 73\n' +
+            '[K: clef=treble] E/4 D/4 C/4 | B,/2 C/4 | D/2 D/4 | ( F/4 E/4)z/4 |\n' +
+            'E/4 C/4 B,/4 | C/2 C/4 | B,/2 B,/4 | B,/2z/4 :|\n' +
+            'V:T\n' +
+            '%%MIDI program 57\n' +
+            '[K: clef=bass] G,/4 B,/4 G,/4 | G,/2 G,/4 | B,/2 B,/4 | B,/2z/4 |\n' +
+            'B,/4 A,/4 G,/4 | F,/2 A,/4 | G,/2 F,/4 | G,/2z/4 :|\n' +
+            'V:B\n' +
+            '%%MIDI program 60\n' +
+            '[K: clef=bass] E,/4 B,,/4 C,/4 | G,,/2 C,/4 | B,,/2 B,,/4 | E,/2z/4 |\n' +
+            'E,/4 E,/4 E,/4 | A,,/2 A,,/4 | B,,/2 B,,/4 | E,/2z/4 :|\n',
+
+            '%abc-2.2\n' +
+            '%%titlefont Jua\n' +
+            '%%vocalfont Jua\n' +
+            'T:091 구세주 빨리오사\n' +
+            'C:Cabrisseau\n' +
+            'M:6/8\n' +
+            'L:1/1\n' +
+            'Q:1/3=36\n' +
+            'K:G\n' +
+            '%%score (S A)(T B)\n' +
+            'V:S\n' +
+            '%%MIDI program 48\n' +
+            '[K: clef=treble] D/8 | G/4 A/8 B/8A/8 B/8 | C\'3/8 B/4 A/8 | G/4 F/8 E/4 A/8 | G/8F/8 E/8 D/4 D/8 |\n' +
+            'w:구 세 주 빨 ― 리 오 사 어 두 움 을 없 이 ― 하 며 동\n' +
+            'G/4 A/8 B/8A/8 B/8 | C\'3/8 B/4 D\'/8 | B/4 B/8 A/8G/8 A/8 | G3/8- G/4z/8 |]\n' +
+            'w:정 마 리 ― 아 에 서 탄 생 하 옵 ― 소 서\n' +
+            'V:A\n' +
+            '%%MIDI program 73\n' +
+            '[K: clef=treble][K:G][M:6/8] D/8 | D/4 D/8 G/4 G/8 | G3/8 G/4 E/8 | D/4 D/8 C/4 C/8 | A,/4 A,/8 D/4 D/8 |\n' +
+            'D/4 D/8 D/4 D/8 | E3/8 D/4 D/8 | G/4 G/8 F/8E/8 F/8 | D3/8- D/4z/8 |]\n' +
+            'V:T\n' +
+            '%%MIDI program 57\n' +
+            '[K: clef=bass][K:G][M:6/8] D,/8 | B,/4 C/8 D/8C/8 D/8 | ( E/4 _E/8) D/4 C/8 | B,/4 A,/8 G,/4 E,/8 | A,/4 G,/8 F,/4 F,/8 |\n' +
+            'G,/4 F,/8 G,/4 G,/8 | G,3/8 G,/4 B,/8 | D/4 D/8 C/4 C/8 | B,3/8- B,/4z/8 |]\n' +
+            'V:B\n' +
+            '%%MIDI program 60\n' +
+            '[K: clef=bass][K:G][M:6/8] D,/8 | G,/4 G,/8 G,/4 G,/8 | G,3/8 G,/4 G,/8 | G,/4 G,/8 C,/4 C,/8 | ^C,/4 C,/8 D,/4 =C,/8 |\n' +
+            'B,,/4 A,,/8 G,,/4 G,,/8 | ( C,/4 E,/8) G,/4 G,/8 | D,/4 D,/8 D,/4 D,/8 | G,3/8- G,/4z/8 |]\n'
+    ];
+            // TODO: using ascii hyphen in lyrics doesn't work as intended, but any other char (e.g. unicode hyphen) works
+
+        var synthControl; // visual widget that allows the user to control playback
+        var midiBuffer; // object that caches and buffers the audio
+
+		var abcOptions = {
+			add_classes: true,
+			clickListener: self.clickListener,
+			responsive: "resize"
+		};
+
+        var voicesOff = [-1,-1,-1,-1];
+        var checkS, checkA, checkT, checkB;
+
+        function load() {
+            checkS = document.getElementById("check-s");
+            checkS.addEventListener("click", function() { checkToggle(); });
+            checkA = document.getElementById("check-a");
+            checkA.addEventListener("click", function() { checkToggle(); });
+            checkT = document.getElementById("check-t");
+            checkT.addEventListener("click", function() { checkToggle(); });
+            checkB = document.getElementById("check-b");
+            checkB.addEventListener("click", function() { checkToggle(); });
+
+			if (ABCJS.synth.supportsAudio()) {
+				synthControl = new ABCJS.synth.SynthController();
+				synthControl.load("#audio", cursorControl, {displayLoop: true, displayRestart: true, displayPlay: true, displayProgress: true, displayWarp: true});
+			} else {
+                console.warn("Audio is not supported in this browser.")
+			}
+            setTune(false);
+        }
+
+		function setTune(userAction) {
+			synthControl.disable(true);
+			var visualObj = ABCJS.renderAbc("paper", abc[1], abcOptions)[0];
+
+            voicesOff[0] = checkS.checked ? -1:0;
+            voicesOff[1] = checkA.checked ? -1:1;
+            voicesOff[2] = checkT.checked ? -1:2;
+            voicesOff[3] = checkB.checked ? -1:3;
+            var audioParams = { voicesOff: voicesOff };
+
+			midiBuffer = new ABCJS.synth.CreateSynth();
+			midiBuffer.init({
+                visualObj: visualObj,
+				options: {
+                    soundFontUrl: "https://noteworthycomposer.org/z/FluidR3_GM/"
+				}
+			}).then(function (response) {
+				console.log(response);
+				if (synthControl) {
+					synthControl.setTune(visualObj, userAction, audioParams).then(function (response) {
+						console.log("Audio successfully loaded.")
+					}).catch(function (error) {
+						console.warn("Audio problem:", error);
+					});
+				}
+			}).catch(function (error) {
+				console.warn("Audio problem:", error);
+			});
+		}
+
+        function checkToggle() {
+            if (midiBuffer) {
+                midiBuffer.stop();
+            }
+            // TODO: wasteful to call renderAbc() and CreateSynth() again
+            setTune(true);
+        }
+    </script>
+</head>
+
+<body onload="load()">
+<main>
+<header>
+<h1></h1>
+</header>
+<div class="container">
+    <main>
+        <div id="paper"></div>
+        <div id="audio"></div>
+        <div class="options-wrapper">
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="check-s" checked>
+                <label for="check-s">S</label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="check-a" checked>
+                <label for="check-a">A</label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="check-t" checked>
+                <label for="check-t">T</label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="check-b" checked>
+                <label for="check-b">B</label>
+            </div>
+        </div>
+    </main>
+</div>
+</main>
+</body>
+</html>

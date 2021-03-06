@@ -1,0 +1,9 @@
+.options-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+}
