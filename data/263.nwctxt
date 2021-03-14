@@ -1,0 +1,208 @@
+!NoteWorthyComposer(2.75)
+|Editor|ActiveStaff:1|CaretIndex:4|CaretPos:0
+|SongInfo|Title:"가톨릭 성가 263 - 십자가 길의 성모"|Author:"그레고리오 성가"|Lyricist:""|Copyright1:"Goldfinger"|Copyright2:""|Comments:"."
+|PgSetup|StaffSize:15|Zoom:5|TitlePage:Y|JustifyVertically:Y|PrintSystemSepMark:N|ExtendLastSystem:N|DurationPadding:Y|PageNumbers:1|StaffLabels:None|BarNumbers:None|StartingBar:1
+|Font|Style:StaffItalic|Typeface:"Times New Roman"|Size:10|Bold:Y|Italic:Y|CharSet:0
+|Font|Style:StaffBold|Typeface:"Times New Roman"|Size:9|Bold:Y|Italic:N|CharSet:0
+|Font|Style:StaffLyric|Typeface:"����"|Size:9|Bold:N|Italic:N|CharSet:0
+|Font|Style:PageTitleText|Typeface:"�ü�"|Size:20|Bold:Y|Italic:N|CharSet:0
+|Font|Style:PageText|Typeface:"Times New Roman"|Size:12|Bold:N|Italic:N|CharSet:0
+|Font|Style:PageSmallText|Typeface:"Times New Roman"|Size:8|Bold:N|Italic:N|CharSet:0
+|Font|Style:User1|Typeface:"Times New Roman"|Size:24|Bold:N|Italic:N|CharSet:0
+|Font|Style:User2|Typeface:"Times New Roman"|Size:24|Bold:N|Italic:N|CharSet:0
+|Font|Style:User3|Typeface:"Times New Roman"|Size:24|Bold:N|Italic:N|CharSet:0
+|Font|Style:User4|Typeface:"Times New Roman"|Size:24|Bold:N|Italic:N|CharSet:0
+|Font|Style:User5|Typeface:"Times New Roman"|Size:8|Bold:N|Italic:N|CharSet:0
+|Font|Style:User6|Typeface:"Times New Roman"|Size:8|Bold:N|Italic:N|CharSet:0
+|PgMargins|Left:1.27|Top:0.76|Right:1.27|Bottom:0.76|Mirror:N
+|AddStaff|Name:"Soprano"|Label:"Soprano"|Group:"Standard"
+|StaffProperties|EndingBar:Section Close|Visible:Y|BoundaryTop:12|BoundaryBottom:28|Lines:5|WithNextStaff:Bracket,Layer|Color:Default
+|StaffProperties|Muted:N|Volume:127|StereoPan:44|Device:0|Channel:1
+|StaffInstrument|Patch:52|Trans:0|DynVel:10,30,45,60,75,92,108,127
+|Lyrics|Placement:Bottom|Align:Start of Accidental/Note|Offset:0
+|Lyric1|Text:"1.어 머 니 께 청 하 오 니\n내 맘 속 에 주 의 상 처\n깊 이 새 겨 주 소 서\n"
+|Lyric2|Text:"2.모 자 함 께 우 오 시 니\n어 느 누 가 울 지 않 고\n근 심 치 않 으 리 오\n"
+|Lyric3|Text:"3.사 랑 하 는 외 아 들 이\n위 로 없 이 죽 으 심 을\n곁 에 서 보 시 도 다\n아 멘\n"
+|Clef|Type:Treble
+|Key|Signature:Bb|Tonic:F|Visibility:Never
+|PerformanceStyle|Style:Legato|Pos:0|Wide:Y|Visibility:Never
+|Dynamic|Style:f|Opts:Volume=95|Pos:9|Wide:Y|Visibility:Never
+|Note|Dur:8th|Pos:-3|Opts:Lyric=Never
+|Note|Dur:8th|Pos:-2|Opts:Lyric=Never
+|Note|Dur:8th|Pos:-1|Opts:Lyric=Never
+|Note|Dur:8th|Pos:-2|Opts:Lyric=Never
+|Note|Dur:8th|Pos:-1|Opts:Lyric=Never
+|Note|Dur:8th|Pos:1|Opts:Lyric=Never
+|Note|Dur:8th|Pos:0|Opts:Lyric=Never
+|PerformanceStyle|Style:Dolce|Pos:0|Wide:Y|Visibility:Never
+|Note|Dur:4th|Pos:-1|Opts:Lyric=Never
+|Bar|Style:MasterRepeatOpen|Visibility:Never
+|Text|Text:"\}"|Font:StaffItalic|Pos:0|Wide:Y
+|Ending|Endings:1,2,3|Visibility:Never
+|PerformanceStyle|Style:Legato|Pos:0|Wide:Y|Visibility:Never
+|Dynamic|Style:f|Opts:Volume=95|Pos:9|Wide:Y|Visibility:Never
+|Note|Dur:8th|Pos:-3
+|Note|Dur:8th|Pos:-2
+|Note|Dur:8th|Pos:-1
+|Note|Dur:8th|Pos:-2
+|Note|Dur:8th|Pos:-1
+|Note|Dur:8th|Pos:1
+|Note|Dur:8th|Pos:0
+|Note|Dur:4th|Pos:-1
+|Text|Text:"\}"|Font:StaffItalic|Pos:0|Wide:Y
+|Note|Dur:8th|Pos:-1
+|Note|Dur:8th|Pos:-2
+|Note|Dur:8th|Pos:-3
+|Note|Dur:8th|Pos:-4
+|Note|Dur:8th|Pos:-5
+|Note|Dur:8th|Pos:-4
+|Note|Dur:8th|Pos:-5
+|Note|Dur:4th|Pos:-6
+|Text|Text:"\}"|Font:StaffItalic|Pos:0|Wide:Y
+|Note|Dur:8th|Pos:-2
+|Note|Dur:8th|Pos:-3
+|Note|Dur:8th|Pos:-2
+|Note|Dur:8th|Pos:-1
+|Note|Dur:8th|Pos:-2
+|Note|Dur:8th|Pos:-3
+|Note|Dur:4th|Pos:-3
+|Rest|Dur:8th
+|Bar|Style:MasterRepeatClose|Visibility:Never
+|Bar|Style:Double
+|Ending|Endings:4|Visibility:Never
+|Note|Dur:8th,Slur|Pos:-3|Opts:Stem=Up,Slur=Upward,Beam=First,Tie=Upward
+|Note|Dur:8th,Slur|Pos:-2|Opts:Stem=Up,Beam
+|Note|Dur:8th|Pos:-3|Opts:Stem=Up,Beam=End
+|Note|Dur:4th,Slur|Pos:-4|Opts:Slur=Upward,Tie=Upward
+|Note|Dur:4th|Pos:-3
+|AddStaff|Name:"Staff-1"|Label:"Staff-1"|Group:"Standard"
+|StaffProperties|EndingBar:Section Close|Visible:Y|BoundaryTop:10|BoundaryBottom:10|Lines:5|WithNextStaff:Bracket|Color:Default
+|StaffProperties|Muted:N|Volume:127|StereoPan:127|Device:0|Channel:6
+|StaffInstrument|Patch:52|Trans:0|DynVel:10,30,45,60,75,92,108,127
+|Clef|Type:Treble
+|Key|Signature:Bb|Tonic:F
+|PerformanceStyle|Style:Legato|Pos:0|Wide:Y|Visibility:Never
+|Dynamic|Style:f|Opts:Volume=95|Pos:9|Wide:Y|Visibility:Never
+|Rest|Dur:8th|Opts:Stem=Down,VertOffset=-8
+|Note|Dur:Half,Dotted|Pos:-3^|Opts:Stem=Down,Slur=Downward,XNoteSpace=1,Tie=Downward
+|Note|Dur:4th|Pos:-3|Opts:Stem=Down,Slur=Downward,Tie=Downward
+|Bar|Style:MasterRepeatOpen|Visibility:Never
+|Ending|Endings:1,2,3|Visibility:Never
+|PerformanceStyle|Style:Legato|Pos:0|Wide:Y|Visibility:Never
+|Dynamic|Style:f|Opts:Volume=95|Pos:9|Wide:Y|Visibility:Never
+|Rest|Dur:8th|Opts:Stem=Down,VertOffset=-8
+|Note|Dur:Half,Dotted|Pos:-3^|Opts:Stem=Down,Slur=Downward,XNoteSpace=1,Tie=Downward
+|Note|Dur:4th,Dotted|Pos:-3|Opts:Stem=Down,Slur=Downward,Tie=Downward
+|Note|Dur:Half|Pos:-6|Opts:Stem=Down,Slur=Downward,Tie=Downward
+|Note|Dur:4th|Pos:-8|Opts:Stem=Down,Slur=Downward,Tie=Downward
+|Note|Dur:4th|Pos:-6|Opts:Stem=Down,Slur=Downward,Tie=Downward
+|Note|Dur:Half|Pos:-5^|Opts:Stem=Down,Slur=Downward,Tie=Downward
+|Note|Dur:4th|Pos:-5|Opts:Stem=Down,Slur=Downward,Tie=Downward
+|Note|Dur:4th,Dotted|Pos:-6^|Opts:Stem=Down,Slur=Downward,Tie=Downward
+|Bar|Style:MasterRepeatClose|Visibility:Never
+|Bar|Style:Double
+|Ending|Endings:4|Visibility:Never
+|Note|Dur:4th,Dotted|Pos:-6^|Opts:Stem=Down,Slur=Downward,Tie=Downward
+|Note|Dur:Half|Pos:-6|Opts:Stem=Down
+|AddStaff|Name:"Tenor"|Label:"Tenor"|Group:"Standard"
+|StaffProperties|EndingBar:Section Close|Visible:Y|BoundaryTop:13|BoundaryBottom:8|Lines:5|WithNextStaff:Bracket,Layer|Color:Default
+|StaffProperties|Muted:N|Volume:127|StereoPan:0|Device:0|Channel:3
+|StaffInstrument|Patch:52|Trans:0|DynVel:10,30,45,60,75,92,108,127
+|Clef|Type:Bass
+|Key|Signature:Bb|Tonic:F
+|PerformanceStyle|Style:Legato|Pos:0|Wide:Y|Visibility:Never
+|Dynamic|Style:f|Opts:Volume=95|Pos:9|Wide:Y|Visibility:Never
+|Rest|Dur:8th|Opts:VertOffset=3
+|Note|Dur:4th|Pos:6|Opts:Stem=Up
+|Note|Dur:4th|Pos:5|Opts:Stem=Up
+|Note|Dur:4th|Pos:7|Opts:Stem=Up
+|Note|Dur:4th|Pos:6|Opts:Stem=Up
+|Bar|Style:MasterRepeatOpen|Visibility:Never
+|Ending|Endings:1,2,3|Visibility:Never
+|PerformanceStyle|Style:Legato|Pos:0|Wide:Y|Visibility:Never
+|Dynamic|Style:f|Opts:Volume=95|Pos:9|Wide:Y|Visibility:Never
+|Rest|Dur:8th|Opts:VertOffset=3
+|Note|Dur:4th|Pos:6|Opts:Stem=Up
+|Note|Dur:4th|Pos:5|Opts:Stem=Up
+|Note|Dur:4th|Pos:7|Opts:Stem=Up
+|Note|Dur:4th,Dotted|Pos:6|Opts:Stem=Up
+|Note|Dur:Half,Dotted|Pos:4|Opts:Stem=Down
+|Note|Dur:4th|Pos:3|Opts:Stem=Down
+|Note|Dur:4th|Pos:4|Opts:Stem=Up
+|Note|Dur:4th|Pos:2|Opts:Stem=Up
+|Note|Dur:4th|Pos:3|Opts:Stem=Down
+|Note|Dur:4th,Dotted|Pos:4^|Opts:Stem=Down,Tie=Upward
+|Bar|Style:MasterRepeatClose|Visibility:Never
+|Bar|Style:Double
+|Ending|Endings:4|Visibility:Never
+|Note|Dur:4th,Dotted|Pos:4|Opts:Stem=Down
+|Note|Dur:4th|Pos:3|Opts:Stem=Up
+|Note|Dur:4th|Pos:4|Opts:Stem=Up
+|AddStaff|Name:"Bass"|Label:"Bass"|Group:"Standard"
+|StaffProperties|EndingBar:Section Close|Visible:Y|BoundaryTop:10|BoundaryBottom:10|Lines:5|Color:Default
+|StaffProperties|Muted:N|Volume:127|StereoPan:84|Device:0|Channel:4
+|StaffInstrument|Patch:52|Trans:0|DynVel:10,30,45,60,75,92,108,127
+|Clef|Type:Bass
+|Key|Signature:Bb|Tonic:F
+|PerformanceStyle|Style:Legato|Pos:0|Wide:Y|Visibility:Never
+|Dynamic|Style:f|Opts:Volume=95|Pos:9|Wide:Y|Visibility:Never
+|Rest|Dur:8th|Opts:VertOffset=-3
+|Note|Dur:Half,Dotted|Pos:2^|Opts:Tie=Downward
+|Note|Dur:4th|Pos:2|Opts:Tie=Downward
+|Bar|Style:MasterRepeatOpen|Visibility:Never
+|Ending|Endings:1,2,3|Visibility:Never
+|PerformanceStyle|Style:Legato|Pos:0|Wide:Y|Visibility:Never
+|Dynamic|Style:f|Opts:Volume=95|Pos:9|Wide:Y|Visibility:Never
+|Rest|Dur:8th|Opts:VertOffset=-3
+|Note|Dur:Half,Dotted|Pos:2^|Opts:Tie=Downward
+|Note|Dur:4th,Dotted|Pos:2^|Opts:Tie=Downward
+|Note|Dur:Half,Dotted|Pos:2|Opts:Tie=Downward
+|Note|Dur:4th|Pos:1|Opts:Tie=Downward
+|Note|Dur:Half|Pos:0|Opts:Tie=Downward
+|Note|Dur:4th|Pos:-2|Opts:Stem=Down,Tie=Downward
+|Note|Dur:4th,Dotted|Pos:2^|Opts:Tie=Downward
+|Bar|Style:MasterRepeatClose|Visibility:Never
+|Bar|Style:Double
+|Ending|Endings:4|Visibility:Never
+|Note|Dur:4th,Dotted|Pos:2^|Opts:Tie=Downward
+|Note|Dur:Half|Pos:2
+|AddStaff|Name:"Tempo Track"|Label:"Tempo Track"|Group:"Conductor"
+|StaffProperties|EndingBar:Section Close|Visible:N|BoundaryTop:10|BoundaryBottom:10|Lines:5|Color:Default
+|StaffProperties|Muted:N|Volume:127|StereoPan:64|Device:0|Channel:5
+|StaffInstrument|Trans:0|DynVel:10,30,45,60,75,92,108,127
+|Clef|Type:Treble
+|Key|Signature:Bb|Tonic:F
+|Tempo|Tempo:60|Pos:7
+|Rest|Dur:8th
+|Rest|Dur:Half,Dotted
+|Tempo|Tempo:30|Pos:7|Placement:AsStaffSignature
+|Rest|Dur:4th
+|Bar|Style:MasterRepeatOpen|Visibility:Never
+|Ending|Endings:1,2,3|Visibility:Never
+|Tempo|Tempo:60|Pos:7
+|Rest|Dur:8th
+|Rest|Dur:Half,Dotted
+|Tempo|Tempo:40|Pos:7|Placement:AsStaffSignature
+|Rest|Dur:4th
+|Tempo|Tempo:60|Pos:7|Placement:AsStaffSignature
+|Rest|Dur:8th
+|Rest|Dur:Half,Dotted
+|Tempo|Tempo:40|Pos:7|Placement:AsStaffSignature
+|Rest|Dur:4th
+|Tempo|Tempo:60|Pos:7|Placement:AsStaffSignature
+|Rest|Dur:4th
+|Rest|Dur:4th
+|Rest|Dur:4th
+|Tempo|Tempo:20|Pos:7|Placement:AsStaffSignature
+|Rest|Dur:4th
+|Tempo|Tempo:90|Pos:-7|Placement:AsStaffSignature
+|Rest|Dur:8th
+|Bar|Style:MasterRepeatClose|Visibility:Never
+|Bar|Style:Double
+|Ending|Endings:4|Visibility:Never
+|Tempo|Tempo:60|Pos:7|Placement:AsStaffSignature
+|Rest|Dur:4th,Dotted
+|Rest|Dur:4th
+|Tempo|Tempo:20|Pos:7|Placement:AsStaffSignature
+|Rest|Dur:4th
+!NoteWorthyComposer-End
