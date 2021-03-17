@@ -36,7 +36,16 @@ class AbcWriter(converter.subConverters.SubConverter):
         else:
             dur = str(fractions.Fraction(f)).lstrip('1')
 
-        return sb + name + dur + se
+        # beams
+        bb = ' '
+        if n.isNote and len(n.beams):
+            beam = n.beams.beamsList[0]
+            if beam.type == 'stop':
+                pass
+            else:
+                bb = '``' # backquotes used for legibility (normally just no-spaces)
+
+        return sb + name + dur + se + bb
 
     def preprocess(self, obj):
         # set convenience properties in Part objects
@@ -157,7 +166,7 @@ class AbcWriter(converter.subConverters.SubConverter):
             for m in measures:
                 ms = ''
                 for n in m.notesAndRests:
-                    ms = ms + self.make_note(n) + ' '
+                    ms = ms + self.make_note(n)
                     if n.lyric:
                         ws = ws + n.lyric + ' '
                         # TODO: does abcjs allow lyrics at the end of a voice (i.e. not inline)?

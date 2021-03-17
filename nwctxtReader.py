@@ -3,6 +3,8 @@ from music21.noteworthy.translate import NoteworthyTranslator
 
 class NwctxtReader(NoteworthyTranslator):
 
+    UNIHYPHEN = '‐' # unicode hyphen
+
     def parseList(self, dataList):
         # Main
         for pi in dataList:
@@ -89,16 +91,38 @@ class NwctxtReader(NoteworthyTranslator):
             name = name.lower()
         n._name = name
 
-        opts = attributes.get('Opts', '')
+        optstr = attributes.get('Opts', '')
+        optlist = optstr.split(',')
+        opts = {}
+        for opt in optlist:
+            try:
+                (name, value) = opt.split('=', 1)
+            except ValueError:
+                name = opt
+                value = ''
+            finally:
+                opts[name] = value
 
-        # in NWC, a tie means that the previous syllable is held
-        hold = (self.lyrics and self.lyricPosition > -1 and n.tie and n.tie.type == 'stop')
-        if opts.find('Lyric=Never') != -1:
+        hold = (self.lyrics and self.lyricPosition > -1 and n.tie and n.tie.type == 'stop') # in a tie
+        extend = self.lyrics and len(n.getSpannerSites()) # in a slur
+        always = opts.get('Lyric', '') == 'Always'
+        never = opts.get('Lyric', '') == 'Never'
+
+        if never:
             n.lyric = '*' # skip lyric for one note
             self.lyricPosition -= 1 # undo previous add
-        elif hold:
+        elif hold and not always:
             n.lyric = '_'
             self.lyricPosition -= 1
+        elif extend and not always:
+            n.lyric = self.UNIHYPHEN
+            self.lyricPosition -= 1
+
+        if 'Beam' in opts:
+            dic = {'First':'start', 'End':'stop', '':'continue'}
+            typ = dic[opts['Beam']]
+            dur = n.duration.type
+            n.beams.fill(dur, typ)
 
     def createTempo(self, attributes):
         '''
@@ -144,9 +168,10 @@ class NwctxtReader(NoteworthyTranslator):
 
         allText = allText.strip('"')
         allText = allText.strip()
-        # replace ascii hyphen with a unicode hyphen, as ascii hyphen has special meaning in abc notation
-        allText = allText.replace('-', ' ‐ ')
         allText = allText.replace('\\n', ' ')
+
+        allText = allText.replace(' -', f' {self.UNIHYPHEN}') # ascii hyphen has special meaning in abc notation
+        allText = allText.replace('-', ' ') # any remaining ascii ones can now just be removed
         allText = allText.removeprefix('1.') # remove verse indicator, if it's there
         lyrics = allText.split()
 
