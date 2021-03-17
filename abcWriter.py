@@ -101,6 +101,7 @@ class AbcWriter(converter.subConverters.SubConverter):
         header = '%abc-2.2\n'
         header = header + '%%titlefont Jua\n'
         header = header + '%%vocalfont Jua\n'
+        header = header + '%%composerfont Jua\n'
         title = obj._songInfo['title']
         author = obj._songInfo['author']
         if title:
