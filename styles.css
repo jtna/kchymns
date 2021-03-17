@@ -1,9 +1,50 @@
-.options-wrapper {
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCRc4AMP6lbBP.woff2);
+}
+
+body {
+    padding: 20px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: currentColor;
+}
+
+.navbutton-wrapper {
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
 
+.options-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 input[type=checkbox] {
     transform: scale(2);
+}
+
+button {
+    margin: 0 4px;
+    padding: 5px 10px;
+    font-size: inherit;
+    background: #e2fdf1;
+    border: 1px solid #5c5c5c;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #3FB07C;
+    color: white;
+    border-color: #3FB07C;
 }
