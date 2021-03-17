@@ -2,18 +2,6 @@
 |Editor|ActiveStaff:1|CaretIndex:10|CaretPos:-1
 |SongInfo|Title:"Í∞ÄÌÜ®Î¶≠ ÏÑ±Í∞Ä 521 - Í≥†ÌÜµÎèÑ ÏóÜÏúºÎ¶¨Îùº"|Author:"Ïù¥Ï¢ÖÏ≤†"|Lyricist:""|Copyright1:"Goldfinger"|Copyright2:""
 |PgSetup|StaffSize:15|Zoom:3|TitlePage:Y|JustifyVertically:Y|PrintSystemSepMark:N|ExtendLastSystem:Y|DurationPadding:Y|PageNumbers:1|StaffLabels:None|BarNumbers:None|StartingBar:1
-|Font|Style:StaffItalic|Typeface:"Times New Roman"|Size:10|Bold:Y|Italic:Y|CharSet:0
-|Font|Style:StaffBold|Typeface:"Times New Roman"|Size:9|Bold:Y|Italic:N|CharSet:0
-|Font|Style:StaffLyric|Typeface:"±º∏≤"|Size:9|Bold:N|Italic:N|CharSet:0
-|Font|Style:PageTitleText|Typeface:"±º∏≤"|Size:16|Bold:Y|Italic:N|CharSet:0
-|Font|Style:PageText|Typeface:"Times New Roman"|Size:12|Bold:N|Italic:N|CharSet:0
-|Font|Style:PageSmallText|Typeface:"Times New Roman"|Size:8|Bold:N|Italic:N|CharSet:0
-|Font|Style:User1|Typeface:"Times New Roman"|Size:24|Bold:N|Italic:N|CharSet:0
-|Font|Style:User2|Typeface:"Times New Roman"|Size:24|Bold:N|Italic:N|CharSet:0
-|Font|Style:User3|Typeface:"Times New Roman"|Size:24|Bold:N|Italic:N|CharSet:0
-|Font|Style:User4|Typeface:"Times New Roman"|Size:24|Bold:N|Italic:N|CharSet:0
-|Font|Style:User5|Typeface:"Times New Roman"|Size:8|Bold:N|Italic:N|CharSet:0
-|Font|Style:User6|Typeface:"Times New Roman"|Size:8|Bold:N|Italic:N|CharSet:0
 |PgMargins|Left:1.27|Top:1.16|Right:1.27|Bottom:0.76|Mirror:N
 |AddStaff|Name:"Soprano"|Label:"Soprano"|Group:"Standard"
 |StaffProperties|EndingBar:Section Close|Visible:Y|BoundaryTop:13|BoundaryBottom:25|Lines:5|WithNextStaff:Bracket,Layer|Color:Default

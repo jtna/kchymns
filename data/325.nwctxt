@@ -2,18 +2,6 @@
 |Editor|ActiveStaff:1|CaretIndex:6|CaretPos:-1
 |SongInfo|Title:"Í∞ÄÌÜ®Î¶≠ ÏÑ±Í∞Ä 325 - ÏûêÎπÑÏÜ°"|Author:"Ïù¥Î¨∏Í∑º ÏûëÍ≥° Ï†ÑÎ°ÄÏúÑÏõêÌöå ÏÑ±ÏùåÏïÖÎ∂ÑÍ≥º Í∞úÏûë"|Lyricist:""|Copyright1:"Goldfinger"|Copyright2:""
 |PgSetup|StaffSize:21|Zoom:6|TitlePage:Y|JustifyVertically:Y|PrintSystemSepMark:N|ExtendLastSystem:Y|DurationPadding:Y|PageNumbers:0|StaffLabels:None|BarNumbers:Plain|StartingBar:1
-|Font|Style:StaffItalic|Typeface:"Times New Roman"|Size:18|Bold:Y|Italic:Y|CharSet:0
-|Font|Style:StaffBold|Typeface:"±º∏≤"|Size:14|Bold:N|Italic:N|CharSet:0
-|Font|Style:StaffLyric|Typeface:"±º∏≤"|Size:17|Bold:N|Italic:N|CharSet:0
-|Font|Style:PageTitleText|Typeface:"±º∏≤"|Size:16|Bold:Y|Italic:N|CharSet:129
-|Font|Style:PageText|Typeface:"Times New Roman"|Size:12|Bold:N|Italic:N|CharSet:0
-|Font|Style:PageSmallText|Typeface:"±º∏≤"|Size:8|Bold:N|Italic:N|CharSet:0
-|Font|Style:User1|Typeface:"Times New Roman"|Size:8|Bold:N|Italic:N|CharSet:0
-|Font|Style:User2|Typeface:"Times New Roman"|Size:8|Bold:N|Italic:N|CharSet:0
-|Font|Style:User3|Typeface:"Times New Roman"|Size:8|Bold:N|Italic:N|CharSet:0
-|Font|Style:User4|Typeface:"Times New Roman"|Size:8|Bold:N|Italic:N|CharSet:0
-|Font|Style:User5|Typeface:"Times New Roman"|Size:8|Bold:N|Italic:N|CharSet:0
-|Font|Style:User6|Typeface:"Times New Roman"|Size:8|Bold:N|Italic:N|CharSet:0
 |PgMargins|Left:1.27|Top:1.78|Right:1.07|Bottom:0.76|Mirror:N
 |AddStaff|Name:"S"|Label:" "|Group:"Standard"
 |StaffProperties|EndingBar:Section Close|Visible:Y|BoundaryTop:10|BoundaryBottom:24|Lines:5|WithNextStaff:Bracket,Layer|Color:Default

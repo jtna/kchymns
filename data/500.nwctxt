@@ -2,18 +2,6 @@
 |Editor|ActiveStaff:1|CaretIndex:4|CaretPos:0
 |SongInfo|Title:"가톨릭 성가 500 - 전능하신 주의 사랑"|Author:"독일 성가"|Lyricist:""|Copyright1:"Goldfinger"|Copyright2:""|Comments:"."
 |PgSetup|StaffSize:14|Zoom:5|TitlePage:Y|JustifyVertically:Y|PrintSystemSepMark:N|ExtendLastSystem:Y|DurationPadding:Y|PageNumbers:1|StaffLabels:Top Systems|BarNumbers:Boxed|StartingBar:1
-|Font|Style:StaffItalic|Typeface:"Times New Roman"|Size:9|Bold:Y|Italic:Y|CharSet:0
-|Font|Style:StaffBold|Typeface:"Times New Roman"|Size:6|Bold:Y|Italic:N|CharSet:0
-|Font|Style:StaffLyric|Typeface:"����"|Size:15|Bold:N|Italic:N|CharSet:0
-|Font|Style:PageTitleText|Typeface:"����"|Size:16|Bold:Y|Italic:N|CharSet:0
-|Font|Style:PageText|Typeface:"Times New Roman"|Size:12|Bold:N|Italic:N|CharSet:0
-|Font|Style:PageSmallText|Typeface:"Times New Roman"|Size:8|Bold:N|Italic:N|CharSet:0
-|Font|Style:User1|Typeface:"Times New Roman"|Size:5|Bold:N|Italic:N|CharSet:0
-|Font|Style:User2|Typeface:"Times New Roman"|Size:5|Bold:N|Italic:N|CharSet:0
-|Font|Style:User3|Typeface:"Times New Roman"|Size:5|Bold:N|Italic:N|CharSet:0
-|Font|Style:User4|Typeface:"Times New Roman"|Size:5|Bold:N|Italic:N|CharSet:0
-|Font|Style:User5|Typeface:"Times New Roman"|Size:8|Bold:N|Italic:N|CharSet:0
-|Font|Style:User6|Typeface:"Times New Roman"|Size:8|Bold:N|Italic:N|CharSet:0
 |PgMargins|Left:1.02|Top:1.02|Right:1.02|Bottom:1.02|Mirror:N
 |AddStaff|Name:"Soprano"|Group:"Standard"
 |StaffProperties|EndingBar:Section Close|Visible:Y|BoundaryTop:10|BoundaryBottom:30|Lines:5|WithNextStaff:Bracket,Layer|Color:Default

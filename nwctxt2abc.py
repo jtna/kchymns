@@ -3,26 +3,6 @@ import nwctxtReader, abcWriter
 import sys
 import os.path
 
-def sanitize_nwctxt(fname):
-    # some files coming out of nwc_conv.exe have an invalid char in the font name, e.g.
-    # |Font|Style:StaffLyric|Typeface:"xB1
-    TRIGGER = '|Font|'
-    found = False
-
-    with open(fname, 'r', errors='ignore') as f:
-        lines = f.readlines()
-
-    clines = []
-    for line in lines:
-        if not line.startswith(TRIGGER):
-            clines.append(line)
-
-    if len(clines) == len(lines):
-        return
-
-    with open(fname, 'w') as f:
-        f.writelines(clines)
-
 if __name__ == '__main__':
     converter.registerSubconverter(abcWriter.AbcWriter)
 
@@ -46,8 +26,6 @@ if __name__ == '__main__':
     if not os.path.exists(infile):
         print(f"Error: {infile} doesn't exist")
         sys.exit(1)
-
-    sanitize_nwctxt(infile)
 
     base, ext = os.path.splitext(infile)
     outfile = base + '.abc'

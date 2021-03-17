@@ -2,18 +2,6 @@
 |Editor|ActiveStaff:1|CaretIndex:5|CaretPos:0
 |SongInfo|Title:"Í∞ÄÌÜ®Î¶≠ ÏÑ±Í∞Ä 001 - ÎÇòÎäî ÎØøÎÇòÏù¥Îã§"|Author:"Alb.G. Stein ÏûëÍ≥°"|Lyricist:""|Copyright1:" "|Copyright2:""
 |PgSetup|StaffSize:16|Zoom:4|TitlePage:Y|JustifyVertically:Y|PrintSystemSepMark:N|ExtendLastSystem:Y|DurationPadding:Y|PageNumbers:1|StaffLabels:None|BarNumbers:None|StartingBar:1
-|Font|Style:StaffItalic|Typeface:"Times New Roman"|Size:12|Bold:N|Italic:Y|CharSet:1
-|Font|Style:StaffBold|Typeface:"Times New Roman"|Size:10|Bold:N|Italic:Y|CharSet:1
-|Font|Style:StaffLyric|Typeface:"±º∏≤"|Size:14|Bold:N|Italic:N|CharSet:0
-|Font|Style:PageTitleText|Typeface:"±º∏≤"|Size:16|Bold:N|Italic:N|CharSet:1
-|Font|Style:PageText|Typeface:"Times New Roman"|Size:12|Bold:N|Italic:N|CharSet:0
-|Font|Style:PageSmallText|Typeface:"Times New Roman"|Size:8|Bold:N|Italic:N|CharSet:0
-|Font|Style:User1|Typeface:"Times New Roman"|Size:5|Bold:N|Italic:N|CharSet:0
-|Font|Style:User2|Typeface:"Times New Roman"|Size:5|Bold:N|Italic:N|CharSet:0
-|Font|Style:User3|Typeface:"Times New Roman"|Size:5|Bold:N|Italic:N|CharSet:0
-|Font|Style:User4|Typeface:"Times New Roman"|Size:5|Bold:N|Italic:N|CharSet:0
-|Font|Style:User5|Typeface:"Times New Roman"|Size:8|Bold:N|Italic:N|CharSet:0
-|Font|Style:User6|Typeface:"Times New Roman"|Size:8|Bold:N|Italic:N|CharSet:0
 |PgMargins|Left:0.76|Top:0.76|Right:0.76|Bottom:0.76|Mirror:N
 |AddStaff|Name:"S"|Label:" "|Group:"Standard"
 |StaffProperties|EndingBar:Section Close|Visible:Y|BoundaryTop:13|BoundaryBottom:26|Lines:5|WithNextStaff:Bracket,Layer|Color:Default

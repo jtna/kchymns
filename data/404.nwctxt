@@ -2,18 +2,6 @@
 |Editor|ActiveStaff:1|CaretIndex:23|CaretPos:1
 |SongInfo|Title:"ê°€í†¨ë¦­ ì„±ê°€ 404 - ë‚˜ëŠ” ì£¼ë‹˜ì„ ì°¾ìŠµë‹ˆë‹¤"|Author:"Odette Vercruysse,ê¹€íƒœì§‘ 4ë¶€ í¸ê³¡"|Lyricist:"ê¹€ìˆ˜í™˜ ì—­ì‚¬"|Copyright1:"Goldfinger"|Copyright2:""
 |PgSetup|StaffSize:17|Zoom:4|TitlePage:Y|JustifyVertically:Y|PrintSystemSepMark:N|ExtendLastSystem:Y|DurationPadding:Y|PageNumbers:0|StaffLabels:None|BarNumbers:None|StartingBar:1
-|Font|Style:StaffItalic|Typeface:"Times New Roman"|Size:10|Bold:Y|Italic:Y|CharSet:0
-|Font|Style:StaffBold|Typeface:"Times New Roman"|Size:2|Bold:Y|Italic:N|CharSet:0
-|Font|Style:StaffLyric|Typeface:"±¼¸²"|Size:13|Bold:N|Italic:N|CharSet:0
-|Font|Style:PageTitleText|Typeface:"±¼¸²"|Size:20|Bold:Y|Italic:N|CharSet:0
-|Font|Style:PageText|Typeface:"Times New Roman"|Size:0|Bold:N|Italic:N|CharSet:0
-|Font|Style:PageSmallText|Typeface:"Times New Roman"|Size:0|Bold:N|Italic:N|CharSet:0
-|Font|Style:User1|Typeface:"¹ÙÅÁÃ¼"|Size:0|Bold:N|Italic:N|CharSet:129
-|Font|Style:User2|Typeface:"µ¸¿òÃ¼"|Size:0|Bold:N|Italic:N|CharSet:129
-|Font|Style:User3|Typeface:"Times New Roman"|Size:0|Bold:N|Italic:N|CharSet:0
-|Font|Style:User4|Typeface:"Times New Roman"|Size:0|Bold:N|Italic:N|CharSet:0
-|Font|Style:User5|Typeface:"Times New Roman"|Size:0|Bold:N|Italic:N|CharSet:0
-|Font|Style:User6|Typeface:"Times New Roman"|Size:0|Bold:N|Italic:N|CharSet:0
 |PgMargins|Left:1.07|Top:0.76|Right:1.07|Bottom:0.76|Mirror:N
 |AddStaff|Name:"Soprano"|Label:"Soprano"|Group:"Standard"
 |StaffProperties|EndingBar:Double|Visible:Y|BoundaryTop:13|BoundaryBottom:26|Lines:5|WithNextStaff:Bracket,Layer|Color:Default
