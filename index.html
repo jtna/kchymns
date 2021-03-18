@@ -153,6 +153,10 @@ header + 'T: 010 주를 찬미해\nC: 프랑스 성가, 최병철 편곡\nM: 2/4
                 visualObj: visualObj,
                 options: {
                     //soundFontUrl: "https://noteworthycomposer.org/z/FluidR3_GM/"
+                    //soundFontUrl: "https://paulrosen.github.io/midi-js-soundfonts/abcjs/"
+                    //soundFontUrl: "https://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/"
+                    //soundFontUrl: "https://gleitz.github.io/midi-js-soundfonts/MusyngKite/"
+                    //soundFontUrl: "https://gleitz.github.io/midi-js-soundfonts/FatBoy/"
                 }
             }).then(function (response) {
                 console.log(response);
@@ -213,22 +217,22 @@ header + 'T: 010 주를 찬미해\nC: 프랑스 성가, 최병철 편곡\nM: 2/4
             <button class="next">NEXT &gt;</button>
         </div>
         <div class="options-wrapper">
-            <div class="checkbox-wrapper">
-                <input type="checkbox" id="check-s" checked>
-                <label for="check-s">S</label>
-            </div>
-            <div class="checkbox-wrapper">
-                <input type="checkbox" id="check-a" checked>
-                <label for="check-a">A</label>
-            </div>
-            <div class="checkbox-wrapper">
-                <input type="checkbox" id="check-t" checked>
-                <label for="check-t">T</label>
-            </div>
-            <div class="checkbox-wrapper">
-                <input type="checkbox" id="check-b" checked>
-                <label for="check-b">B</label>
-            </div>
+            <label class="checkbox-container">S
+                <input type="checkbox" id="check-s" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">A
+                <input type="checkbox" id="check-a" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">T
+                <input type="checkbox" id="check-t" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">B
+                <input type="checkbox" id="check-b" checked="checked">
+                <span class="checkmark"></span>
+            </label>
         </div>
         <div id="audio"></div>
         <div id="paper"></div>
