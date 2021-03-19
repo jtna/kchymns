@@ -9,7 +9,7 @@ class AbcWriter(converter.subConverters.SubConverter):
     registerFormats = ('abc',)
     registerOutputExtensions = ('abc',)
 
-    tsql = 1.0 # timesignature quarterlength
+    nuql = 1.0 # note unit quarterlength
     MEASURESPERLINE = 4
 
     def make_note(self, n):
@@ -30,11 +30,11 @@ class AbcWriter(converter.subConverters.SubConverter):
 
         name = n._name if type(n) is note.Note else 'z'
 
-        f = n.duration.quarterLength / self.tsql
+        f = n.duration.quarterLength / self.nuql
         if f == 1.0:
             dur = ''
         else:
-            dur = str(fractions.Fraction(f)).lstrip('1')
+            dur = str(fractions.Fraction(f).limit_denominator(32)).lstrip('1')
 
         # beams
         bb = ' '
@@ -79,6 +79,18 @@ class AbcWriter(converter.subConverters.SubConverter):
                     p._repeatStart = mnum - 1
                     break
 
+        # find most common note length
+        durations = {}
+        for n in obj.flat.notesAndRests:
+            dur = n.duration.quarterLength
+            try:
+                durations[dur] += 1
+            except KeyError:
+                durations[dur] = 1
+        common = max(durations, key=durations.get)
+        self.nuql = common
+        #print(f'durations: {durations}')
+
     def make_score_directive(self, obj):
         # try to pair two parts that (are not disabled), (are sequential) and (have the same clef)
         sd = "%%score "
@@ -122,13 +134,9 @@ class AbcWriter(converter.subConverters.SubConverter):
             ts = p.flat.getElementsByClass('TimeSignature')
             if ts:
                 mstr = str(ts[0].numerator) + '/' + str(ts[0].denominator)
-                lstr = str(1) + '/' + str(ts[0].denominator) # L: note unit length
+                lstr = str(fractions.Fraction(self.nuql/4).limit_denominator(32)) # L: note unit length
                 header = header + 'M: ' + mstr + '\n'
                 header = header + 'L: ' + lstr + '\n'
-
-                self.tsql = ts[0].beatDuration.quarterLength
-                if (ts[0].denominator / 4) != self.tsql:
-                    logging.warning("Invalid time signature quarter length")
             else:
                 logging.warning(f"No time signature found in {p}")
 
@@ -140,14 +148,14 @@ class AbcWriter(converter.subConverters.SubConverter):
             logging.warning(f"No tempo found in score")
 
         if p:
-            ks = p.flat.getElementsByClass('KeySignature')[0]
-            if ks:
+            try:
+                ks = p.flat.getElementsByClass('KeySignature')[0]
                 kstr = ks.asKey().name
                 kstr = kstr.replace('major', '')
                 kstr = kstr.replace('-', 'b')
                 kstr = kstr.strip()
                 header = header + 'K: ' + kstr + '\n'
-            else:
+            except IndexError:
                 logging.warning(f"No key signature found in {p}")
 
         # TODO: check all parts against the key and time signatures we've chosen
@@ -155,11 +163,16 @@ class AbcWriter(converter.subConverters.SubConverter):
 
     def make_voices(self, obj):
         voice = ''
+        voicenum = 0
+        #instruments = (48, 73, 57, 60, 0, 0)
+
         for p in obj.parts:
             if p._disabled: continue
 
             ps = 'V: ' + p.id + ' clef=' + p._clef + '\n'
+            #ps = ps + f'%%MIDI program {instruments[voicenum]}\n'
             voice = voice + ps
+            voicenum += 1
 
             num = 0 # measure.number is not set by the nwc reader and all default to 0
             ws = ''
