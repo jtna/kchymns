@@ -1,5 +1,6 @@
-from music21 import stream, key, note, tempo, converter
+from music21 import stream, key, note, tempo, converter, repeat
 from music21.noteworthy.translate import NoteworthyTranslator
+from music21.noteworthy.translate import NoteworthyTranslateException
 
 class NwctxtReader(NoteworthyTranslator):
 
@@ -202,6 +203,15 @@ class NwctxtReader(NoteworthyTranslator):
             posList.append(pos)
         posInfo = ','.join(posList)
         return NoteworthyTranslator.getMultiplePitchesFromPositionInfo(self, posInfo)
+
+    def createOtherRepetitions(self, attributes):
+        try:
+            NoteworthyTranslator.createOtherRepetitions(self, attributes)
+        except NoteworthyTranslateException:
+            style = attributes['Style']
+            if style == 'DalSegno':
+                g = repeat.DalSegno()
+            self.currentMeasure.append(g)
 
 class ConverterNwctext(converter.subConverters.SubConverter):
     registerFormats = ('noteworthytxt',)
