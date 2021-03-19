@@ -131,7 +131,8 @@ class NwctxtReader(NoteworthyTranslator):
         # key: nwctxt string, value: (abc string, referent quarterlength)
         bdict = {'Eighth':('1/8',0.5), 'Eighth Dotted':('3/16',0.75), 'Quarter':('1/4',1.0),\
                 'Quarter Dotted':('3/8',1.5), 'Half':('1/2',2.0), 'Half Dotted':('3/4',3.0)}
-        base = attributes.get('Base', bdict['Quarter'])
+        b = attributes.get('Base', 'Quarter')
+        base = bdict[b]
         temponum = int(attributes.get('Tempo', 80))
         mm = tempo.MetronomeMark(None, temponum, note.Note(quarterLength=base[1]))
         mm._tempo = base[0] + '=' + str(temponum)
