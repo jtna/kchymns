@@ -198,6 +198,17 @@ class NwctxtReader(NoteworthyTranslator):
         self.score._songInfo['title'] = title
         self.score._songInfo['author'] = author
 
+    def getMultiplePitchesFromPositionInfo(self, posInfo):
+        # this fixes a bug in the parent's function:
+        # |Chord|Dur:Half|Pos:3^,5^
+        # it should strip '^' from all pitches, but in only does it for the last one
+        posList = []
+        for pos in posInfo.split(','):
+            pos = pos.rstrip('^')
+            posList.append(pos)
+        posInfo = ','.join(posList)
+        return NoteworthyTranslator.getMultiplePitchesFromPositionInfo(self, posInfo)
+
 class ConverterNwctext(converter.subConverters.SubConverter):
     registerFormats = ('noteworthytxt',)
     registerInputExtensions = ('nwctxt',)
