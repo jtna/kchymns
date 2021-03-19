@@ -181,18 +181,12 @@ class NwctxtReader(NoteworthyTranslator):
 
     def createLyrics(self, attributes):
         return self.createLyricsKr(attributes)
-        lyr = NoteworthyTranslator.createLyrics(self, attributes)
-        if len(lyr):
-            lyr[0] = lyr[0].lstrip('1')
-            lyr[0] = lyr[0].lstrip('.')
-        print(lyr)
 
     def setSongInfo(self, attributes):
         title = attributes.get('Title', '')
         author = attributes.get('Author', '')
         title = title.strip().strip('"')
         author = author.strip().strip('"')
-        author = author.removesuffix(' 작곡')
 
         self.score._songInfo = {}
         self.score._songInfo['title'] = title

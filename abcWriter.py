@@ -116,6 +116,8 @@ class AbcWriter(converter.subConverters.SubConverter):
         header = header + '%%composerfont Jua\n'
         title = obj._songInfo['title']
         author = obj._songInfo['author']
+        author = author.removesuffix(' 작곡')
+
         if title:
             r = re.search('(가톨릭\s*성가\s*)(\d+)\s*-\s*(.+)', title)
             if r:
