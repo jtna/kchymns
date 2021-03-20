@@ -108,8 +108,7 @@
             document.querySelector(".next").addEventListener("click", next);
             document.querySelector(".prev").addEventListener("click", prev);
             var numbox = document.getElementById("numbox");
-            numbox.value = "";
-            numbox.placeholder = idx+1;
+            numbox.value = idx+1;
 
             checkS = document.getElementById("check-s");
             checkS.addEventListener("click", function() { cbxToggle(); });
@@ -199,8 +198,7 @@
                 idx = abc.length - 1;
 
             var numbox = document.getElementById("numbox");
-            numbox.value = "";
-            numbox.placeholder = idx+1;
+            numbox.value = idx+1;
 
             setTune(true); // prime immediately
             return;
@@ -216,6 +214,7 @@
             if (event.keyCode == 13) { // enter key
                 target = parseInt(e.value) - 1;
                 changeIdx(target);
+                e.blur();
             }
         }
 
@@ -227,7 +226,7 @@
     <main>
         <div class="navbutton-wrapper">
             <button class="prev">&lt; PREV</button>
-            <input type="text" id="numbox" pattern="[0-9]{1,3}" style="text-align:center" onkeypress="numboxEnter(this)"/>
+            <input type="text" id="numbox" pattern="[0-9]{1,3}" style="text-align:center" onfocus="this.value=''" onkeypress="numboxEnter(this)"/>
             <button class="next">NEXT &gt;</button>
         </div>
         <div class="options-wrapper">
