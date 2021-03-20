@@ -5,7 +5,7 @@ import os
 if __name__ == '__main__':
 
     start = 1
-    count = 10
+    count = 528
     SCRIPTNAME = 'nwctxt2abc.py'
     HEADER = '%abc-2.2\\n%%titlefont Jua\\n%%vocalfont Jua\\n%%composerfont Jua\\n'
 
@@ -16,7 +16,7 @@ if __name__ == '__main__':
         outfile = f'./data/{i:03d}.abc'
 
         if os.path.exists(infile):
-            print(infile)
+            #print(infile)
             os.system(f'python {SCRIPTNAME} {infile}')
 
             with open(outfile) as f:
