@@ -215,6 +215,8 @@ class NwctxtReader(NoteworthyTranslator):
             style = attributes['Style']
             if style == 'DalSegno':
                 g = repeat.DalSegno()
+            elif style == 'DSalFine':
+                g = repeat.DalSegnoAlFine()
             self.currentMeasure.append(g)
 
 class ConverterNwctext(converter.subConverters.SubConverter):
