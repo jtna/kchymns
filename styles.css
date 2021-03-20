@@ -31,6 +31,22 @@ body {
     padding-bottom: 0px;
 }
 
+input[type=text] {
+    border: 2px solid #0d8bf2;
+    border-radius: 4px;
+    font-size: inherit;
+    width: 4em;
+}
+
+input[type=text]:focus {
+    background-color: #cfe8fc;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
 button {
     margin: 0 4px;
     padding: 5px 10px;
