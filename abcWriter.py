@@ -62,12 +62,27 @@ class AbcWriter(converter.subConverters.SubConverter):
             else:
                 logging.warning(f"No clef in {repr(p)}")
 
+        numparts = 0
         for p in obj.parts:
             muted = p._staffProperties.get('Muted', '').lower()
             p._muted = True if (muted == 'y') else False
             visible = p._staffProperties.get('Visible', '').lower()
             p._visible = True if (visible == 'y') else False
             p._disabled = p._muted or not p._visible
+            if not p._disabled:
+                numparts += 1
+
+        if numparts < 4:
+            logging.warning(f"Found {numparts} enabled parts. Forcing enable of first 4")
+            for p in obj.parts[0:4]:
+                p._disabled = False
+        elif numparts > 4:
+            logging.warning(f"Found {numparts} enabled parts. Forcing disable of 5th part and up")
+            n = 0
+            for p in obj.parts:
+                if not p._disabled:
+                    n += 1
+                p._disabled = (n > 4)
 
         for p in obj.parts:
             p._repeatStart = 0
@@ -158,7 +173,8 @@ class AbcWriter(converter.subConverters.SubConverter):
                 kstr = kstr.strip()
                 header = header + 'K: ' + kstr + '\n'
             except IndexError:
-                logging.warning(f"No key signature found in {p}")
+                pass
+                #logging.warning(f"No key signature found in {p}")
 
         # TODO: check all parts against the key and time signatures we've chosen
         return header
