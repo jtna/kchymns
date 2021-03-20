@@ -101,7 +101,6 @@ header + 'T: 010 주를 찬미해\nC: 프랑스 성가, 최병철 편곡\nM: 2/4
         var currentNum = 0;
 
         var synthControl; // visual widget that allows the user to control playback
-        var midiBuffer; // object that caches and buffers the audio
         var visualObj; // result of renderAbc()
 
         var abcOptions = {
@@ -116,14 +115,15 @@ header + 'T: 010 주를 찬미해\nC: 프랑스 성가, 최병철 편곡\nM: 2/4
         function load() {
             document.querySelector(".next").addEventListener("click", next);
             document.querySelector(".prev").addEventListener("click", prev);
+
             checkS = document.getElementById("check-s");
-            checkS.addEventListener("click", function() { checkToggle(); });
+            checkS.addEventListener("click", function() { cbxToggle(); });
             checkA = document.getElementById("check-a");
-            checkA.addEventListener("click", function() { checkToggle(); });
+            checkA.addEventListener("click", function() { cbxToggle(); });
             checkT = document.getElementById("check-t");
-            checkT.addEventListener("click", function() { checkToggle(); });
+            checkT.addEventListener("click", function() { cbxToggle(); });
             checkB = document.getElementById("check-b");
-            checkB.addEventListener("click", function() { checkToggle(); });
+            checkB.addEventListener("click", function() { cbxToggle(); });
 
             if (ABCJS.synth.supportsAudio()) {
                 synthControl = new ABCJS.synth.SynthController();
@@ -145,60 +145,66 @@ header + 'T: 010 주를 찬미해\nC: 프랑스 성가, 최병철 편곡\nM: 2/4
 
         function setTune(userAction) {
             synthControl.disable(true);
+            console.log("start");
+
             visualObj = ABCJS.renderAbc("paper", abc[currentNum], abcOptions)[0];
             var audioParams = getAudioParams();
 
-            midiBuffer = new ABCJS.synth.CreateSynth();
-            midiBuffer.init({
-                visualObj: visualObj,
-                options: {
-                    //soundFontUrl: "https://noteworthycomposer.org/z/FluidR3_GM/"
-                    //soundFontUrl: "https://paulrosen.github.io/midi-js-soundfonts/abcjs/"
-                    //soundFontUrl: "https://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/"
-                    //soundFontUrl: "https://gleitz.github.io/midi-js-soundfonts/MusyngKite/"
-                    //soundFontUrl: "https://gleitz.github.io/midi-js-soundfonts/FatBoy/"
+            if (synthControl) {
+                if (userAction) {
+                    disableButtons(true);
                 }
-            }).then(function (response) {
-                console.log(response);
-                if (synthControl) {
-                    synthControl.setTune(visualObj, userAction, audioParams).then(function (response) {
-                        console.log("Audio successfully loaded.")
-                    }).catch(function (error) {
-                        console.warn("Audio problem:", error);
-                    });
-                }
-            }).catch(function (error) {
-                console.warn("Audio problem:", error);
-            });
+                synthControl.setTune(visualObj, userAction, audioParams).then(function (response) {
+                    console.log("Audio successfully loaded.")
+                }).catch(function (error) {
+                    console.warn("Audio problem:", error);
+                }).then(function () {
+                    if (userAction) {
+                        disableButtons(false);
+                    }
+                    console.log("done");
+                });
+            }
         }
 
-        function checkToggle() {
-            if (midiBuffer) {
-                midiBuffer.stop();
-                var audioParams = getAudioParams();
+        function disableButtons(disabled) {
+            var btnPrev = document.querySelector(".prev");
+            var btnNext = document.querySelector(".next");
+            btnPrev.disabled = disabled;
+            btnNext.disabled = disabled;
+        }
 
-                if (synthControl) {
-                    synthControl.disable(true);
-                    synthControl.setTune(visualObj, true, audioParams).then(function (response) {
-                        console.log("Audio successfully loaded.")
-                    }).catch(function (error) {
-                        console.warn("Audio problem:", error);
-                    });
-                }
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function cbxToggle() {
+            if (synthControl) {
+                while (synthControl.isLoading) {
+                    console.log("wait..")
+                    await sleep(500)
+                }
+                console.log("destroy synthControl");
+                synthControl.destroy() // this stops and clears the midibuffer
+                synthControl.isLoaded = false;
             }
-            else {
-                setTune(true);
-            }
+            setTune(false); // defer priming until user clicks play button
         }
 
         function changeNum(jump) {
+            if (synthControl && synthControl.isLoading) {
+                // don't interrupt the priming process
+                console.log("skip changeNum");
+                return;
+            }
             currentNum += jump;
             if (currentNum >= abc.length)
                 currentNum = 0;
             else if (currentNum < 0)
                 currentNum = abc.length - 1;
-            synthControl.disable();
-            setTune(true);
+
+            setTune(true); // prime immediately
+            return;
         }
         function next() {
             changeNum(1)
