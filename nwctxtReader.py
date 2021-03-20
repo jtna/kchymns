@@ -1,4 +1,5 @@
-from music21 import stream, key, note, tempo, converter, repeat
+from music21 import stream, key, note, tempo, converter, repeat, beam
+from music21.beam import BeamException
 from music21.noteworthy.translate import NoteworthyTranslator
 from music21.noteworthy.translate import NoteworthyTranslateException
 
@@ -123,7 +124,10 @@ class NwctxtReader(NoteworthyTranslator):
             dic = {'First':'start', 'End':'stop', '':'continue'}
             typ = dic[opts['Beam']]
             dur = n.duration.type
-            n.beams.fill(dur, typ)
+            try:
+                n.beams.fill(dur, typ)
+            except BeamException:
+                pass
 
     def createTempo(self, attributes):
         '''
