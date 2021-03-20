@@ -208,6 +208,10 @@ class NwctxtReader(NoteworthyTranslator):
         posInfo = ','.join(posList)
         return NoteworthyTranslator.getMultiplePitchesFromPositionInfo(self, posInfo)
 
+    def getOnePitchFromPosition(self, pos):
+        pos = pos.removesuffix('!3') # TODO: not sure what this does
+        return NoteworthyTranslator.getOnePitchFromPosition(self, pos)
+
     def createOtherRepetitions(self, attributes):
         try:
             NoteworthyTranslator.createOtherRepetitions(self, attributes)
