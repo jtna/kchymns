@@ -141,28 +141,15 @@
             var audioParams = {};
 
             if (synthControl) {
-                if (userAction) {
-                    disableButtons(true);
-                }
                 synthControl.setTune(visualObj, userAction, audioParams).then(function (response) {
                     console.log("Audio successfully loaded.")
                 }).catch(function (error) {
                     console.warn("Audio problem:", error);
                 }).then(function () {
-                    if (userAction) {
-                        disableButtons(false);
-                    }
                     console.log("done");
                 });
             }
         }
-
-        function disableButtons(disabled) {
-            var btnPrev = document.querySelector(".prev");
-            var btnNext = document.querySelector(".next");
-            btnPrev.disabled = disabled;
-            btnNext.disabled = disabled;
-        }
 
         function countVoices() {
             var num = 0;
@@ -192,11 +179,6 @@
         }
 
         function changeIdx(target) {
-            if (synthControl && synthControl.isLoading) {
-                // don't interrupt the priming process
-                console.log("skip changeNum");
-                return;
-            }
             idx = target;
             if (idx >= abc.length)
                 idx = 0;
@@ -206,7 +188,7 @@
             var numbox = document.getElementById("numbox");
             numbox.value = idx+1;
 
-            setTune(true); // prime immediately
+            setTune(false);
             return;
         }
         function next() {
