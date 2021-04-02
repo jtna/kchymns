@@ -64,7 +64,7 @@ button:hover {
 /* checkbox stuff */
 /* customize the label (the container) */
 .checkbox-container {
-    display: block;
+    display: flex;
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
