@@ -1,6 +1,7 @@
 from music21 import converter, note, stream, meter, spanner, bar, environment
 import logging
 import re, fractions
+import os.path
 
 environLocal = environment.Environment()
 
@@ -11,6 +12,7 @@ class AbcWriter(converter.subConverters.SubConverter):
 
     nuql = 1.0 # note unit quarterlength
     MEASURESPERLINE = 4
+    measurehints = []
 
     def make_note(self, n):
         # ties and slurs
@@ -179,7 +181,7 @@ class AbcWriter(converter.subConverters.SubConverter):
         # TODO: check all parts against the key and time signatures we've chosen
         return header
 
-    def make_voices(self, obj):
+    def make_voices(self, obj, measure_hint):
         voice = ''
         voicenum = 0
         #instruments = (48, 73, 57, 60, 0, 0)
@@ -192,7 +194,9 @@ class AbcWriter(converter.subConverters.SubConverter):
             voice = voice + ps
             voicenum += 1
 
-            num = 0 # measure.number is not set by the nwc reader and all default to 0
+            x = 0 # current measure
+            y = 0 # current line
+            num = 0 # total measures (measure.number is not set by the nwc reader and all default to 0)
             ws = ''
             measures = p.getElementsByClass('Measure')[p._repeatStart:]
             for m in measures:
@@ -201,28 +205,56 @@ class AbcWriter(converter.subConverters.SubConverter):
                     ms = ms + self.make_note(n)
                     if n.lyric:
                         ws = ws + n.lyric + ' '
-                        # TODO: does abcjs allow lyrics at the end of a voice (i.e. not inline)?
 
                 if ms: # skip empty measures in nwctxt TODO: this may be due to repeat bars
                     voice = voice + ms + '| '
-                    num = num + 1
-                if (num % self.MEASURESPERLINE == 0) or (m is measures[-1]):
+                    num += 1
+                    x += 1
+
+                is_newline = False
+                if measure_hint and len(measure_hint) > y:
+                    if x == measure_hint[y]:
+                        is_newline = True
+                else:
+                    if (num % self.MEASURESPERLINE == 0):
+                        is_newline = True
+
+                if is_newline or (m is measures[-1]):
                     voice = voice[:-1] + '\n'
+                    x = 0
+                    y += 1
                     if ws:
                         voice = voice + 'w: ' + ws[:-1] + '\n'
                         ws = ''
                 # TODO: decide how we'll handle repeats
+
+        if measure_hint:
+            if sum(measure_hint) != num:
+                logging.warning(f"Measure hint sum {sum(measure_hint)} != total measures {num}")
+
         return voice
+
+    def read_metadata(self, index):
+        index -= 1
+        with open('data/measurehints.txt') as f:
+            lines = f.readlines()
+            if len(lines) > index:
+                line = lines[index].rstrip()
+                self.measurehints = [int(char) for char in line]
 
     def write(self, obj, fmt, fp=None, subformats=None, **keywords):
         music = ''
         if fp is None:
             fp = environLocal.getTempFile('.abc')
 
+        basename = os.path.basename(fp)
+        split = os.path.splitext(basename)
+        self.read_metadata(int(split[0]))
+
         self.preprocess(obj)
         music = music + self.make_header(obj)
         music = music + self.make_score_directive(obj)
-        music = music + self.make_voices(obj)
+        music = music + self.make_voices(obj, self.measurehints)
 
         with open(fp, 'w') as f:
             f.write(music)
