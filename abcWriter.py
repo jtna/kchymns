@@ -1,4 +1,4 @@
-from music21 import converter, note, stream, meter, spanner, bar, environment
+from music21 import converter, note, stream, meter, spanner, bar, key, environment
 import logging
 import re, fractions
 import os.path
@@ -14,7 +14,26 @@ class AbcWriter(converter.subConverters.SubConverter):
     MEASURESPERLINE = 4
     measurehints = []
 
-    def make_note(self, n):
+    def get_note_name(self, n, obj):
+        try:
+            currentKey = obj.flat.getElementsByClass('KeySignature')[0]
+        except IndexError:
+            currentKey = key.KeySignature(0)
+
+        # set name for ABC notation
+        postfix = ("", "", ",,", ",", "", "", "'", "''")
+        name = n.step
+        if n.pitch.accidental != currentKey.accidentalByStep(n.step):
+            if n.pitch.accidental.displayStatus:
+                acc2str = {'♭':'_', '♭♭':'__', '♮':'=', '♯':'^', '♯♯':'^^'}
+                acc = acc2str.get(n.pitch.accidental.unicode, '')
+                name = acc + name
+        name = name + postfix[n.octave]
+        if n.octave > 4:
+            name = name.lower()
+        return name
+
+    def make_note(self, n, obj):
         # ties and slurs
         sb = ''
         se = ''
@@ -30,7 +49,7 @@ class AbcWriter(converter.subConverters.SubConverter):
                     if sp.isFirst(n):
                         sb = sb + '('
 
-        name = n._name if type(n) is note.Note else 'z'
+        name = self.get_note_name(n, obj) if type(n) is note.Note else 'z'
 
         f = n.duration.quarterLength / self.nuql
         if f == 1.0:
@@ -50,8 +69,13 @@ class AbcWriter(converter.subConverters.SubConverter):
         return sb + name + dur + se + bb
 
     def preprocess(self, obj):
-        # set convenience properties in Part objects
+        for p in obj.parts:
+            # if we run makeAccidentals on the part (rather than the measure),
+            # it does things like add naturals for an accidental in a previous measure
+            for m in p.getElementsByClass('Measure'):
+                m.makeAccidentals(inPlace=True, cautionaryNotImmediateRepeat=False)
 
+        # set convenience properties in Part objects
         for p in obj.parts:
             clef = p.flat.getElementsByClass('Clef')
             p._clef = 'treble' # default
@@ -202,7 +226,7 @@ class AbcWriter(converter.subConverters.SubConverter):
             for m in measures:
                 ms = ''
                 for n in m.notesAndRests:
-                    ms = ms + self.make_note(n)
+                    ms = ms + self.make_note(n, obj)
                     if n.lyric:
                         ws = ws + n.lyric + ' '
 

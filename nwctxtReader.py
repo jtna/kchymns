@@ -78,21 +78,7 @@ class NwctxtReader(NoteworthyTranslator):
     def translateNote(self, attributes):
         NoteworthyTranslator.translateNote(self, attributes)
 
-        # set name for ABC notation
         n = self.currentMeasure[-1]
-        postfix = ("", "", ",,", ",", "", "", "'", "''")
-        name = n.step
-        if n.pitch.accidental != self.currentKey.accidentalByStep(n.step):
-            acc2str = {'♭':'_', '♭♭':'__', '♮':'=', '♯':'^', '♯♯':'^^'}
-            acc = acc2str.get(n.pitch.accidental.unicode, '')
-            name = acc + name
-        name = name + postfix[n.octave]
-        # TODO: must test a note with natural sign. let's do some grepping for notes in nwctxt
-        # git grep -Eo "Pos:[nb#xv]{1}-?[[:digit:]]+" -- data/*.nwctxt
-        if n.octave > 4:
-            name = name.lower()
-        n._name = name
-
         optstr = attributes.get('Opts', '')
         optlist = optstr.split(',')
         opts = {}
