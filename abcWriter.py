@@ -112,13 +112,24 @@ class AbcWriter(converter.subConverters.SubConverter):
 
         for p in obj.parts:
             p._repeatStart = 0
-            mnum = 0
+            p._repeatEnd = None
+            mnum = -1
             for el in p.recurse():
                 if type(el) is stream.Measure:
                     mnum += 1
                 elif type(el) is bar.Repeat and el.direction == 'start':
-                    p._repeatStart = mnum - 1
+                    p._repeatStart = mnum
+                elif type(el) is bar.Repeat and el.direction == 'end':
+                    p._repeatEnd = mnum
                     break
+        # local repeats often appear like this:
+        # open:
+        #   |Bar
+        #   |Bar|Style:LocalRepeatOpen|Visibility:Never
+        # close:
+        #   |Bar|Style:LocalRepeatClose|Repeat:3|Visibility:Never
+        # and they end up adding an empty measure each when parsed.
+        # these could be deleted (using repeat.deleteMeasures, based on len(measure) == 0)
 
         # find most common note length
         durations = {}
@@ -145,7 +156,7 @@ class AbcWriter(converter.subConverters.SubConverter):
 
             if (len(pair) == 2) or (p is obj.parts[-1]):
                 s = ' '.join(x.id for x in pair)
-                sd = sd + f'({s})'
+                sd = sd + f'[({s})]'
                 pair.clear()
         sd = sd + '\n'
         return sd
@@ -155,14 +166,14 @@ class AbcWriter(converter.subConverters.SubConverter):
         header = header + '%%titlefont Jua\n'
         header = header + '%%vocalfont Jua\n'
         header = header + '%%composerfont Jua\n'
+        header = header + '%%stretchlast\n'
         title = obj._songInfo['title']
         author = obj._songInfo['author']
-        author = author.removesuffix(' 작곡')
 
         if title:
             r = re.search('(가톨릭\s*성가\s*)(\d+)\s*-\s*(.+)', title)
             if r:
-                title = r.group(2) + ' ' + r.group(3)
+                title = r.group(2).lstrip('0') + ' ' + r.group(3)
             header = header + 'T: ' + title + '\n'
         if author:
             header = header + 'C: ' + author + '\n'
@@ -206,57 +217,56 @@ class AbcWriter(converter.subConverters.SubConverter):
         return header
 
     def make_voices(self, obj, measure_hint):
-        voice = ''
-        voicenum = 0
+        voices = ''
         #instruments = (48, 73, 57, 60, 0, 0)
 
-        for p in obj.parts:
-            if p._disabled: continue
+        fparts = filter(lambda p: not p._disabled, obj.parts)
 
+        for vnum, p in enumerate(fparts):
             ps = 'V: ' + p.id + ' clef=' + p._clef + '\n'
-            #ps = ps + f'%%MIDI program {instruments[voicenum]}\n'
-            voice = voice + ps
-            voicenum += 1
+            #ps = ps + f'%%MIDI program {instruments[vnum]}\n'
+            voices = voices + ps
 
             x = 0 # current measure
             y = 0 # current line
-            num = 0 # total measures (measure.number is not set by the nwc reader and all default to 0)
+            total = 0 # total measures (measure.number is not set by nwcReader and all default to 0)
             ws = ''
-            measures = p.getElementsByClass('Measure')[p._repeatStart:]
+            end_measure = None if not p._repeatEnd else (p._repeatEnd + 1)
+            measures = p.getElementsByClass('Measure')[p._repeatStart:end_measure]
             for m in measures:
                 ms = ''
                 for n in m.notesAndRests:
                     ms = ms + self.make_note(n, obj)
-                    if n.lyric:
+                    if (vnum == 0) and n.lyric:
                         ws = ws + n.lyric + ' '
 
-                if ms: # skip empty measures in nwctxt TODO: this may be due to repeat bars
-                    voice = voice + ms + '| '
-                    num += 1
-                    x += 1
+                voices = voices + ms + '| '
+                total += 1
+                x += 1
 
                 is_newline = False
                 if measure_hint and len(measure_hint) > y:
                     if x == measure_hint[y]:
                         is_newline = True
                 else:
-                    if (num % self.MEASURESPERLINE == 0):
+                    if (total % self.MEASURESPERLINE == 0):
                         is_newline = True
 
-                if is_newline or (m is measures[-1]):
-                    voice = voice[:-1] + '\n'
+                is_last = (m is measures[-1])
+
+                if is_newline or is_last:
+                    voices = voices[:-1] + (']\n' if is_last else '\n')
                     x = 0
                     y += 1
                     if ws:
-                        voice = voice + 'w: ' + ws[:-1] + '\n'
+                        voices = voices + 'w: ' + ws[:-1] + '\n'
                         ws = ''
-                # TODO: decide how we'll handle repeats
 
         if measure_hint:
-            if sum(measure_hint) != num:
-                logging.warning(f"Measure hint sum {sum(measure_hint)} != total measures {num}")
+            if sum(measure_hint) != total:
+                logging.warning(f"Measure hint sum {sum(measure_hint)} != total measures {total}")
 
-        return voice
+        return voices[:-1]
 
     def read_metadata(self, index):
         index -= 1
