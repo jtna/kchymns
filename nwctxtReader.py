@@ -179,9 +179,9 @@ class NwctxtReader(NoteworthyTranslator):
         title = title.strip().strip('"')
         author = author.strip().strip('"')
 
-        self.score._songInfo = {}
-        self.score._songInfo['title'] = title
-        self.score._songInfo['author'] = author
+        self.score._nwcSongInfo = {}
+        self.score._nwcSongInfo['title'] = title
+        self.score._nwcSongInfo['author'] = author
 
     def getMultiplePitchesFromPositionInfo(self, posInfo):
         # this fixes a bug in the parent's function:

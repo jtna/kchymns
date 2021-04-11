@@ -2,6 +2,7 @@ from music21 import converter, note, stream, meter, spanner, bar, key, environme
 import logging
 import re, fractions
 import os.path
+import json
 
 environLocal = environment.Environment()
 
@@ -12,7 +13,7 @@ class AbcWriter(converter.subConverters.SubConverter):
 
     nuql = 1.0 # note unit quarterlength
     MEASURESPERLINE = 4
-    measurehints = []
+    metadata = {}
 
     def get_note_name(self, n, obj):
         try:
@@ -167,16 +168,24 @@ class AbcWriter(converter.subConverters.SubConverter):
         header = header + '%%vocalfont Jua\n'
         header = header + '%%composerfont Jua\n'
         header = header + '%%stretchlast\n'
-        title = obj._songInfo['title']
-        author = obj._songInfo['author']
+        title = ''
+        authors = []
 
-        if title:
-            r = re.search('(가톨릭\s*성가\s*)(\d+)\s*-\s*(.+)', title)
-            if r:
-                title = r.group(2).lstrip('0') + ' ' + r.group(3)
-            header = header + 'T: ' + title + '\n'
-        if author:
-            header = header + 'C: ' + author + '\n'
+        try:
+            title = self.metadata['title']
+            authors = self.metadata['composer'].split(', ')
+        except AttributeError:
+            title = obj._nwcSongInfo['title']
+            authors.append(obj._nwcSongInfo['author'])
+            if title:
+                r = re.search('(가톨릭\s*성가\s*)(\d+)\s*-\s*(.+)', title)
+                if r:
+                    title = r.group(2).lstrip('0') + ' ' + r.group(3)
+        finally:
+            if title:
+                header = header + 'T: ' + title + '\n'
+            for author in authors:
+                header = header + 'C: ' + author + '\n'
 
         # key and time signatures are pulled from the first not-muted part
         p = next((pp for pp in obj.parts if not pp._disabled), None)
@@ -216,7 +225,8 @@ class AbcWriter(converter.subConverters.SubConverter):
         # TODO: check all parts against the key and time signatures we've chosen
         return header
 
-    def make_voices(self, obj, measure_hint):
+    def make_voices(self, obj, layout_hint):
+        layout_hint = [int(char) for char in layout_hint] # convert from string to array
         voices = ''
         #instruments = (48, 73, 57, 60, 0, 0)
 
@@ -245,8 +255,8 @@ class AbcWriter(converter.subConverters.SubConverter):
                 x += 1
 
                 is_newline = False
-                if measure_hint and len(measure_hint) > y:
-                    if x == measure_hint[y]:
+                if layout_hint and len(layout_hint) > y:
+                    if x == layout_hint[y]:
                         is_newline = True
                 else:
                     if (total % self.MEASURESPERLINE == 0):
@@ -262,33 +272,34 @@ class AbcWriter(converter.subConverters.SubConverter):
                         voices = voices + 'w: ' + ws[:-1] + '\n'
                         ws = ''
 
-        if measure_hint:
-            if sum(measure_hint) != total:
-                logging.warning(f"Measure hint sum {sum(measure_hint)} != total measures {total}")
+        if layout_hint:
+            if sum(layout_hint) != total:
+                logging.warning(f"Layout hint sum {sum(layout_hint)} != total measures {total}")
 
         return voices[:-1]
 
-    def read_metadata(self, index):
-        index -= 1
-        with open('data/measurehints.txt') as f:
-            lines = f.readlines()
-            if len(lines) > index:
-                line = lines[index].rstrip()
-                self.measurehints = [int(char) for char in line]
+    def read_metadata(self, abcfp):
+        (pre, ext) = os.path.splitext(abcfp)
+        metaname = pre + '.json'
+
+        try:
+            with open(metaname) as f:
+                data = json.load(f)
+                self.metadata = data
+        except FileNotFoundError:
+            pass
 
     def write(self, obj, fmt, fp=None, subformats=None, **keywords):
         music = ''
         if fp is None:
             fp = environLocal.getTempFile('.abc')
 
-        basename = os.path.basename(fp)
-        split = os.path.splitext(basename)
-        self.read_metadata(int(split[0]))
-
+        self.read_metadata(fp)
         self.preprocess(obj)
+
         music = music + self.make_header(obj)
         music = music + self.make_score_directive(obj)
-        music = music + self.make_voices(obj, self.measurehints)
+        music = music + self.make_voices(obj, self.metadata['layoutHint'])
 
         with open(fp, 'w') as f:
             f.write(music)
