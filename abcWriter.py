@@ -111,6 +111,11 @@ class AbcWriter(converter.subConverters.SubConverter):
                     n += 1
                 p._disabled = (n > 4)
 
+        # sanitize part id strings
+        part_ids = ['S','A','T','B']
+        for i,p in enumerate(obj.parts):
+            p._id = part_ids[i] if i<4 else p.id
+
         for p in obj.parts:
             p._repeatStart = 0
             p._repeatEnd = None
@@ -156,7 +161,7 @@ class AbcWriter(converter.subConverters.SubConverter):
                 pair.append(p)
 
             if (len(pair) == 2) or (p is obj.parts[-1]):
-                s = ' '.join(x.id for x in pair)
+                s = ' '.join(x._id for x in pair)
                 sd = sd + f'[({s})]'
                 pair.clear()
         sd = sd + '\n'
@@ -229,7 +234,7 @@ class AbcWriter(converter.subConverters.SubConverter):
         fparts = filter(lambda p: not p._disabled, obj.parts)
 
         for vnum, p in enumerate(fparts):
-            ps = 'V: ' + p.id + ' clef=' + p._clef + '\n'
+            ps = 'V: ' + p._id + ' clef=' + p._clef + '\n'
             #ps = ps + f'%%MIDI program {instruments[vnum]}\n'
             voices = voices + ps
 
