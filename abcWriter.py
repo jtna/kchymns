@@ -164,15 +164,11 @@ class AbcWriter(converter.subConverters.SubConverter):
 
     def make_header(self, obj):
         header = '%abc-2.2\n'
-        header = header + '%%titlefont Jua\n'
-        header = header + '%%vocalfont Jua\n'
-        header = header + '%%composerfont Jua\n'
-        header = header + '%%stretchlast\n'
         title = ''
         authors = []
 
         try:
-            title = self.metadata['title']
+            title = self.metadata['index'] + ' ' + self.metadata['title']
             authors = self.metadata['composer'].split(', ')
         except AttributeError:
             title = obj._nwcSongInfo['title']
@@ -281,11 +277,14 @@ class AbcWriter(converter.subConverters.SubConverter):
     def read_metadata(self, abcfp):
         (pre, ext) = os.path.splitext(abcfp)
         metaname = pre + '.json'
+        basename = os.path.basename(abcfp)
+        index = os.path.splitext(basename)[0]
 
         try:
             with open(metaname) as f:
                 data = json.load(f)
                 self.metadata = data
+                self.metadata['index'] = index
         except FileNotFoundError:
             pass
 
