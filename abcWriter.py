@@ -25,10 +25,15 @@ class AbcWriter(converter.subConverters.SubConverter):
         postfix = ("", "", ",,", ",", "", "", "'", "''")
         name = n.step
         if n.pitch.accidental != currentKey.accidentalByStep(n.step):
-            if n.pitch.accidental.displayStatus:
-                acc2str = {'♭':'_', '♭♭':'__', '♮':'=', '♯':'^', '♯♯':'^^'}
-                acc = acc2str.get(n.pitch.accidental.unicode, '')
-                name = acc + name
+            try:
+                if n.pitch.accidental.displayStatus:
+                    acc2str = {'♭':'_', '♭♭':'__', '♮':'=', '♯':'^', '♯♯':'^^'}
+                    acc = acc2str.get(n.pitch.accidental.unicode, '')
+                    name = acc + name
+            except AttributeError:
+                # TODO: this occurs if there's a key change in the middle of the tune
+                # index 288, 467 and 504
+                logging.warning(f"Unexpected accidental")
         name = name + postfix[n.octave]
         if n.octave > 4:
             name = name.lower()
