@@ -27,9 +27,15 @@
     </style>
 
     <script src="abcjs-basic-min.js" type="text/javascript"></script>
+    <script src="abc-hymn-linebreaker.js" type="text/javascript"></script>
     <script type="text/javascript">
         var script = document.createElement('script');
         script.src = "abcdata.js";
+        document.head.appendChild(script)
+
+        // For adjustment data
+        var script = document.createElement('script');
+        script.src = "abc-adj-data.js";
         document.head.appendChild(script)
     </script>
     <script type="text/javascript">
@@ -136,8 +142,10 @@
         function setTune(userAction) {
             synthControl.disable(true);
             console.log("start");
-
-            visualObj = ABCJS.renderAbc("paper", abc[idx], abcOptions)[0];
+            
+            // Apply breaker
+            var modifiedAbc = abcLineBreaker.lineBreak(abc[idx], abc_adj[idx])
+            visualObj = ABCJS.renderAbc("paper", modifiedAbc, abcOptions)[0];
             var audioParams = {};
 
             if (synthControl) {
