@@ -58,6 +58,12 @@ class AbcWriter(converter.subConverters.SubConverter):
         name = self.get_note_name(n, obj) if type(n) is note.Note else 'z'
 
         f = n.duration.quarterLength / self.nuql
+        # TODO: triplet notation disabled for now. both render and playback have issues, e.g. index 57
+        if 0 and hasattr(n, '_triplet'):
+            f = n.duration.quarterLengthNoTuplets / self.nuql
+            if hasattr(n, '_tripletPrefix'):
+                name = n._tripletPrefix + name
+
         if f == 1.0:
             dur = ''
         else:
@@ -141,6 +147,33 @@ class AbcWriter(converter.subConverters.SubConverter):
         #   |Bar|Style:LocalRepeatClose|Repeat:3|Visibility:Never
         # and they end up adding an empty measure each when parsed.
         # these could be deleted (using repeat.deleteMeasures, based on len(measure) == 0)
+
+        # handle triplets
+        for p in obj.parts:
+            count = 0
+            nstart = None
+            for n in p.recurse().getElementsByClass('Note'):
+                try:
+                    if n._triplet == 'First':
+                        nstart = n
+                except AttributeError:
+                    pass
+
+                if nstart:
+                    count += 1
+
+                try:
+                    if n._triplet == 'End':
+                        if count == 3:
+                            prefix = f'(3'
+                        else:
+                            # 'put p notes into the time of q for the next r notes'
+                            prefix = f'(3:2:{count}'
+                        count = 0
+                        nstart._tripletPrefix = prefix
+                        nstart = None
+                except AttributeError:
+                    pass
 
         # find most common note length
         durations = {}

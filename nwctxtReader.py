@@ -209,6 +209,26 @@ class NwctxtReader(NoteworthyTranslator):
                 g = repeat.DalSegnoAlFine()
             self.currentMeasure.append(g)
 
+    # it appears that the tuplet info becomes ambiguous during the transition from nwctxt to music21
+    # in nwctxt, a tuplet looks like this, where the beginning and end of the triplet are marked:
+    #   |Note|Dur:8th,Triplet=First|...
+    #   |Note|Dur:4th,Triplet=End|...
+    # but in music21/noteworthy/translate.py, the unit of the triplet is always taken from the Dur: string
+    #   tup = duration.Tuplet(3, 2, durationObject.type)
+    # .. which means that it's impossible to figure out in music21 what the units are
+    def setDurationForObject(self, generalNote, durationInfo):
+        NoteworthyTranslator.setDurationForObject(self, generalNote, durationInfo)
+        parts = durationInfo.split(',')
+        for kk in parts:
+            if kk == 'Triplet=First':
+                generalNote._triplet = 'First'
+            elif kk == 'Triplet=End':
+                generalNote._triplet = 'End'
+            # calling duration.quarterLengthNoTuplets or duration.tuplets is really slow for some reason
+            # so this is an optimization
+            elif kk == 'Triplet':
+                generalNote._triplet = 'Middle'
+
 class ConverterNwctext(converter.subConverters.SubConverter):
     registerFormats = ('noteworthytxt',)
     registerInputExtensions = ('nwctxt',)
