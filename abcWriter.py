@@ -321,7 +321,7 @@ class AbcWriter(converter.subConverters.SubConverter):
         (pre, ext) = os.path.splitext(abcfp)
         metaname = pre + '.json'
         basename = os.path.basename(abcfp)
-        index = os.path.splitext(basename)[0]
+        index = os.path.splitext(basename)[0].lstrip('0')
 
         try:
             with open(metaname) as f:
