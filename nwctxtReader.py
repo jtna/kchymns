@@ -162,10 +162,21 @@ class NwctxtReader(NoteworthyTranslator):
         allText = allText.strip()
         allText = allText.replace('\\n', ' ')
 
-        allText = allText.replace(' -', f' {self.UNIHYPHEN}') # ascii hyphen has special meaning in abc notation
+        # ascii hyphen has special meaning in abc notation
+        allText = allText.replace(' -', f' {self.UNIHYPHEN}') # sometimes they come in multiples, like "X - - X"
         allText = allText.replace('-', ' ') # any remaining ascii ones can now just be removed
-        allText = allText.removeprefix('1.') # remove verse indicator, if it's there
+        allText = allText.replace('1.', '') # remove verse indicator, if it's there
         lyrics = allText.split()
+
+        # underscores:
+        # a _ surrounded by spaces is a hold (same meaning as in abc notation)
+        # multiple _ surrounded by spaces in a row are probably better expressed as skips (*) (TODO)
+        # otherwise, a _ next to a syllable only affects positioning, not the note/syllable association
+        for i,syl in enumerate(lyrics):
+            if '_' in syl and len(syl) > 1:
+                syl = syl.lstrip('_')
+                syl = syl.rstrip('_')
+                lyrics[i] = syl
 
         #print(lyrics)
         return lyrics
