@@ -13,6 +13,7 @@ class AbcWriter(converter.subConverters.SubConverter):
 
     nuql = 1.0 # note unit quarterlength
     MEASURESPERLINE = 4
+    UNIHYPHEN = '‐' # unicode hyphen
     metadata = {}
 
     def get_note_name(self, n, obj):
@@ -46,6 +47,10 @@ class AbcWriter(converter.subConverters.SubConverter):
         if n.tie:
             if n.tie.type == 'start':
                 se = '-'
+            # a note with a tie should have an empty lyric char, not a hyphen
+            # this is a common mistake in NWC files that people generate, and we correct it here
+            if n.lyric == self.UNIHYPHEN:
+                n.lyric = '*'
         else: # assume ties and slurs are mutually exclusive
             spanners = n.getSpannerSites()
             for sp in spanners:
