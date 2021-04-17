@@ -1,0 +1,53 @@
+%abc-2.2
+T: 327 거룩하시도다 (미사곡 다섯)
+C: 이문근 작곡
+C: 전례위원회 성음악분과 개작
+M: 2/4
+L: 1/4
+Q: 1/4=84
+K: Ab
+%%score [(S A)][(T B)]
+V: S clef=treble
+A/ A/ B/ B/ | c/B/ A | A/ A/ B/ B/ | c/B/ A |
+w: 거 룩 하 시 도 ‐ 다 거 룩 하 시 도 ‐ 다
+B c | d/ c/ B/A/ | B2 | (c B) |
+w: 거 룩 하 시 도 ‐ 다 온 ‐
+(A G) | A B | F F/ F/ | E2 |
+w: 누 ‐ 리 의 주 하 느 님
+E/ E/ E | A A | F/ F/ F | B B | c2 |
+w: 하 늘 과 땅 에 가 득 찬 그 영 광
+A A | d c | B B | c2 |
+w: 높 은 데 서 호 산 나
+A/ A/ A | A/ A/ A/ A/ | B c/ d/ | (c B) |
+w: 주 님 의 이 름 으 로 오 시 는 분 ‐
+c/ B/ A | E E | F2 |
+w: 찬 미 받 으 소 서
+E E | A G | F F | E2 |]
+w: 높 은 데 서 호 산 나
+V: A clef=treble
+E/ E/ E/ E/ | E E | C/ C/ E/ E/ | E E |
+F F | F/ F/ F | E2 | E2 |
+E2 | E E | D C/ C/ | B,2 |
+C/ C/ C | C C | D/ D/ D | D D | (C E) |
+E D/E/ | F E | E E | E2 |
+E/ E/ E | E/ E/ D/ E/ | F F/ F/ | E2 |
+E/ E/ E | C C | C2 |
+C C | E C | C C | B,2 |]
+V: T clef=bass
+C/ C/ B,/ B,/ | A, C | A,/ A,/ G,/ G,/ | A, A, |
+F, G,/A,/ | B,/ A,/ G,/F,/ | (G, F,/G,/) | A,2 |
+A,2 | A, A, | A, A,/ A,/ | G,2 |
+A,/ A,/ A, | A, A, | A,/ A,/ A, | A, G, | A,2 |
+A, A, | A, A, | A, G, | A,2 |
+C/ C/ C | C/ C/ A,/ G,/ | F,/G,/ A,/ A,/ | (A, G,) |
+A,/ A,/ A, | A, G, | A,2 |
+A, A, | A, A, | A, A, | G,2 |]
+V: B clef=bass
+A,/ A,/ G,/ G,/ | A, A, | A,,/ A,,/ E,/ E,/ | A,, C,/E,/ |
+D, C, | B,,/ B,,/ B,, | E,2 | (A,, B,,) |
+(C, D,) | C, B,,/C,/ | D, D,/ D,/ | E,2 |
+A,/ A,/ A,/G,/ | F, F,/E,/ | D,/ D,/ D, | B,, B,, | A,,2 |
+F, F,/E,/ | D, A,, | E, E, | A,,2 |
+A,/ A,/ A, | F,/ F,/ F,/ E,/ | D, D,/ D,/ | E,2 |
+A,,/ A,,/ A,,/B,,/ | C, C, | F,2 |
+A,, A,, | C, A,, | D, D, | E,2 |]
