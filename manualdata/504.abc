@@ -1,0 +1,41 @@
+%abc-2.2
+T: 504 우리와 함께 주여
+C: 원선오 작사/작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/4
+Q: 1/4=112
+K: D
+%%score [(S A)][(T B)]
+V: S clef=treble
+K: D
+F/ G A/ F G | A/ F/- F3 | A/ B c/ B F | G4 |
+w: 우 리 와 함 께 주 여 * 머 무 르 십 시 오
+G/ A B/ c B | A/ F/- F3 | E/ F G/ F E | D4 |
+w: 식 탁 에 같 이 앉 아 * 빵 을 나 눕 시 다
+K: Dm
+A/ A A/ G F | G/ G/- G3 | G/ G G/ F E | F4 |
+w: 착 하 신 우 리 목 자 * 양 들 을 위 하 여
+A/ A A/ G F | G/ G/- G3 | E/ F G/ F G | A/- A/- A/- A/- A2 |]
+w: 목 숨 을 버 리 시 고 * 다 ‐ 시 사 셨 네 ‐ ‐ ‐ ‐
+V: A clef=treble
+K: D
+D/ D D/ D D | D/ D/- D3 | E/ E E/ ^D D | E4 |
+C/ C C/ E C | D/ D/- D3 | C/ C C/ D C | A,4 |
+K: Dm
+D/ D D/ D D | D/ D/- D3 | ^C/ C C/ D C | D4 |
+D/ D D/ D D | D/ D/- D3 | E/- E E/ D D | ^C/- C/- C/- C/- C2 |]
+V: T clef=bass
+K: D
+A,/ G, F,/ A, G, | F,/ (A, D/ C B,) | A,/ A, A,/ F, B, | (B,2 A,2) |
+A,/ A, A,/ A, G, | F,/ (A, B,/ C B,) | A,/ A, A,/ A, G, | F,4 |
+K: Dm
+F,/ F, F,/ G, A, | B,/ (B, A,/ G, F,) | E,/ E, E,/ A, A, | A,4 |
+F,/ F, F,/ G, A, | B,/ B,/- B,3 | A,/- A, A,/ A, G, | (E,2 A,2) |]
+V: B clef=bass
+K: D
+D,/ D, D,/ D, D, | D,/ D,/- D,3 | C,/ B,, A,,/ B,, B,, | (E,3/2 D,/ C, B,,) |
+A,,/ A,, A,,/ A,, A,, | D,/ D,/- D,3 | A,,/ A,, A,,/ A,, A,, | D,4 |
+K: Dm
+D,/ D, D,/ D, D, | G,,/ G,,/- G,,3 | A,,/ A,, A,,/ A,, A,, | (D,3/2 A,,/ =B,, ^C,) |
+D,/ D, D,/ D, D, | G,/ (G, F,/ E, D,) | ^C,/- C, C,/ D, B,, | A,,4 |]

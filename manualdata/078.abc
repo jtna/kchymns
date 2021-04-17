@@ -1,0 +1,28 @@
+%abc-2.2
+T: 78 영광의 왕께 찬미를
+C: Johann M. Haydn 작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 3/4
+L: 1/4
+Q: 1/4=90
+K: Ab
+%%score [(S A)][(T B)]
+V: S clef=treble
+E | A A B | c2 A | d d c | B2 E | A A B |
+w: 영 광 의 왕 께 다 경 배 하 며 그 크 신 사
+c2 d | e3/4`d/4 c B | A2 E | E E F | G G A |
+w: 랑 늘 찬 ‐ 미 하 라 새 삶 의 길 밝 히 보
+B B c | d2 E | A A B | c c d | e3/4`d/4 c B | A2 |]
+w: 여 주 시 니 그 영 광 의 주 님 다 찬 ‐ 미 하 라
+V: A clef=treble
+B, | E E E | E2 E | D E E | E2 E | E E E |
+E2 A | E3/4`F/4 E E/D/ | C2 C | E E B, | E E E |
+=D D E | E2 E | E E E | E F F | E3/4`F/4 E D | C2 |]
+V: T clef=bass
+G, | A, A, G, | A,2 C | A, G, A, | G,2 G, | A, A, G, |
+A,2 A, | A, A, G, | A,2 A, | B, C B, | B, B, A, |
+A, A, A, | G,2 G, | A, A, G, | A, A, A, | A, A, G, | A,2 |]
+V: B clef=bass
+E,/D,/ | C, C, B,, | (A,, A,) A,/_G,/ | F, E, A,, | E,/=D,/E,/F,/ E,/_D,/ | C, C, B,, |
+(A,, A,/G,/) F, | C,3/4`D,/4 E, E, | A,,2 A, | G, A, =D, | E, D, C, |
+F, _F, E, | E,2 E,/D,/ | C, C, B,, | A,, F, D, | C,3/4`D,/4 E, E, | A,,2 |]

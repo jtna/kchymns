@@ -1,0 +1,32 @@
+%abc-2.2
+T: 46 사랑의 송가
+C: Tina Benitez 작곡
+M: 3/4
+L: 1/4
+Q: 1/4=88
+K: D
+%%score [(S A)][(T B)]
+V: S clef=treble
+A, | F3/2 ^E/ F | G2 F/ E/ | D2 C | D2 A, | A3/2 ^G/ A | B2 A/ G/ | F2 D | E2 A, |
+w: 천 사 의 말 을 하 는 사 람 도 사 랑 없 으 면 소 용 이 없 고 심
+F3/2 ^E/ F | G2 F/ E/ | D2 C | D2 E/ F/ | G2 E | C2 A, | D3- | D2 D |
+w: 오 한 진 리 깨 달 은 자 도 울 리 는 징 과 같 네 _ 하
+B3/2 ^A/ B | E2 F/ G/ | A2 F | D2 A | d3/2 c/ d | B2 ^G | A3- | A z A, |
+w: 느 님 말 씀 전 한 다 해 도 그 무 슨 소 용 있 나 _ 사
+F3/2 ^E/ F | G2 F/ E/ | D2 C | D2 E/ F/ | G2 E | C3/2 D/ E | D3- | D z |]
+w: 랑 없 이 는 소 용 이 없 고 아 무 것 도 아 닙 니 다 _
+V: A clef=treble
+A, | D3/2 D/ D | E2 B,/ B,/ | A,2 A, | A,2 A, | F3/2 ^E/ F | G2 D/ C/ | D2 D | C2 A, |
+D3/2 D/ D | E2 B,/ B,/ | A,2 A, | A,2 D/ D/ | E2 B, | A,2 A, | (A, B, G, | A,2) D |
+D3/2 C/ D | C2 D/ E/ | E2 C | D2 C | D E F | E2 E | (E F D | E) z A, |
+D3/2 D/ D | E2 B,/ B,/ | A,2 A, | A,2 D/ D/ | E2 B, | A,3/2 B,/ C | (A, B, G, | A,) z |]
+V: T clef=bass
+A, | A,3/2 ^G,/ A, | B,2 G,/ G,/ | F,2 G, | F,2 A, | D3/2 D/ D | D2 A,/ A,/ | A,2 A, | A,2 A, |
+A,3/2 ^G,/ A, | B,2 G,/ G,/ | F,2 G, | F,2 G,/ A,/ | B,2 G, | G,2 G, | (F, G, E, | F,2) A, |
+G,3/2 G,/ G, | A,2 A,/ B,/ | A,2 A, | A,2 G, | F, A, A, | ^G,2 B,/D/ | (C D B, | C) z A, |
+A,3/2 ^G,/ A, | B,2 G,/ G,/ | F,2 G, | F,2 G,/ A,/ | B,2 G, | E, F, G, | (F, G, E, | F,) z |]
+V: B clef=bass
+A, | D,3/2 D,/ D, | G,2 G,,/ G,,/ | A,,2 A,, | D,2 A, | D,3/2 D,/ D, | G,2 F,/ E,/ | D,2 F, | A,2 A, |
+D,3/2 D,/ D, | G,2 G,,/ G,,/ | A,,2 A,, | D,2 D,/ D,/ | G,2 G,, | A,,2 A,, | D,3- | D,2 F, |
+G,3/2 G,/ G, | G,2 F,/ E,/ | C,2 A, | F,2 E, | B,, A,, D, | E,2 E, | A,,3- | A,, z A, |
+D,3/2 D,/ D, | G,2 G,,/ G,,/ | A,,2 A,, | D,2 D,/ D,/ | G,2 G,, | A,,3/2 A,,/ A,, | D,3- | D, z |]
