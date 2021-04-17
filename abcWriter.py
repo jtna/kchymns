@@ -68,6 +68,8 @@ class AbcWriter(converter.subConverters.SubConverter):
             dur = ''
         else:
             dur = str(fractions.Fraction(f).limit_denominator(32)).lstrip('1')
+            if dur == '/2':
+                dur = '/'
 
         # beams
         bb = ' '
@@ -76,7 +78,10 @@ class AbcWriter(converter.subConverters.SubConverter):
             if beam.type == 'stop':
                 pass
             else:
-                bb = '``' # backquotes used for legibility (normally just no-spaces)
+                if dur == '/':
+                    bb = ''
+                else:
+                    bb = '`' # backquotes used for legibility
 
         return sb + name + dur + se + bb
 
