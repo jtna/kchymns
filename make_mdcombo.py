@@ -28,7 +28,7 @@ def make_mdcombo():
                         fcomp += c + ' '
                     fcomp = fcomp.strip()
 
-                fout.write(f"   '{str(i)}, {data['title']}, {fcomp}, {data['firstPhrase']}',\n")
+                fout.write(f"   '{str(i)}, {data['title']}, {fcomp}, {data['firstPhrase']}, {data['season']}',\n")
 
         fout.write('];\n')
 
