@@ -223,7 +223,7 @@ class AbcWriter(converter.subConverters.SubConverter):
         try:
             title = self.metadata['index'] + ' ' + self.metadata['title']
             authors = self.metadata['composer'].split(', ')
-        except AttributeError:
+        except (AttributeError, KeyError):
             title = obj._nwcSongInfo['title']
             authors.append(obj._nwcSongInfo['author'])
             if title:
@@ -274,8 +274,12 @@ class AbcWriter(converter.subConverters.SubConverter):
         # TODO: check all parts against the key and time signatures we've chosen
         return header
 
-    def make_voices(self, obj, layout_hint):
-        layout_hint = [int(char) for char in layout_hint] # convert from string to array
+    def make_voices(self, obj):
+        try:
+            layout_hint = [int(char) for char in self.metadata['layoutHint']] # convert from string to array
+        except (AttributeError, KeyError):
+            layout_hint = None
+
         voices = ''
         #instruments = (48, 73, 57, 60, 0, 0)
 
@@ -351,7 +355,7 @@ class AbcWriter(converter.subConverters.SubConverter):
 
         music = music + self.make_header(obj)
         music = music + self.make_score_directive(obj)
-        music = music + self.make_voices(obj, self.metadata['layoutHint'])
+        music = music + self.make_voices(obj)
 
         with open(fp, 'w') as f:
             f.write(music)
