@@ -1,8 +1,12 @@
 import os, re, json
 
 def make_mdcombo():
+    seasontuple = ('연중', '대림', '성탄', '사순', '부활', '성령', '성체', '성심', '봉헌', '참회', '위령', '성모', '성인', '축가', '미사곡')
+    seasondict = { season: i for i,season in enumerate(seasontuple) }
+    seasonarray = []
+
     with open('./data/mdcombo.js', 'w') as fout:
-        fout.write('const mdcombo = [\n');
+        fout.write('const mdcombo = [\n')
 
         for i in range(1, 528+1):
             fname = f'./data/{i:03d}.json'
@@ -29,8 +33,13 @@ def make_mdcombo():
                     fcomp = fcomp.strip()
 
                 fout.write(f"   '{str(i)}, {data['title']}, {fcomp}, {data['firstPhrase']}, {data['season']}',\n")
+                seasonarray.append(seasondict[data['season']])
 
-        fout.write('];\n')
+        fout.write('];\n\n')
+        fout.write('const seasonidx = ')
+        fout.write(f'{seasonarray}')
+        fout.write(';\n\n')
+        fout.write('export { mdcombo, seasonidx };\n')
 
 if __name__ == '__main__':
     make_mdcombo()
