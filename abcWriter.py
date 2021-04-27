@@ -51,14 +51,15 @@ class AbcWriter(converter.subConverters.SubConverter):
             # this is a common mistake in NWC files that people generate, and we correct it here
             if n.lyric == self.UNIHYPHEN:
                 n.lyric = '*'
-        else: # assume ties and slurs are mutually exclusive
-            spanners = n.getSpannerSites()
-            for sp in spanners:
-                if type(sp) is spanner.Slur:
-                    if sp.isLast(n):
-                        se = se + ')'
-                    if sp.isFirst(n):
-                        sb = sb + '('
+
+        # ties and slurs are not mutually exclusive (e.g. #194)
+        spanners = n.getSpannerSites()
+        for sp in spanners:
+            if type(sp) is spanner.Slur:
+                if sp.isLast(n):
+                    se = se + ')'
+                if sp.isFirst(n):
+                    sb = sb + '('
 
         name = self.get_note_name(n, obj) if type(n) is note.Note else 'z'
 
