@@ -6,8 +6,10 @@ import logging
 
 class NwctxtReader(NoteworthyTranslator):
 
-    UNIHYPHEN = '‐' # unicode hyphen
-    wasWithinSlur = False
+    def __init__(self):
+        super().__init__()
+        self.UNIHYPHEN = '‐' # unicode hyphen
+        self.wasWithinSlur = False
 
     def parseList(self, dataList):
         # Main
@@ -80,13 +82,10 @@ class NwctxtReader(NoteworthyTranslator):
     def adjustLyric(self, n, opts):
         inSlur = False
         inSlurFirst = False # first note of slur
-        spanners = n.getSpannerSites('Slur')
-        if len(spanners) > 1:
-            logging.error(f"Expected 1 slur, got {len(spanners)}")
+
         # for the last note of the slur, .withinSlur is already False by the time the parent's translateNote() finishes
-        # however, it is part of a spanner
         # see #137 for a slur over multiple notes
-        inSlur = self.withinSlur or (len(spanners) > 0)
+        inSlur = self.withinSlur or self.wasWithinSlur
         inSlurFirst = self.withinSlur and not self.wasWithinSlur
         self.wasWithinSlur = self.withinSlur
 
