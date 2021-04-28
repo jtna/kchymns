@@ -2,10 +2,12 @@ from music21 import stream, key, note, tempo, converter, repeat, beam
 from music21.beam import BeamException
 from music21.noteworthy.translate import NoteworthyTranslator
 from music21.noteworthy.translate import NoteworthyTranslateException
+import logging
 
 class NwctxtReader(NoteworthyTranslator):
 
     UNIHYPHEN = '‐' # unicode hyphen
+    wasWithinSlur = False
 
     def parseList(self, dataList):
         # Main
@@ -75,6 +77,34 @@ class NwctxtReader(NoteworthyTranslator):
         # totalscore.show()
         return self.score
 
+    def adjustLyric(self, n, opts):
+        inSlur = False
+        inSlurFirst = False # first note of slur
+        spanners = n.getSpannerSites('Slur')
+        if len(spanners) > 1:
+            logging.error(f"Expected 1 slur, got {len(spanners)}")
+        # for the last note of the slur, .withinSlur is already False by the time the parent's translateNote() finishes
+        # however, it is part of a spanner
+        # see #137 for a slur over multiple notes
+        inSlur = self.withinSlur or (len(spanners) > 0)
+        inSlurFirst = self.withinSlur and not self.wasWithinSlur
+        self.wasWithinSlur = self.withinSlur
+
+        hold = self.lyricPosition > -1 and n.tie and n.tie.type == 'stop' # in a tie
+        extend = inSlur and not inSlurFirst
+        always = opts.get('Lyric', '') == 'Always'
+        never = opts.get('Lyric', '') == 'Never'
+
+        if never:
+            n.lyric = '*' # skip lyric for one note
+            self.lyricPosition -= 1 # undo previous add
+        elif hold and not always:
+            n.lyric = '_'
+            self.lyricPosition -= 1
+        elif extend and not always:
+            n.lyric = self.UNIHYPHEN
+            self.lyricPosition -= 1
+
     def translateNote(self, attributes):
         NoteworthyTranslator.translateNote(self, attributes)
 
@@ -91,20 +121,8 @@ class NwctxtReader(NoteworthyTranslator):
             finally:
                 opts[name] = value
 
-        hold = (self.lyrics and self.lyricPosition > -1 and n.tie and n.tie.type == 'stop') # in a tie
-        extend = self.lyrics and len(n.getSpannerSites()) # in a slur
-        always = opts.get('Lyric', '') == 'Always'
-        never = opts.get('Lyric', '') == 'Never'
-
-        if never:
-            n.lyric = '*' # skip lyric for one note
-            self.lyricPosition -= 1 # undo previous add
-        elif hold and not always:
-            n.lyric = '_'
-            self.lyricPosition -= 1
-        elif extend and not always:
-            n.lyric = self.UNIHYPHEN
-            self.lyricPosition -= 1
+        if n.lyric:
+            self.adjustLyric(n, opts)
 
         if 'Beam' in opts:
             dic = {'First':'start', 'End':'stop', '':'continue'}
@@ -162,7 +180,8 @@ class NwctxtReader(NoteworthyTranslator):
         allText = allText.strip()
         allText = allText.replace('\\n', ' ')
 
-        # ascii hyphen has special meaning in abc notation
+        # hyphens that are part of a slur or tie are removed here, and added back in translateNote()
+        # ascii hyphen has special meaning in abc notation, so must be replaced with something else
         allText = allText.replace(' -', f' {self.UNIHYPHEN}') # sometimes they come in multiples, like "X - - X"
         allText = allText.replace('-', ' ') # any remaining ascii ones can now just be removed
         allText = allText.replace('1.', '') # remove verse indicator, if it's there

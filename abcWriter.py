@@ -53,13 +53,12 @@ class AbcWriter(converter.subConverters.SubConverter):
                 n.lyric = '*'
 
         # ties and slurs are not mutually exclusive (e.g. #194)
-        spanners = n.getSpannerSites()
+        spanners = n.getSpannerSites('Slur')
         for sp in spanners:
-            if type(sp) is spanner.Slur:
-                if sp.isLast(n):
-                    se = se + ')'
-                if sp.isFirst(n):
-                    sb = sb + '('
+            if sp.isFirst(n):
+                sb = sb + '('
+            elif sp.isLast(n):
+                se = se + ')'
 
         name = self.get_note_name(n, obj) if type(n) is note.Note else 'z'
 
