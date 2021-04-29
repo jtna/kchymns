@@ -232,7 +232,9 @@ class NwctxtReader(NoteworthyTranslator):
             NoteworthyTranslator.createOtherRepetitions(self, attributes)
         except NoteworthyTranslateException:
             style = attributes['Style']
-            if style == 'DalSegno':
+            if style == 'DaCapo':
+                g = repeat.DaCapo()
+            elif style == 'DalSegno':
                 g = repeat.DalSegno()
             elif style == 'DSalFine':
                 g = repeat.DalSegnoAlFine()
