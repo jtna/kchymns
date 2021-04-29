@@ -1,0 +1,33 @@
+%abc-2.2
+T: 137 부활하신 주 예수
+C: 손복희 작사
+C: Robert Williams 작곡
+M: 4/4
+L: 1/4
+Q: 1/4=88
+K: G
+%%score [(S A) (T B)]
+V: S clef=treble
+G G B B | d c/B/ A2 | (d3/2 c/ B) c/B/ | A2 G z |
+w: 부 활 하 신 주 예 ‐ 수 알 ‐ ‐ 렐 ‐ 루 야
+G G B B | d c/B/ A2 | (d3/2 c/ B) c/B/ | A2 G z |
+w: 두 손 높 이 펴 시 ‐ 고 알 ‐ ‐ 렐 ‐ 루 야
+B B d d | e/d/ c/B/ A2 | (B3/2 A/ B) ^c | d2 d z |
+w: 제 자 들 을 보 ‐ 시 ‐ 며 알 ‐ ‐ 렐 루 야
+G G B B | d c/B/ A2 | (d3/2 c/ B) c/B/ | A2 G z |]
+w: 하 늘 나 라 오 르 ‐ 네 알 ‐ ‐ 렐 ‐ 루 야
+V: A clef=treble
+G G G G | A A/G/ F2 | (G F G/)F/ E | (E F) G z |
+G G G G | A A/G/ F2 | (G F G/)F/ E | (E F) G z |
+G G A A | ^G E (F =G) | F3 A/G/ | G2 F z |
+G G E G | A A/G/ F2 | (G F G/)F/ E | (E F) G z |]
+V: T clef=bass
+B, B, D D | D D D2 | D3 C | C2 B, z |
+B, B, D D | D D D2 | D3 C | C2 B, z |
+D D D D | B, A, (A, E) | D3 E | D2 D z |
+D D B, E | D D D2 | D3 C | C2 B, z |]
+V: B clef=bass
+G, G, G, G, | F, G, (D C) | (B, A, G,) A, | D,2 G, z |
+G, G, G, G, | F, G, (D C) | (B, A, G,) A, | D,2 G, z |
+G, G, =F, F, | E, A,, (D, ^C,) | (D, D B,) A, | D,2 D, z |
+B, B, G, E, | F, G, (D C) | (B, A, G,) A, | D,2 G, z |]
