@@ -87,7 +87,7 @@ class AbcWriter(converter.subConverters.SubConverter):
             if beam.type == 'stop':
                 pass
             else:
-                if dur == '/':
+                if dur == '/' or not dur:
                     bb = ''
                 else:
                     bb = '`' # backquotes used for legibility
