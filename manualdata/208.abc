@@ -1,0 +1,33 @@
+%abc-2.2
+T: 208 간절한 주의 사랑
+C: Choral
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/4
+Q: 1/4=74
+K: F
+%%score [(S A)][(T B)]
+V: S clef=treble
+F | F A c d | (c B) A c | B A G G | A2 z F |
+w: 간 절 한 주 의 사 ‐ 랑 이 맘 에 넘 치 니 사
+F A c d | (c B) A c | B A G G | F2 z c | G A B A |
+w: 랑 에 깊 이 잠 ‐ 겨 노 래 를 부 른 다 형 제 여 찬 미
+A2 G G | A/=B/ c c B | c3 C | F A c d |
+w: 하 세 영 원 ‐ 히 무 궁 히 거 룩 한 주 의
+(c B) A c | F F G A | B2 z G | A c/B/ A G | F2 z |]
+w: 성 ‐ 심 정 성 된 맘 으 로 찬 미 찬 ‐ 송 하 세
+V: A clef=treble
+C | C F F F | (F E) F A | G F F E | F2 z C |
+C F F F | (F E) F A | G F F E | F2 z F | G F E F |
+F2 E E | F G F D/F/ | (F D E) C | C F F F |
+(F E) F E | D D E _E | D2 z C | C D C B, | A,2 z |]
+V: T clef=bass
+A, | A, C C B, | C2 C C | C C D C | C2 z A, |
+A, C C B, | C2 C C | C C D C/B,/ | A,2 z _E | D D C C |
+(C =B,) C C | C C A, G, | G,3 C | A, C C B, |
+C2 C B, | A, A, C F, | F,2 z E, | F, F, E, E, | F,2 z |]
+V: B clef=bass
+F, | F, F, A, B, | (A, G,) F, F, | E, F, B,, C, | F,2 z F, |
+F, F, A, B, | (A, G,) F, F, | E, F, B,, C, | F,2 z A, | B, A, G, F, |
+C,2 C, C | F, E, F, G, | C,3 C | F, F, A, B, |
+(A, G,) F, C, | D, D, C, C, | B,,2 z C, | F, B,, C, C, | F,,2 z |]

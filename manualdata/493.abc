@@ -1,0 +1,32 @@
+%abc-2.2
+T: 493 살아 계신 주 성령
+C: Daniel Iverson 작곡
+M: 4/4
+L: 1/4
+Q: 1/4=80
+K: Eb
+%%score [(S A)][(T B)]
+V: S clef=treble
+G3/2 G/ G G | F G A2 | G3/2 E/ E F | G3 z |
+w: 살 아 계 신 주 성 령 내 게 오 소 서
+G3/2 G/ G G | F G A2 | G3/2 E/ E F | E3 z |
+w: 살 아 계 신 주 성 령 어 서 오 소 서
+A2 A2 | G2 G2 | =A2 A2 | B2 B _A |
+w: 주 성 령 이 나 를 안 으 사
+G3/2 G/ G G | F G A2 | G3/2 E/ E F | E3 z |]
+w: 당 신 품 에 영 원 히 살 게 하 소 서
+V: A clef=treble
+E3/2 E/ E E | D E F2 | E3/2 E/ C _C | B,3 z |
+E3/2 E/ E E | D E F2 | E3/2 E/ E D | B,3 z |
+E2 E2 | E2 E2 | F2 F2 | F2 F F |
+E3/2 E/ E E | D E F2 | E3/2 E/ E D | B,3 z |]
+V: T clef=bass
+B,3/2 B,/ B, B, | B, B, B,2 | B,3/2 G,/ A, A, | G,3 z |
+G,3/2 G,/ C B, | B, B, B,2 | B,3/2 G,/ G, A, | G,3 z |
+C2 C2 | B,2 C2 | C2 E2 | D2 E D |
+B,3/2 B,/ B, B, | B, B, B,2 | B,3/2 G,/ G, A, | G,3 z |]
+V: B clef=bass
+E, E, E, E, | B,, B,, B,,2 | E,3/2 E,/ E, E, | E,3 z |
+C,3/2 C,/ C, E, | B,, B,, B,,2 | E,3/2 E,/ C, B,, | E,3 z |
+A,,2 A,,2 | E,2 C,2 | F,2 F,2 | B,,2 =A,, B,, |
+E, E, E, E, | B,, B,, B,,2 | E,3/2 E,/ C, B,, | E,3 z |]

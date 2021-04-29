@@ -1,0 +1,28 @@
+%abc-2.2
+T: 81 영광의 주 성삼위
+C: Felice de Giardini 작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 3/4
+L: 1/4
+Q: 1/4=80
+K: F
+%%score [(S A)][(T B)]
+V: S clef=treble
+c A F | (G F) E | F3 | F G A | B/c/ B A | G3 |
+w: 성 부 성 자 ‐ 성 령 거 룩 한 삼 ‐ 위 일 체
+c A F | C3 | G A B | A3/2 G/ F | G A B |
+w: 영 광 의 주 진 리 와 생 명 의 원 천 인
+A3/2 G/ F | F A c | c3/2 d/ c | B A G | F3 |]
+w: 성 삼 을 영 원 히 기 리 며 찬 미 하 세
+V: A clef=treble
+F F C | (D C) C | C3 | D E _E | D C C | C3 |
+C C C | G,3 | C C C | C3/2 C/ C | C C F |
+E ^C D | C C F | G3/2 F/ F | F F E | C3 |]
+V: T clef=bass
+A, C C | (B, A,) G, | A,3 | A, C C | B, E, F, | E,3 |
+F, F, F, | (F,2 E,) | E, F, E, | F, E, F, | E, F, F,/G,/ |
+A, A, A, | A, F, A, | G, A, A, | B, C C/B,/ | A,3 |]
+V: B clef=bass
+F, F,, A,, | (B,, C,) C, | (F,2 E,) | D, C, F, | B,, C, F,, | (C,2 B,,) |
+A,, F,, A,, | C,3 | B,, A,, G,, | F,, G,, A,, | G,, F,,/_E,/ D, |
+^C, A,, D, | F, F, F, | E, F, F,/_E,/ | D, C, C, | F,3 |]
