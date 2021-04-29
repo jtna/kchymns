@@ -89,7 +89,7 @@ class NwctxtReader(NoteworthyTranslator):
         inSlurFirst = self.withinSlur and not self.wasWithinSlur
         self.wasWithinSlur = self.withinSlur
 
-        hold = self.lyricPosition > -1 and n.tie and n.tie.type == 'stop' # in a tie
+        hold = n.tie and n.tie.type == 'stop' # in a tie
         extend = inSlur and not inSlurFirst
         always = opts.get('Lyric', '') == 'Always'
         never = opts.get('Lyric', '') == 'Never'
@@ -120,7 +120,7 @@ class NwctxtReader(NoteworthyTranslator):
             finally:
                 opts[name] = value
 
-        if n.lyric:
+        if self.lyrics: # self.lyrics is reset every staff
             self.adjustLyric(n, opts)
 
         if 'Beam' in opts:
