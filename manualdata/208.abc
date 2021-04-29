@@ -6,7 +6,7 @@ M: 4/4
 L: 1/4
 Q: 1/4=74
 K: F
-%%score [(S A)][(T B)]
+%%score [(S A) (T B)]
 V: S clef=treble
 F | F A c d | (c B) A c | B A G G | A2 z F |
 w: 간 절 한 주 의 사 ‐ 랑 이 맘 에 넘 치 니 사

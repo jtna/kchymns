@@ -5,7 +5,7 @@ C: Nicola A. Montani 편곡
 M: 2/4
 L: 1/8
 Q: 1/4=86
-%%score [(S A)][(T B)]
+%%score [(S A) (T B)]
 V: S clef=treble
 E2 E F | G2 c2 | B`c d`B | c2 G2 | A2 c A |
 w: 죽 음 을 이 긴 우 ‐ 리 ‐ 주 님 하 늘 나

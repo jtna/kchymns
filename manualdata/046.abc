@@ -5,7 +5,7 @@ M: 3/4
 L: 1/4
 Q: 1/4=88
 K: D
-%%score [(S A)][(T B)]
+%%score [(S A) (T B)]
 V: S clef=treble
 A, | F3/2 ^E/ F | G2 F/ E/ | D2 C | D2 A, | A3/2 ^G/ A | B2 A/ G/ | F2 D | E2 A, |
 w: 천 사 의 말 을 하 는 사 람 도 사 랑 없 으 면 소 용 이 없 고 심

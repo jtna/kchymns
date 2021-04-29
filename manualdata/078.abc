@@ -6,7 +6,7 @@ M: 3/4
 L: 1/4
 Q: 1/4=90
 K: Ab
-%%score [(S A)][(T B)]
+%%score [(S A) (T B)]
 V: S clef=treble
 E | A A B | c2 A | d d c | B2 E | A A B |
 w: 영 광 의 왕 께 다 경 배 하 며 그 크 신 사

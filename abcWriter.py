@@ -205,6 +205,7 @@ class AbcWriter(converter.subConverters.SubConverter):
         # try to pair two parts that (are not disabled), (are sequential) and (have the same clef)
         sd = "%%score "
         pair = []
+        ps = ''
         for p in obj.parts:
             if p._disabled: continue
             if not len(pair):
@@ -214,9 +215,12 @@ class AbcWriter(converter.subConverters.SubConverter):
 
             if (len(pair) == 2) or (p is obj.parts[-1]):
                 s = ' '.join(x._id for x in pair)
-                sd = sd + f'[({s})]'
+                ps = ps + f'({s}) '
                 pair.clear()
-        sd = sd + '\n'
+        if ps:
+            ps = ps.rstrip()
+            ps = '[' + ps + ']'
+        sd = sd + ps + '\n'
         return sd
 
     def make_header(self, obj):
@@ -333,7 +337,7 @@ class AbcWriter(converter.subConverters.SubConverter):
             if sum(layout_hint) != total:
                 logging.warning(f"Layout hint sum {sum(layout_hint)} != total measures {total}")
 
-        return voices[:-1]
+        return voices
 
     def read_metadata(self, abcfp):
         (pre, ext) = os.path.splitext(abcfp)
