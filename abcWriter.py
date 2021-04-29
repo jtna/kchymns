@@ -51,7 +51,7 @@ class AbcWriter(converter.subConverters.SubConverter):
                 # a note with a tie should have an empty lyric char, not a hyphen
                 # this is a common mistake in NWC files that people generate, and we correct it here
                 if n.lyric == self.UNIHYPHEN:
-                    n.lyric = '*'
+                    n.lyric = '_'
         except AttributeError:
             pass
 
