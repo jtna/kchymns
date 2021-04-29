@@ -28,7 +28,7 @@ class AbcWriter(converter.subConverters.SubConverter):
         if n.pitch.accidental != currentKey.accidentalByStep(n.step):
             try:
                 if n.pitch.accidental.displayStatus:
-                    acc2str = {'♭':'_', '♭♭':'__', '♮':'=', '♯':'^', '♯♯':'^^'}
+                    acc2str = {'♭':'_', '𝄫':'__', '♮':'=', '♯':'^', '𝄪':'^^'}
                     acc = acc2str.get(n.pitch.accidental.unicode, '')
                     name = acc + name
             except AttributeError:
