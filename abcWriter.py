@@ -44,20 +44,24 @@ class AbcWriter(converter.subConverters.SubConverter):
         # ties and slurs
         sb = ''
         se = ''
-        if n.tie:
-            if n.tie.type == 'start':
-                se = '-'
-            # a note with a tie should have an empty lyric char, not a hyphen
-            # this is a common mistake in NWC files that people generate, and we correct it here
-            if n.lyric == self.UNIHYPHEN:
-                n.lyric = '*'
+        try:
+            if n._tieType:
+                if n._tieType == 'start' or n._tieType == 'continue':
+                    se = '-'
+                # a note with a tie should have an empty lyric char, not a hyphen
+                # this is a common mistake in NWC files that people generate, and we correct it here
+                if n.lyric == self.UNIHYPHEN:
+                    n.lyric = '*'
+        except AttributeError:
+            pass
 
         # ties and slurs are not mutually exclusive (e.g. #194)
         spanners = n.getSpannerSites('Slur')
         for sp in spanners:
+            # slur beginning and end are also not mutually exclusive
             if sp.isFirst(n):
                 sb = sb + '('
-            elif sp.isLast(n):
+            if sp.isLast(n):
                 se = se + ')'
 
         name = self.get_note_name(n, obj) if type(n) is note.Note else 'z'

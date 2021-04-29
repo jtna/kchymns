@@ -258,6 +258,16 @@ class NwctxtReader(NoteworthyTranslator):
             elif kk == 'Triplet':
                 generalNote._triplet = 'Middle'
 
+    def setTieFromPitchInfo(self, noteOrChord, pitchInfo):
+        NoteworthyTranslator.setTieFromPitchInfo(self, noteOrChord, pitchInfo)
+        # e.g. for 2 consecutive ties over 3 notes of the same pitch,
+        # the parent function marks the first and last note, but not the middle one
+        # so set a convenience property here
+        if noteOrChord.tie:
+            noteOrChord._tieType = noteOrChord.tie.type
+        elif self.withinTie:
+            noteOrChord._tieType = 'continue'
+
 class ConverterNwctext(converter.subConverters.SubConverter):
     registerFormats = ('noteworthytxt',)
     registerInputExtensions = ('nwctxt',)
