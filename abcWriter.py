@@ -191,12 +191,14 @@ class AbcWriter(converter.subConverters.SubConverter):
 
         # find most common note length
         durations = {}
-        for n in obj.flat.notesAndRests:
-            dur = n.duration.quarterLength
-            try:
-                durations[dur] += 1
-            except KeyError:
-                durations[dur] = 1
+        for p in obj.parts:
+            if p._disabled: continue
+            for n in p.flat.notesAndRests:
+                dur = n.duration.quarterLength
+                try:
+                    durations[dur] += 1
+                except KeyError:
+                    durations[dur] = 1
         common = max(durations, key=durations.get)
         self.nuql = common
         #print(f'durations: {durations}')
