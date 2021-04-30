@@ -254,11 +254,12 @@ class AbcWriter(converter.subConverters.SubConverter):
             ts = p.flat.getElementsByClass('TimeSignature')
             if ts:
                 mstr = str(ts[0].numerator) + '/' + str(ts[0].denominator)
-                lstr = str(fractions.Fraction(self.nuql/4).limit_denominator(32)) # L: note unit length
                 header = header + 'M: ' + mstr + '\n'
-                header = header + 'L: ' + lstr + '\n'
             else:
                 logging.warning(f"No time signature found in {p}")
+
+        lstr = str(fractions.Fraction(self.nuql/4).limit_denominator(32))
+        header = header + 'L: ' + lstr + '\n' # L: note unit length
 
         # tempo is pulled from the first mm found in the score
         mm = obj.flat.getElementsByClass('MetronomeMark')
