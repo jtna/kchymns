@@ -1,0 +1,25 @@
+%abc-2.2
+T: 85 즈가리야의 노래
+C: 그레고리오 성가
+C: 새가톨릭성가편찬위원회 편곡
+L: 1/8
+Q: 1/4=90
+K: Bb
+%%score Melody [(S A) (T B)]
+V: Melody clef=treble
+F G B B16 c B2 |
+w: 주 여 이스 라엘의~하느님 찬미받으소 서
+B16 B A F G2 |]
+w: 주는~당신~백성을~찾아 속량 하 시 고
+V: S clef=treble
+FGB B16 c B2 |
+B16 BAF G2 |]
+V: A clef=treble
+z3 D16- D G2 |
+F16 E2 D- D2 |]
+V: T clef=bass
+z3 B,16- B,- B,2 |
+B,16 C3 B,2 |]
+V: B clef=bass
+z3 G,16- G, E,2 |
+D,16 C,2 D, G,2 |]

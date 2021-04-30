@@ -12,7 +12,7 @@ E E3 | E E E2 | A2 G F | E F F2 | E4 |
 w: 주 님 자 비 를 자 비 를 베 푸 소 서
 A A3 | A A A2 | c2 B A | G F E2 | E4 |
 w: 주 님 자 비 를 자 비 를 베 푸 소 서
-c c c2 | c c c2 | e2 d c | B A G`F | E4 |
+c c c2 | c c c2 | e2 d c | B A GF | E4 |
 w: 그리 스도 님 자 비 를 자 비 를 베 푸 소 ‐ 서
 E E E2 | E E E2 | A2 G F | E F F2 | E4 |
 w: 그리 스도 님 자 비 를 자 비 를 베 푸 소 서
@@ -30,14 +30,14 @@ C2 C2 | B, B, B,2 | E2 D D | C C C2 | B,4 |]
 V: T clef=bass
 A,2 A,2 | A, A, G,2 | A,2 A, A, | A, A, A,2 | G,4 |
 A,2 A,2 | A, A, A,2 | A,2 A, A, | A, A, A,2 | G,4 |
-A, A, A,B, | C C C`B, | A,2 A, A, | D C B,`A, | (G,`F, G,2) |
+A, A, A,B, | C C CB, | A,2 A, A, | D C B,A, | (G,F, G,2) |
 A, A, A,2 | A, A, G,2 | A,2 A, A, | A, A, A,2 | G,4 |
 A,2 A,2 | A, A, A,2 | A,2 A, A, | A, A, A,2 | G,4 |
 A,2 A,2 | A, A, G,2 | A,2 A, A, | A, A, A,2 | G,4 |]
 V: B clef=bass
-A,,2 E,2 | E, E, E,`D, | C,2 D, D, | A,, A,, D,2 | E,4 |
-F,2 E,2 | D, D, C,`B,, | A,,2 C, C, | D, D, E,2 | E,4 |
-A, A, A,2 | A, A, A,`G, | F,2 F, F, | D, D, D,2 | (E,3 D,) |
-C, C, A,,2 | E, E, E,`D, | C,2 D, D, | A,, A,, D,2 | E,4 |
-F,2 E,2 | D, D, C,`B,, | A,,2 C, C, | D, D, E,2 | E,4 |
-A,,2 C,2 | E, E, E,`D, | C,2 D, D, | A,, A,, D,2 | E,4 |]
+A,,2 E,2 | E, E, E,D, | C,2 D, D, | A,, A,, D,2 | E,4 |
+F,2 E,2 | D, D, C,B,, | A,,2 C, C, | D, D, E,2 | E,4 |
+A, A, A,2 | A, A, A,G, | F,2 F, F, | D, D, D,2 | (E,3 D,) |
+C, C, A,,2 | E, E, E,D, | C,2 D, D, | A,, A,, D,2 | E,4 |
+F,2 E,2 | D, D, C,B,, | A,,2 C, C, | D, D, E,2 | E,4 |
+A,,2 C,2 | E, E, E,D, | C,2 D, D, | A,, A,, D,2 | E,4 |]

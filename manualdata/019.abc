@@ -1,0 +1,33 @@
+%abc-2.2
+T: 19 주를 따르리
+C: 한국 순교 복자 성직 수도회 선곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/4
+Q: 1/4=90
+K: E
+%%score [(S A) (T B)]
+V: S clef=treble
+B, | G3/2 E/ B,/E/ G/ c/ | B2 G E | A2 A F | G3 z | c2 e/ c/ A/ c/ |
+w: 주 예 수 우 ‐ 리 의 희 망 우 리 의 행 복 내 일 생 다 하
+B3 G | F3/2 F/ G/ B,/ C/D/ | E3 z | C2 F F | A3 G |
+w: 여 주 님 을 사 랑 하 ‐ 리 생 명 의 길 밝
+c2 c c | B3 B | B3/2 c/ B/A/ G/F/ | E3 E | A2 A B/c/ |
+w: 혀 주 시 니 주 님 을 따 ‐ 르 ‐ 리 십 자 가 길 ‐
+B3 B | c3/2 c/ d/ c/ B/A/ | G3 B, | F2 F G | E3 |]
+w: 로 주 님 을 현 양 하 ‐ 리 사 랑 의 길 로
+V: A clef=treble
+B, | E3/2 B,/ B, E/ E/ | F2 E E | (F E) D D | E3 z | E2 E/ E/ E/ E/ |
+E3 B, | C3/2 C/ B,/ B,/ A, | G,3 z | A,2 C C | B,3 ^B, |
+(C G) F E | D3 D | E E D D | (D C/^B,/ C) =D | C2 D D |
+E3 E | E3/2 E/ F/ F/ F | (F E/D/ E) B, | C2 A, B, | G,3 |]
+V: T clef=bass
+B, | B,3/2 G,/ G, B,/ G,/ | B,2 B, B, | C2 B, B, | B,3 z | A,2 C/ E/ C/ A,/ |
+G,3 E, | E,3/2 E,/ E,/ G,/ F, | E,3 z | F,2 A, A, | F,3 F, |
+(G, B,) A, ^A, | B,3 A, | G, E, F, G, | G,3 G, | (A, G,) F, G,/A,/ |
+(A, G,/F,/ G,) B, | A, A, A,/ A,/ B, | B,3 E, | (F, E,) D, D, | E,3 |]
+V: B clef=bass
+G,/F,/ | E,3/2 E,/ E, E,/ E,/ | D,2 E, G, | F,2 B,, B,, | E,3 z | A,2 A,/ A,/ A,/ A,/ |
+E,3 E, | A,, ^A,, B,,/ B,,/ B,, | E,3 z | E,2 E, E, | (E, D,/C,/ D,) D, |
+(E, ^E,) F, ^^F, | G,3 F, | E, G,, B,, ^B,, | C,3 =B,, | A,,2 B,, B,, |
+E,3 G, | A, G, F,/ F,/ D, | E,3 G,, | A,,2 B,, B,, | E,3 |]

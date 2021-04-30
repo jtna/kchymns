@@ -1,0 +1,35 @@
+%abc-2.2
+T: 30 승리의 십자가
+C: 이탈리아 성가
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/8
+Q: 1/4=102
+K: D
+%%score [(S A) (T B)]
+V: S clef=treble
+F | A2 F2 z F G A | B6 A2 | c4 B A G A | F6 z F |
+w: 십 자 가 승 리 하 네 우 리 구 원 하 리 라 십
+A2 F2 z F G A | B6 A2 | A4 B2 c c | d6 |
+w: 자 가 승 리 하 네 우 리 구 원 하 리
+z2 ||[M:3/4] (A6- | A2 GF G2) | (G6- | G2 F2) z2 |
+w: Humming _ * * * * * *
+(FG A4- | A2 GF G2) | (G6- ||[M:4/4] G2 F4) |]
+w: * * * * * * * * * *
+V: A clef=treble
+D | D2 D2 z D D D | D6 D2 | E4 C C B, C | D6 z D |
+F2 D2 z D D D | D6 DF | G4 G2 G G | F6 |
+z2 ||[M:3/4] F6- | F2 E^D E2 | E6- | E2 D2 z2 |
+DE F4- | F2 E^D E2 | E6- ||[M:4/4] E2 D4 |]
+V: T clef=bass
+A, | F,2 A,2 z A, G, F, | G,6 F,2 | G,4 E, E, A, A, | A,6 z A, |
+=C2 A,2 z C B, A, | G,6 A,D | E4 E2 E E | D6 |
+z2 ||[M:3/4] (D4 C2 | B,4 _B,2) | (A,4 B,C | D2 A,2) z2 |
+(A,2 D2 C2 | B,4 _B,2) | (A,4 B,C ||[M:4/4] D2 A,4) |]
+V: B clef=bass
+D, | D,2 D,2 z D, D, D, | G,,6 D,2 | A,,4 A,, A,, A,, A,, | D,6 z D, |
+D,2 D,2 z D, E, F, | G,6 F,D, | C,4 B,,2 A,, A,, | D,6 |
+A,,2 ||[M:3/4] D,3 D, E, F, | B,,2 E,3 D, | C,2 C, C, B,, A,, | D,4 A,,2 |
+w: 진 리 에 목 마 른 자 사 랑 자 유 찾 았 네 십
+D,3 D, E, F, | B,,2 E,3 D, | C,2 C, C, B,, A,, ||[M:4/4] D,6 |]
+w: 자 가 찬 란 하 게 세 상 비 추 어 주 리

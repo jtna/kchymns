@@ -1,0 +1,33 @@
+%abc-2.2
+T: 29 주 예수 따르기로
+C: Arthur H. Mann 작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/4
+Q: 1/4=76
+K: F
+%%score [(S A) (T B)]
+V: S clef=treble
+A | A3/2 A/ G F | F2 E C | B3/2 B/ A G | A3 A |
+w: 주 예 수 따 르 기 로 나 약 속 했 으 니 내
+c3/2 c/ B A | A2 B A | G3/2 F/ E F | G3 ^G |
+w: 친 구 되 신 주 여 늘 함 께 하 소 서 주
+A3/2 A/ G F | F2 E C | B3/2 B/ A G | A3 A |
+w: 함 께 계 시 오 면 나 든 든 하 옵 고 주
+d3/2 c/ B A | c2 B D | F3/2 E/ D E | F3 |]
+w: 나 를 이 끄 시 면 바 른 길 가 리 다
+V: A clef=treble
+F | C3/2 C/ B, A, | (D =B,) C C | D3/2 E/ F G | F3 F |
+^F3/2 A/ G F | D2 D D | D =B, C C | E3 E |
+F3/2 C/ E D | (D =B,) C C | F F F E | F3 E |
+A A G D | _E2 D B, | C B, B, B, | A,3 |]
+V: T clef=bass
+F, | F,3/2 F,/ E, F, | G,2 G, E, | G,3/2 G,/ F, C | C3 C |
+D A, B, C | C2 B, C | =B, A, G, A, | B,3 B, |
+A, C C A, | G,2 G, E, | F, B, C C | C3 ^C |
+D D D D | A,2 B, G, | A, G, F, G, | F,3 |]
+V: B clef=bass
+F,, | F,, A,, C, D, | (=B,, G,,) C, C, | G, C, D, E, | F,3 _E, |
+D,3/2 ^F,/ G, D, | ^F,2 G, F, | G, G,, C, C, | C,3 C, |
+F, F, C, D, | (=B,, G,,) C, C, | D, D, C, C, | F,3 A, |
+F, ^F, G, F, | ^F,2 G, G,, | C, C, C, C, | F,,3 |]

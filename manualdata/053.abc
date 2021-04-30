@@ -1,0 +1,43 @@
+%abc-2.2
+T: 53 주님은 나의 목자
+C: Paul Quinlan 작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/8
+Q: 1/4=92
+K: D
+%%score [(S A) (T B)]
+V: S clef=treble
+D | F3 F F3 G | F2 E4 F G | A3 A B3 B | A6 z E |
+w: 주 님 은 나 의 목 자 아 쉬 울 것 없 노 라 파
+F3 F (F3 G) | F2 E4 F E | D3 D C3 E | D6 D E |
+w: 아 란 풀 ‐ 밭 에 이 몸 뉘 어 주 시 고 고 이
+F3 F (F3 G) | F2 E4 F G | A3 A B3 B | A6 z E |
+w: 쉬 라 물 ‐ 터 로 나 를 끌 어 주 시 니 내
+F3 F F3 G | F2 E4 F E | D4 (C3 E) | D6 z F |
+w: 영 혼 싱 싱 하 게 생 기 돋 아 ‐ 라 죽
+A4 d3 d | B6 G F | E4 F2 G2 | F G A4 z F |
+w: 음 그 늘 진 골 짜 기 간 다 하 여 도 주
+A3 A d3 d | B6 G F | E4- E E D C | D6 z |]
+w: 함 께 계 시 니 무 서 울 _ 것 없 노 라
+V: A clef=treble
+D | D3 D D3 D | D2 C4 D D | D3 D D3 D | (D4 C2) z C |
+D3 D D3- D | D2 C4 C C | A,3 A, A,3 C | A,6 D C |
+D3 E D3- D | D2 C4 C D | D3 D D3 D | (D4 C2) z C |
+D3 D D3 D | D2 C4 C C | A,4 A,3- A, | A,6 z D |
+F4 A3 A | G6 D D | B,4 B,2 B,2 | D D C4 z D |
+D3 D F3 F | D6 D D | B,4 C2 A, A, | A,6 z |]
+V: T clef=bass
+F, | A,3 A, B,3 B, | A,2 A,4 A, G, | F,3 F, G,3 G, | E,6 z A, |
+A,3 A, (A,3 G,) | A,2 G,4 F, G, | F,3 F, E,3 G, | (G,2 E,2 F,2) A, A, |
+A,3 ^A, B,3- B, | A,2 A,4 A, B, | A,3 A, G,3 G, | E,6 z A, |
+A,3 A, B,3 B, | A,2 A,4 A, G, | F,4 (A,3 G,) | F,6 z A, |
+D4 D3 D | D6 G, G, | G,4 A,2 G,2 | A, A, A,4 z A, |
+A,3 A, A,3 A, | G,6 G, G, | (G,2 ^G,2) A,2 =G, G, | F,6 z |]
+V: B clef=bass
+D, | D,3 C, (B,,2 A,,) G,, | A,,2 A,,4 D, D, | D,3 D, G,,3 G,, | A,,6 z A,, |
+D,3 D, ((D,2 =C,) B,,) | A,,2 A,,4 A,, A,, | D,3 D, A,,3 A,, | D,6 F, E, |
+D,3 C, ((B,,2 =A,,) G,,) | A,,2 A,,4 A,, G,, | F,,3 F,, G,,3 G,, | A,,6 z A,, |
+D,3 C, (B,,2 A,,) G,, | A,,2 A,,4 A,, A,, | D,4 (A,,3 C,) | D,6 z D, |
+(D,2 E,2) F,3 F, | (G,4 G,,2) B,, B,, | E,4 ^D,2 E,2 | A,, A,, A,,4 z D, |
+F,3 F, D,3 D, | (G,4 G,,2) B,, B,, | E,4 A,,2 A,, A,, | D,6 z |]

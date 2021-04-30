@@ -1,0 +1,38 @@
+%abc-2.2
+T: 176 믿음 소망 사랑
+C: 프랑스 성가
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/4
+Q: 1/4=96
+K: G
+%%score [(S A) (T B)]
+V: S clef=treble
+B2 B B | c2 B2 | A G G F | G A B2 |
+w: 주 여 오 소 서 우 리 에 게 오 소 서
+c2 c c | B d c B | A2 A G | A3 z |
+w: 미 약 한 우 리 사 랑 드 리 오 니
+B2 B B | c2 B2 | A G G F | G A B2 |
+w: 받 아 주 소 서 구 원 의 주 예 수 여
+G2 G2 | A2 A2 | B A B ^c | d3 z |
+w: 기 쁨 평 화 우 리 주 예 수
+G2 G2 | A2 B2 | c B A A | G3 z |]
+w: 영 원 찬 미 받 으 옵 소 서
+V: A clef=treble
+G2 F F | (E F) G2 | E E D D | B, D D2 |
+(C G) F A | G G G G | G2 F E | F3 z |
+G2 F F | (E F) G2 | E E D C | B, D D2 |
+(C E) D2 | (D F) E2 | F F F/G/ A/G/ | F3 z |
+E2 =F2 | E2 F2 | A/G/ F/G/ G F | D3 z |]
+V: T clef=bass
+D2 D D | C2 D2 | C B, B, A, | G, F, G,2 |
+G,2 A, D | D B, C D | E2 D B, | D3 z |
+D2 D D | C2 D2 | C B, B, A, | G, F, G,2 |
+G,2 (G, B,) | A,2 (A, ^C) | D D D E | D3 z |
+B,2 B,2 | C2 D2 | E D E C | B,3 z |]
+V: B clef=bass
+G,2 G, G, | A,2 G,2 | C, C, D, D, | E, D, (G, F,) |
+E,2 D, F, | G, =F, E, D, | C,2 D, E, | D,3 z |
+G,2 G, G, | A,2 G,2 | C, C, D, D, | E, D, (G, F,) |
+(E, C,) (B,, G,) | (F, D,) (^C, A,) | D, D B, A, | D,3 z |
+E,2 D,2 | C,2 B,,2 | A,, B,, C, D, | G,,3 z |]

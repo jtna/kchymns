@@ -1,0 +1,33 @@
+%abc-2.2
+T: 10 주를 찬미해
+C: 프랑스 성가
+C: 새가톨릭성가편찬위원회 편곡
+M: 2/4
+L: 1/8
+Q: 1/4=56
+K: D
+%%score [(S A) (T B)]
+V: S clef=treble
+F2 F G | A3/2 A/ A2 | d2 B3/2 B/ | A4 |
+w: 내 주 를 찬 미 해 시 온 에 서
+G2 G2 | F2 D F | A2 F2 | E4 |
+w: 나 의 구 세 주 찬 미 해
+F2 F3/2`E/ | D4 | A2 A3/2`G/ | F4 |
+w: 호 산 ‐ 나 호 산 ‐ 나
+d2 c3/2 B/ | AG F G | (F2 E2) | D3 z |]
+w: 호 산 나 다 ‐ 윗 의 자 ‐ 손
+V: A clef=treble
+D2 D E | E3/2 E/ E2 | D2 D3/2 D/ | DEFD |
+EC CE | D2 D D | E2 D2 | C4 |
+C2 C2 | (C2 B,2) | E2 E2 | (E2 D2) |
+F2 E3/2 E/ | FE D E | (E D2 C) | D3 z |]
+V: T clef=bass
+A,2 A, B, | A,3/2 A,/ A,2 | F,2 G,3/2 G,/ | F,G,A,F, |
+A,2 A,2 | A,2 A, A, | A,2 A,2 | A,4 |
+A,G, F,2 | (F,2 B,2) | A,B, C2 | A,4 |
+B,2 A,3/2 G,/ | F,G, A, B, | (A,3 G,) | F,3 z |]
+V: B clef=bass
+D,2 D, D, | C,3/2 C,/ C,2 | B,,2 G,,3/2 G,,/ | D,4 |
+A,,2 A,,C, | D,E, F, D, | C,A,, D,2 | A,,4 |
+A,,2 ^A,,2 | B,,4 | C,2 A,,2 | D,4 |
+B,,2 C,3/2 C,/ | D,2 D, G, | (A,2 A,,2) | D,3 z |]

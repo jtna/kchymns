@@ -1,0 +1,34 @@
+%abc-2.2
+T: 35 나는 포도나무요
+C: 김경옥 작사
+C: 원선오 작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/8
+Q: 1/4=86
+K: Eb
+%%score [(S A) (T B)]
+V: S clef=treble
+E F | G2 B2 A2 c2 | B6 c d | e2 G2 F2 F2 | E6 |
+w: 나 는 포 도 나 무 요 너 희 는 가 지 로 다
+E F | G2 F G A2 G A | B c B A G2 G B |
+w: 가 지 가 나 무 에 붙 어 있 지 않 으 면 작 은
+c2 e2 d2 c B | c2 B =A B2 E F | G2 F G A2 G A ||[M:3/4]
+w: 열 매 도 맺 을 수 없 듯 이 너 희 도 내 안 에 머 무
+B c B A G2 | F C F2 G2 ||[M:4/4] E6 |]
+w: 르 지 않 으 면 그 러 하 리 라
+V: A clef=treble
+E E | E2 E2 E2 E2 | (E2 DC D2) E F | G2 E2 E2 D2 | B,6 |
+E E | E2 E E E2 E E | E E E D E2 E F |
+G2 F2 F2 F F | E2 E E D2 E E | E2 E E E2 E E ||[M:3/4]
+F F F F E2 | C C C2 D2 ||[M:4/4] B,6 |]
+V: T clef=bass
+G, A, | B,2 _D2 C2 A,2 | G,6 A, A, | C2 B,2 C2 B,2 | G,6 |
+G, A, | B,2 A, B, C2 B, C | B, A, B, B, B,2 B, B, |
+B,2 =A,2 B,2 B, B, | =A,2 C C B,2 G, _A, | B,2 A, B, C2 B, C ||[M:3/4]
+B, B, B, B, B,2 | A, A, A,2 A,2 ||[M:4/4] G,6 |]
+V: B clef=bass
+E, E, | E,2 E,2 E,2 E,2 | E,6 A, F, | C,2 G,2 A,2 B,B,, | E,6 |
+E, E, | E,2 E, E, E,2 E, E, | G, A, G, F, E,2 E, D, |
+E,2 C,2 B,,2 D, D, | F,2 F, F, B,,2 E, E, | E,2 E, E, E,2 E, E, ||[M:3/4]
+D, D, D, D, E,2 | A,, A,, B,,2 B,,2 ||[M:4/4] E,6 |]

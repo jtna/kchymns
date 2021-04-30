@@ -1,0 +1,33 @@
+%abc-2.2
+T: 12 주님을 기리나이다
+C: 샬트르 성 바오로 수녀회 선곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/4
+Q: 1/4=82
+K: Bb
+%%score [(S A) (T B)]
+V: S clef=treble
+D | G3/2 G/ A G/A/ | B c A A | B3/2 A/ G ^F | G3 D |
+w: 주 님 을 기 리 ‐ 나 이 다 찬 미 하 나 이 다 내
+G3/2 G/ A G/A/ | (B c) A A | B3/2 A/ G ^F | G3 |
+w: 영 혼 양 식 ‐ 이 ‐ 여 영 원 한 일 치 여
+D | G G G A/ B/ | A2 G G/ A/ | B B c B/c/ | d3 d |
+w: 아 침 엔 당 신 의 사 랑 밤 엔 당 신 진 실 ‐ 을 거
+e d c/ B/ A/ B/ | A A G G/ G/ | A/ G/ F/ G/ F =E/ E/ | D3 |]
+w: 문 고 타 며 기 리 나 이 다 찬 미 찬 송 드 리 옵 나 이 다
+V: A clef=treble
+D | D3/2 D/ E E | G G/A/ ^F F | G E D D | D3 D |
+D3/2 D/ E E | (G3/2 A/) ^F F | G E D D | D3 |
+D | D D C E/ E/ | C2 B, B,/ C/ | D F E G | (G ^F/=E/ F) G |
+A A G/ G/ G/ G/ | G ^F D D/ D/ | D/ ^C/ D/ D/ D C/ C/ | D3 |]
+V: T clef=bass
+B, | B,3/2 B,/ C C | D C/E/ D D | D C B, A,/C/ | B,3 D |
+B,3/2 B,/ C C | (D C/E/) D D | D C B, A,/C/ | B,3 |
+B, | B, =B, C/_B,/ A,/ G,/ | (G, ^F,) G, G,/ G,/ | F, F, G, G, | A,3 B, |
+C D E/ D/ C/ D/ | E D/C/ B, D,/ =E,/ | F,/ G,/ A,/ A,/ A, G,/ G,/ | F,3 |]
+V: B clef=bass
+G, | G,3/2 G,/ G, G, | G,/F,/ E,/C,/ D, D, | G, C, D, D, | G,3 B,/A,/ |
+G,3/2 G,/ G, G, | G,/F,/E,/C,/ D, D, | G, C, D, D, | G,,3 |
+G, | G, F, E, C,/ C,/ | D,2 E, E,/ E,/ | B,, D, C, E, | D,3 G, |
+G, ^F, G,/ G,/ G,/ G,/ | C, D, G,, B,,/ B,,/ | A,,/ A,,/ A,,/ A,,/ A,, A,,/ A,,/ | D,3 |]

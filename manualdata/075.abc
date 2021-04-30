@@ -1,0 +1,33 @@
+%abc-2.2
+T: 75 주 그리스도 우리 왕
+C: Melchior Teschner 작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/4
+Q: 1/4=90
+K: Bb
+%%score [(S A) (T B)]
+V: S clef=treble
+B, | F F G A | B2 B d | c B B A | B3 B, |
+w: 주 그리 스도 우 리 왕 께 큰 영 광 드 리 세 그
+F F G A | B2 B d | c B B A | B3 B |
+w: 옛 날 주 의 백 성 호 산 나 불 렀 네 주
+d d c B | (A G) F A | B A G G | F3 F |
+w: 다 윗 왕 손 으 ‐ 로 이 세 상 구 하 려 참
+D F G F | (F E) D F | E D C C | B,3 |]
+w: 왕 이 되 신 주 ‐ 께 다 찬 미 드 리 세
+V: A clef=treble
+B, | D D E F | (F E) D F | F F C F/E/ | D3 B, |
+D D E F | (F E) D F | F F C F/E/ | D3 F |
+G G G G | (F =E) F F | F F F =E | C3 C |
+D D E D | C2 B, B, | B, B, B, A, | B,3 |]
+V: T clef=bass
+B, | B, B, B, C | B,2 B, B, | A, B, G, F, | F,3 F, |
+B, B, B, C | B,2 B, B, | A, B, G, F, | F,3 D |
+B, B, C C | (C B,) A, C | B, C B, B, | A,3 A, |
+B, B, B, B, | F,2 F, F, | G, F, F, E, | D,3 |]
+V: B clef=bass
+B, | B,, B,, E, E, | (D, C,) B,, B,, | F, D, E, F, | B,,3 D, |
+B,, B,, E, E, | (D, C,) B,, B,, | F, D, E, F, | B,,3 B, |
+G, F, =E, E, | F,2 F, _E, | D, C, C, C, | F,3 F, |
+B,, B,, E, B,, | A,,2 B,, D, | E, F, F,, F,, | B,,3 |]

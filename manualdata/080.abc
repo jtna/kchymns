@@ -1,0 +1,33 @@
+%abc-2.2
+T: 80 거룩하신 성삼이여
+C: 조정옥 역사
+C: 새가톨릭성가편찬위원회 편곡
+M: 3/4
+L: 1/4
+Q: 1/4=98
+K: D
+%%score [(S A) (T B)]
+V: S clef=treble
+A | A2 G | F2 F | E2 E | D2 (A |
+w: 거 룩 하 신 성 삼 이 여 하
+d2) d | (c3/2 d/) e | d c B | A2 A |
+w: ‐ 나 이 ‐ 신 삼 위 일 체 오
+d2 c | B2 A | (G3/2 F/) E | F2 A |
+w: 묘 하 온 그 신 ‐ 비 를 굳
+A2 G | F2 F | E2 E | D2 |]
+w: 이 믿 어 흠 숭 하 리
+V: A clef=treble
+A | F2 E | (D E) D | D2 C | D2 (D- |
+D G) E | E2 E | F E D | C2 C |
+D2 F | F2 F | (E3/2 D/) C | (C D) E/G/ |
+F2 E | (D E) D | D2 C | D2 |]
+V: T clef=bass
+A, | (D C) B, | (A, ^A,) B, | B,2 A,/G,/ | F,2 (F, |
+G,2) ^G, | (A, ^G,) A, | A, A, ^G, | A,2 A, |
+A,2 ^A, | B,2 B, | B,2 B, | (^A, B,) C |
+(D C) B, | (A, ^A,) B, | B,2 A,/G,/ | F,2 |]
+V: B clef=bass
+A, | D,2 D, | (D, C,) B,, | G,,2 A,, | B,,2 (=C, |
+B,,2) B,, | (A,, B,,) C, | D, E, ^E, | F,2 G, |
+F,2 E, | D,2 ^D, | (E,3/2 F,/) G, | (F, B,,) =A,, |
+D,2 D, | (D, C,) B,, | G,,2 A,, | D,2 |]

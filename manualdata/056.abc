@@ -1,0 +1,33 @@
+%abc-2.2
+T: 56 목자를 따라서
+C: John Zundel 작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 6/8
+L: 1/8
+Q: 1/8=116
+K: F
+%%score [(S A) (T B)]
+V: S clef=treble
+C | F2 F FE F | G3- G2 C | G2 G GF G | A3- A2 C |
+w: 양 떼 를 떠 ‐ 나 서 _ 나 길 을 잃 ‐ 었 네 _ 내
+A2 A A2 A | AB c c2 B | A2 A B2 G | F3- F2 C |
+w: 목 자 잃 고 헤 ‐ 매 며 애 태 우 나 이 다 _ 아
+G2 G GF G | A3- A2 C | A2 A AG A | B3- B2 C |
+w: 버 지 집 ‐ 떠 나 _ 먼 길 을 가 ‐ 던 나 _ 이
+A2 A A2 A | A B c c2 B | A2 A B2 G | F3- F2 |]
+w: 제 는 나 의 아 버 지 께 돌 아 가 렵 니 다 _
+V: A clef=treble
+C | C2 C DC D | (D3 C2) C | C2 C CD E | F3- F2 C |
+C2 C D2 D | C2 C C2 E | F2 ^F G2 E | C3- C2 C |
+C2 =B, C2 C | C3- C2 C | C2 C D2 D | (D3 C2) C |
+C2 C C2 D | F F F _E2 D | C2 C C2 C/B,/ | A,3- A,2 |]
+V: T clef=bass
+E, | F,2 A, A,2 A, | (G,3 E,2) G,/F,/ | E,2 G, C2 C | C3- C2 G, |
+F,2 F, F,2 F, | F,G, A, G,2 C | C2 D D2 B, | (B,3 A,2) A, |
+G,2 G,/F,/ E,2 E, | F,3- F,2 E, | F,2 F, F,2 ^F, | (G,2 =F, E,2) E, |
+F,2 F, F,2 F, | A, G, G, _G,2 F, | F,2 F, E,2 E, | F,3- F,2 |]
+V: B clef=bass
+C,/B,,/ | A,,2 F,, D,2 D, | (B,,3 C,2) E,/D,/ | C,2 E, E,D, C, | F,3- F,2 E, |
+F,2 F, D,2 D, | F,2 F, E,2 C, | F,2 D, B,,2 C, | F,3- F,2 F, |
+E,2 D, C,2 B,, | (A,,2 G,, F,,2) C, | F,,2 F,/E,/ D,2 C, | (B,,3 C,2) C, |
+F,,2 F,, F,E, D, | C, B,, A,, A,,2 B,, | C,2 C, C,2 C, | F,,3- F,,2 |]

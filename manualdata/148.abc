@@ -1,0 +1,28 @@
+%abc-2.2
+T: 148 위로자 성령
+C: 미국 성가
+C: 새가톨릭성가편찬위원회 편곡
+M: 3/4
+L: 1/4
+Q: 1/4=80
+K: Eb
+%%score [(S A) (T B)]
+V: S clef=treble
+G G G | B2 G | (F G) A | G2 z | F F G |
+w: 임 하 소 서 성 령 ‐ 이 여 창 조 주
+E2 G | (c/B/ A) G | F2 z | G G B | e2 d/c/ |
+w: 여 임 하 ‐ ‐ 소 서 고 귀 하 온 은 ‐
+B2 A | G2 z | B c _d | c2 B/A/ | G2 F | E2 z |]
+w: 총 으 로 모 든 조 물 돌 ‐ 보 소 서
+V: A clef=treble
+E E E | E2 E | (D E) F | E2 z | D D D |
+C2 E | (F D) E | D2 z | E E F | E2 F |
+G2 F/E/ | (D E) z | E E E | E2 F | E2 D | E2 z |]
+V: T clef=bass
+B, B, B, | B,2 B, | B,2 B, | B,2 z | B, A, G, |
+G,2 C | B,2 B, | B,2 z | B, B, B, | C2 C |
+(D E/D/) C | (=B, C) z | G, G, G, | A,2 C | B,2 A, | G,2 z |]
+V: B clef=bass
+E, E, E, | G,2 E, | B,2 D, | E,2 z | B,, B,, =B,, |
+C,2 C, | (D, F,) E, | B,,2 z | E, E, D, | (C, C) A, |
+(G,/F,/ E,) F, | (G, C,) z | _D, C, B,, | A,,2 A,, | B,,2 B,, | E,2 z |]

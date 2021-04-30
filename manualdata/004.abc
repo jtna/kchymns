@@ -1,0 +1,33 @@
+%abc-2.2
+T: 4 찬양하라
+C: Peter Sohren 작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 3/4
+L: 1/4
+Q: 1/4=90
+K: G
+%%score [(S A) (T B)]
+V: S clef=treble
+G G d | (B3/2 A/) G | F E D | E F G |
+w: 찬 양 하 라 ‐ 전 능 하 신 창 조 주
+A3 | G3 | G G d | (B3/2 A/) G | F E D |
+w: 천 주 찬 미 하 라 ‐ 내 영 혼 아
+E F G | A3 | G3 | d d d | e3 | B c d |
+w: 우 리 구 세 주 만 민 들 아 주 의 제
+d c B | A3 | D E F | G A B | A3 | G3 |]
+w: 단 에 모 여 깊 은 흠 숭 드 리 어 라
+V: A clef=treble
+D E D | (G F) E | D C B, | C C B, |
+(E D C) | B,3 | B, E D | (D ^D) E | D C B, |
+C C B, | (D2 C) | B,3 | G D G | G3 | G G ^F |
+G E G | F3 | D C C | B, D ^D | (E2 D/C/) | B,3 |]
+V: T clef=bass
+B, B, A, | D2 B, | B, G, G, | G, A, G, |
+(G, F,2) | G,3 | G, C A, | (G, A,) B, | B, G, G, |
+G, A, G, | F,3 | G,3 | B, A, B, | C3 | D C C |
+B, C A, | A,3 | G, G, A, | G, F, F, | (E, A,/G,/ F,) | G,3 |]
+V: B clef=bass
+G, E, F, | (G, D,) E, | B,, C, G,, | C, A,, E,/D,/ |
+(C, D,2) | G,,3 | E,/D,/ C,/E,/ F, | (G, F,) E, | B,, C, G,, |
+C, A,, E, | D,3 | G,,3 | G, F, G, | C,3 | G,/=F,/ E, D, |
+G, C, ^C, | (D,2 C,) | B,, C, A,, | E, D, B,, | (C,2 D,) | G,,3 |]

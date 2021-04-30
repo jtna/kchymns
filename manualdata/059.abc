@@ -1,0 +1,34 @@
+%abc-2.2
+T: 59 주께선 나의 피난처
+C: 강청란 작사
+C: James McGranahan 작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 6/8
+L: 1/8
+Q: 3/8=54
+K: Bb
+%%score [(S A) (T B)]
+V: S clef=treble
+F F F F G A | B3 F3 | A A A A B c | B6 |
+w: 주 께 선 나 의 피 난 처 의 지 할 곳 주 님 뿐
+G G G B A G | F3 B3 | B B B B A B | c6 |
+w: 풍 파 가 심 할 지 라 도 내 게 는 평 화 있 네
+d d d d ^c d | B3 F3 | d c B B A B | c6 |
+w: 메 마 른 우 리 영 혼 에 새 생 명 주 옵 시 며
+d d d c B G | F3 B3 | A A A A B c | B6 |]
+w: 주 안 에 영 원 한 안 식 누 리 게 하 옵 소 서
+V: A clef=treble
+D D D E E E | D3 D3 | F F F E E E | (D3 F3) |
+E E E G F E | D3 F3 | G G G G ^F G | (F3 E3) |
+D F F F F F | E3 F3 | F F F =E E E | _E6 |
+D F F E E E | C3 FED | E E E E E E | D6 |]
+V: T clef=bass
+B, B, B, A, B, C | B,3 B,3 | C C C C B, A, | B,6 |
+B, B, B, B, B, B, | B,3 D3 | D D D D C B, | A,6 |
+B, B, B, _A, A, A, | G,3 B,3 | B, B, B, G, G, G, | (B,3 A,3) |
+B, _A, A, G, G, B, | A,3 B,3 | C C C C B, A, | B,6 |]
+V: B clef=bass
+B,, B,, B,, F, F, F, | B,,3 B,,3 | F, F, F, F, F, F, | (B,,3 D,3) |
+E, E, E, E, E, E, | B,,3 B,,B,A, | G, G, G, D, D, D, | F,6 |
+B,, B,, B,, B,, B,, B,, | E,3 D,3 | B,, C, D, C, C, C, | F,6 |
+B,, B,, B,, E, E, E, | (F,2 E,) D,C,B,, | F, F, F, F, F, F, | B,,6 |]

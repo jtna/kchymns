@@ -1,0 +1,32 @@
+%abc-2.2
+T: 79 그리스도 승리 (Christus Vincit)
+C: 새가톨릭성가편찬위원회 편곡
+M: 2/2
+L: 1/4
+Q: 1/2=82
+K: F
+%%score [(S A) (T B)]
+V: S clef=treble
+A2 A2 | c2 c2 | F2 F2 | A2 A2 |
+w: 그리 스도 승 리 그리 스도 왕 국
+d2 G2 | c2 (F B) | (A2 G3/2) F/ | F4 |
+w: 그리 스도 다 스 ‐ 리 ‐ 신 다
+F/ G/A/ A8 G/ A/ "<("">)"F/ F |
+w: 주 님 ‐ 을~찬미하라~모든 민족 들 _ 아
+A8 F/ G/A/ G F |]
+w: 주님을~찬미하라~모든 백 성 ‐ 들 아
+V: A clef=treble
+F2 F2 | G2 E2 | D2 D2 | E2 E2 |
+(G F) E2 | (F E) (D F) | (F2 E3/2) C/ | C4 |
+z3/2 C8 x3/2 D |
+E8 x/ D D C |]
+V: T clef=bass
+C2 C2 | C2 C2 | A,2 A,2 | A,2 C2 |
+D2 C2 | C2 (A, D) | (C2 B,3/2) A,/ | A,4 |
+z3/2 F,8 x3/2 A, |
+A,8 x/ B,- B, A, |]
+V: B clef=bass
+F,2 F,2 | E,2 C,2 | D,2 D,2 | C,2 A,,2 |
+B,,2 (C, B,,) | A,,2 (D, B,,) | C,2- C,3/2 F,/ | F,4 |
+z3/2 F,8 x3/2 D, |
+C,8 x/ B,,- B,, F, |]

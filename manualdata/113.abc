@@ -1,0 +1,42 @@
+%abc-2.2
+T: 113 성 요셉과 성 마리아
+C: 새가톨릭성가편찬위원회 편곡
+M: 3/4
+L: 1/8
+Q: 1/4=82
+K: D
+%%score [(S A) (T B)]
+V: S clef=treble
+F E | D3 A, F G | A2 F2 F G | A3 F E F | D2 z2 F F |
+w: 성 요 셉 과 성 마 리 아 예 수 님 을 모 시 고 평 화
+E3 E F ^G | A2 E2 A B | c3 d B ^G | A2 z2 F G |
+w: 롭 게 지 낸 생 활 우 리 함 께 본 받 자 우 리
+F2 E2 A B | A4 A A | B3 A G A | G2 F2 F G |
+w: 형 제 자 매 여 사 랑 안 에 일 치 하 고 서 로
+F2 E2 A G | F2 D2 A G | F3 F G A | B2 z d c B |
+w: 함 께 힘 을 모 아 가 정 에 충 실 하 여 성 가 정
+A3 B A G | F2 z2 E F | G3 E F G |
+w: 이 루 어 가 세 이 에 주 님 풍 성
+A4 B A | A3 F E F | D4 |]
+w: 히 축 복 하 여 주 시 리
+V: A clef=treble
+A, A, | A,3 A, D D | D2 D2 D D | D3 D C C | D2 z2 D D |
+C2 B,2 C D | C2 C2 C D | E3 E E E | E2 z2 D E |
+D2 C2 C C | D4 D D | D2 D2 E E | E2 D2 D E |
+D2 C2 D C | D2 D2 D C | D3 D D D | D2 z G G G |
+F2 E2 E E | D2 z2 E ^D | E3 E ^D E |
+(E2 D2) C C | D3 D C C | D4 |]
+V: T clef=bass
+A, G, | F,3 F, A, A, | A,2 A,2 A, G, | F,3 A, G, A, | F,2 z2 A, A, |
+A,2 ^G,2 A, B, | A,2 A,2 A, A, | A,3 ^G, D B, | C2 z2 A, A, |
+A,2 A,2 A, A, | A,4 A, A, | G,2 A,2 A, A, | A,2 A,2 A, A, |
+A,2 A,2 A, A, | A,2 A,2 A, A, | A,3 A, G, F, | G,2 z B, C D |
+D2 C2 C C | A,2 z2 B, B, | B,3 B, B, B, |
+(A,2 F,2) G, G, | F,3 A, G, A, | F,4 |]
+V: B clef=bass
+D, D, | D,3 D, D, E, | F,2 D,2 D, B,, | A,,3 A,, A,, A,, | D,2 z2 D, D, |
+A,,2 E,2 E, E, | A,,2 A,,2 F, F, | E,3 E, E, E, | A,,2 z2 D, D, |
+A,2 A,2 G, G, | F,4 F, F, | G,2 F,2 C, C, | D,2 D,2 D, D, |
+A,2 G,2 F, E, | D,2 F,2 F, E, | D,3 =C, B,, A,, | G,,2 z G, G, G, |
+A,2 A,2 A, A, | D,2 z2 G, F, | E,3 G, F, E, |
+(C,2 D,2) A,, A,, | A,,3 A,, A,, A,, | D,4 |]

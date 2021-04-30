@@ -1,0 +1,54 @@
+%abc-2.2
+T: 111 하늘 높은 곳에 영광
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/4
+Q: 1/4=94
+K: Eb
+%%score [(S A) (T B)]
+V: S clef=treble
+B,/E/ | G G B3/4 B/4 F/ G/ | E B, z B,/ E/ | G G B/A/ F/G/ | E2 z G/F/ |
+w: 귀 ‐ 여 운 아 기 구 세 주 여 우 리 구 원 예 ‐ 수 ‐ 여 우 ‐
+F F G/=A/ B/ c/ | d B z/ B/ =A/ G/ | F2 z/ F/ G/ =A/ | B2 z/ B/ B/ B/ |
+w: 리 는 기 ‐ 다 리 오 니 기 다 리 는 이 마 음 에 어 서 빨
+B2 z/ B/ B/ B/ | B3 z | (e3/2 e/) B z | (e3/2 e/) B z |
+w: 리 임 하 소 서 영 _ 광 영 _ 광
+c3/2 c/ c c | B2 G z | (e3/2 e/) e z | (d3/2 d/) d z | c3/2 c/ c c |
+w: 하 늘 높 은 곳 에 영 _ 광 영 _ 광 하 느 님 께
+B2 B z | (d3/2 d/) d z | (e3/2 e/) e B/ B/ | d c B A |
+w: 영 광 영 _ 광 영 _ 광 산 을 울 려 반 향
+(B3/2 A/) G/ z/ z | (d3/2 d/) d z | (e3/2 e/) e/ B/ B/ B/ | d c B A |
+w: 하 ‐ 네 영 _ 광 영 _ 광 다 함 께 찬 미 드 리
+G2 z B,/3 B,/3 B,/3 | C D E F | G F G A | B2 d2 |
+w: 세 영 광 이 하 느 님 께 하 느 님 께 영 광
+(e3/2 e/) e z | (d3/2 d/) d z | c3/2 c/ B e | (e3 d) | e3 |]
+w: 영 _ 광 영 _ 광 하 느 님 께 영 ‐ 광
+V: A clef=treble
+B,/E/ | E E F3/4 F/4 D/ D/ | B, B, z B,/ B,/ | E E D D | E2 z D |
+E D E F/ F/ | F F z/ G/ F/ E/ | E2 z/ C/ D/ E/ | D2 z/ D/ D/ D/ |
+E2 z/ E/ F/ G/ | A3 z | (G3/2 G/) G z | (G3/2 G/) F z |
+F3/2 F/ F F | G2 E z | (G3/2 G/) G z | (F3/2 F/) F z | =A3/2 A/ A A |
+F2 F z | (F3/2 F/) F z | (E3/2 E/) E B/ B/ | B A G F |
+(G3/2 F/) E/ z/ z | (F3/2 F/) F z | (E3/2 E/) E/ B/ B/ B/ | B A G F |
+E2 z B,/3 B,/3 B,/3 | C D C D | E D E F | F2 F2 |
+(B3/2 B/) B z | (B3/2 B/) B z | G3/2 G/ G G | (F2 G A) | G3 |]
+V: T clef=bass
+G, | B, B, B,3/4 B,/4 A,/ B,/ | G, G, z G,/ G,/ | C C B, A,/B,/ | G,2 z B, |
+C B, B, B,/ =A,/ | B, B, z/ B,/ B,/ B,/ | =A,2 z/ A,/ B,/ C/ | B,2 z/ B,/ B,/ A,/ |
+G,2 z/ B,/ B,/ B,/ | B,3 z | (B,3/2 B,/) B, z | (C3/2 C/) B, z |
+A,3/2 A,/ A, D | B,2 B, z | (C3/2 C/) C z | (=A,3/2 A,/) A, z | C3/2 C/ C E |
+D2 D B,/ B,/ | A,2 A, B,/ B,/ | G,2 G, B,/ B,/ | D C B, A, |
+w: * * 천 사 들 의 노 랫 소 리
+(B,3/2 A,/) G,/ B,/ B,/ B,/ | A,2- A,/ B,/ B,/ B,/ | G,2- G,/ B,/ B,/ B,/ | D C B, A, |
+w: * * * 천 사 들 의 _ 노 랫 소 리 _
+G,2 z B,,/3 B,,/3 B,,/3 | C, D, E, B, | B, B, B, C | B,2 B,2 |
+(E3/2 E/) E z | (F3/2 F/) F z | E3/2 E/ D C | (C2 B,2) | B,3 |]
+V: B clef=bass
+E, | E, E, D,3/4 D,/4 B,,/ B,,/ | E, E, z E,/ E,/ | C, C, D, B,, | E,2 z B, |
+=A, B, E, D,/ C,/ | B,, D, z/ E,/ E,/ E,/ | F,2 z/ F,/ F,/ F,/ | B,2 z/ B,,/ B,,/ B,,/ |
+E,2 z/ G,/ F,/ E,/ | D,3 z | (E,3/2 E,/) E, z | (C,3/2 C,/) D, z |
+F,3/2 F,/ F, D, | E,2 E, z | (C,3/2 C,/) C, z | (F,3/2 F,/) F, z | F,3/2 F,/ F, F, |
+B,2 B, z | (B,,3/2 B,,/) B,, z | (E,3/2 E,/) E, B,/ B,/ | B, A, G, F, |
+(G,3/2 F,/) E,/ z/ z | (B,,3/2 B,,/) B,, z | (E,3/2 E,/) E,/ B,/ B,/ B,/ | B, A, G, F, |
+E,2 z B,,/3 B,,/3 B,,/3 | C, D, C, B,, | E, B,/A,/ G, F,/E,/ | D,2 B,2 |
+(G,3/2 G,/) G, z | (B,3/2 B,/) B, z | C3/2 C/ G, C | (A,2 B, B,,) | E,3 |]

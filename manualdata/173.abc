@@ -1,0 +1,54 @@
+%abc-2.2
+T: 173 사랑의 주여 오소서 (Veni Jesu Amor Mi)
+C: 김광남 역사
+C: Luigi Cherubini 작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 3/4
+L: 1/4
+Q: 1/4=60
+K: D
+%%score [(S A) (T B)]
+V: S clef=treble
+F2 F | F2 F | F2 G/E/ | A2 z | D D z |
+w: 사 랑 이 신 예 수 ‐ 여 어 서
+E E z | F3/2 D/ A/ F/ | F E z | F2 F |
+w: 빨 리 내 맘 에 오 소 서 사 랑
+F2 F | F2 G/E/ | A2 z | d2 d |
+w: 이 신 예 수 ‐ 여 내 마
+d2 d | d2 c | d F F | (F3/2 E/) D |
+w: 음 에 오 소 서 사 랑 이 ‐ 신
+(D E) F | E G G | (G3/2 F/) E | (E F) G |
+w: 예 ‐ 수 여 사 랑 이 ‐ 신 예 ‐ 수
+F A A | (A3/2 G/) F | (B3/2 c/) d/B/ | A z A |
+w: 여 내 마 음 ‐ 에 오 ‐ 소 ‐ 서 사
+A z ^A | B z e | d2 c | d z2 | z3 | z A A |
+w: 랑 사 랑 주 예 수 여 내 게
+A2 G | F z2 | z3 | z A A | A2 G | F2 z |]
+w: 오 소 서 내 게 오 소 서
+V: A clef=treble
+D2 D | D2 D | D2 C | D2 z | D D z |
+C C z | D3/2 D/ D/ D/ | D C z | D2 D |
+D2 D | D2 C | D2 z | (F G) A |
+B2 A | ^G2 =G | F D D | (D3/2 C/) D |
+D2 D | C E E | (E3/2 D/) C | (C D) E |
+D D C | (D3/2 C/) D | D2 D | D z C |
+D z F | E z G | F2 G | F z2 | z4 | z F F |
+E2 E | D z2 | z4 | z D D | (D C) C | D2 z |]
+V: T clef=bass
+(A, D) C | B,2 A, | A,2 A, | A,2 z | F, F, z |
+A, A, z | A,3/2 F,/ F,/ A,/ | A, A, z | (A, D) C |
+B,2 A, | A,2 A, | A,2 z | A,2 A,/D/ |
+D2 D | B,2 A, | A, A, A, | (A,3/2 G,/) F, |
+(F, G,) A, | A, A, A, | A,2 A, | A,2 A, |
+A, F, G, | A,2 A, | (G,3/2 A,/) B,/G,/ | F, z G, |
+A, z =C | B, z B, | A,2 A, | A, z2 | z4 | z A, A, |
+A,2 A, | A, z2 | z3 | z F, F, | E,2 A, | A,2 z |]
+V: B clef=bass
+D,2 D, | D,2 D, | A,2 A,/G,/ | F,2 z | B,, B,, z |
+A,, A,, z | D,3/2 D,/ D,/ D,/ | A,, A,, z | D,2 D, |
+D,2 D, | A,2 A,/G,/ | F,2 z | (D, E,) F, |
+G,2 F, | E,2 A, | D, D, D, | D,2 D, |
+D,2 D, | A,, A,, A,, | A,,2 A,, | A,,2 C, |
+D, D, E, | (F, E,) D, | D,2 D, | D, z E, |
+F, z D, | G, z G, | A,2 A,, | D, z2 | z3 | z D, D, |
+C,2 C, | D, z2 | z3 | z A,, A,, | A,,2 A,, | D,2 z |]

@@ -1,0 +1,33 @@
+%abc-2.2
+T: 25 사랑의 하느님
+C: Trad. Melody
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/4
+Q: 1/4=84
+K: Eb
+%%score [(S A) (T B)]
+V: S clef=treble
+E2 E E | F D E2 | G2 G G | A F G2 |
+w: 사 랑 의 하 느 님 자 비 의 하 느 님
+B2 e c | B3/2 B/ A G | A2 G G | F3 z |
+w: 우 리 의 몸 과 맘 받 으 옵 소 서
+B2 c B | B3/2 G/ A2 | A2 B A | A3/2 F/ G2 |
+w: 은 총 의 샘 이 여 위 로 의 샘 이 여
+G2 B A | G3/2 F/ E A | G2 F2 | E3 z |]
+w: 우 리 의 애 원 을 들 으 소 서
+V: A clef=treble
+B,2 C C | C B, B,2 | D2 E E | E D E2 |
+E2 E E | D3/2 E/ F E | (C D) E E | D3 z |
+(E _D) C/=D/ =E/F/ | G F (F E) | (D C) B,/C/ D/E/ | F E E2 |
+=E2 F F | D D C E | E2 (E D) | B,3 z |]
+V: T clef=bass
+G,2 G, G, | F, F,/A,/ (G, B,) | =B,2 C _D | C B, B,2 |
+G,2 A, =A, | (B, A,/) G,/ B, B, | A,2 B, C | D3 z |
+(B, A,) G, C | C C C2 | (A, G,) F, B, | B, B, B,2 |
+C2 C C | =B, B, G, C | B,2 A,2 | G,3 z |]
+V: B clef=bass
+(E, D,) C, B,, | A,, B,, (E, G,) | (G, F,) E, E, | A,, B,, E,2 |
+(E, D,) C, F, | B,,3/2 E,/ D, E, | F,2 G, =A, | B,3 z |
+(G, F,) =E,/=D,/ C, | F, F, F,2 | (F, E,) D,/C,/ B,, | E, E, (E, _D,) |
+C,2 F, F, | G, G, C, A,, | B,,2 B,,2 | E,3 z |]

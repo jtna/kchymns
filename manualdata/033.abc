@@ -1,0 +1,23 @@
+%abc-2.2
+T: 33 우리 주 예수 그리스도
+C: William C. Burns 작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/4
+Q: 1/4=80
+K: Bb
+%%score [(S A) (T B)]
+V: S clef=treble
+D/E/ | F G F B | B A2 A/B/ | c E G F | D3 D/E/ |
+w: 우 ‐ 리 주 예 수 그리 스도 내 ‐ 영 의 위 로 여 내 ‐
+F F B A | A G2 G | F B A c | B3 |]
+w: 마 음 주 께 드 려 참 평 화 누 리 리
+V: A clef=treble
+B, | D E D F | =E F2 F | C C C C | B,3 B, |
+B, B, D D | C (B, C) ^C | D F F E | D3 |]
+V: T clef=bass
+B, | B, B, B, D | _D C2 C/B,/ | A, A, A, F, | F,3 F, |
+F, F, F, F, | ^F, G,2 B, | B, D C A, | B,3 |]
+V: B clef=bass
+B, | B,, E, B,, B,, | G, (A, G,) F, | F, F, F, A,, | B,,3 B,,/C,/ |
+D, D, B,, D, | D, E,2 =E, | F, F, F, F, | B,,3 |]
