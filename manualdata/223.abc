@@ -1,0 +1,32 @@
+%abc-2.2
+T: 223 주여 용서하여 주소서 (Parce Domine)
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/4
+Q: 1/4=78
+K: Ab
+%%score [(S A) (T B)]
+V: S clef=treble
+c c c B | B2 A2 | c c c B | (B A) (B A) | (G2 F) z |
+w: 주 여 당 신 백 성 용 서 하 여 주 ‐ 소 ‐ 서 ‐
+A2 G A | B2 c2 | G A (B A) | G (A G2) | F4 |
+w: 영 원 히 주 여 노 하 지 ‐ 마 소 ‐ 서
+F/ A/ B/ c8 B/ A/ B/ c/ c |
+w: 주 여 내 기도를 들 어 주 소 서 
+c8 B/ A/ B/A/ G ||
+w: 내~비는~소리를~귀여겨 들 으 소 ‐ 서
+V: A clef=treble
+F F F F | =E2 F2 | F F F F | F2 F2 | (=E2 F) z |
+E2 E E | (F E/D/) C2 | C C (D F) | F (F =E2) | C4 |
+F3/2- F4 "<("">)"G4 F2 G |
+A4 "<("">)"G4 F2 E ||
+V: T clef=bass
+A, A, A, B, | C2 C2 | A, A, A, B, | (B, C) D2 | (B,2 A,) z |
+A,2 C A, | (A, G,) G,2 | G, F, (F, D) | D (C B,2) | A,4 |
+A,3/2- A,4 "<("">)"C4 D2 C |
+C4- "<("">)"C4 D2 B, ||
+V: B clef=bass
+F, E, D, D, | C,2 F,2 | F, E, =D, D, | _D,2 B,,2 | (C,2 D,) z |
+C,2 C, C, | (D, E,) =E,2 | =E, F, B,,2 | B,, C,3 | F,4 |
+F,3/2- F,4 "<("">)"E,4 D,2 E, |
+F,4 "<("">)"E,4 D,2 E, ||

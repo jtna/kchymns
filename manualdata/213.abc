@@ -1,0 +1,33 @@
+%abc-2.2
+T: 213 제단에 예물을 드리려 할 때
+C: 프랑스 성가
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/4
+Q: 1/4=106
+K: D
+%%score [(S A) (T B)]
+V: S clef=treble
+F2 ^E F | (G A) G F | E2 ^D E | ^E2 F z |
+w: 제 단 에 예 ‐ 물 을 드 리 려 할 때
+A2 ^G A | B c d B | A G G F | F2 E z |
+w: 너 에 게 원 한 품 은 형 제 생 각 나 면
+F2 ^E F | G A G F | E2 ^D E | ^E2 F z |
+w: 어 서 가 그 형 제 와 화 해 를 하 고
+A2 ^G A | B c d F | E2 ^D E | (C2 D) z |]
+w: 돌 아 와 그 예 물 바 쳐 드 려 라 ‐
+V: A clef=treble
+D2 D D | (E F) E D | C2 ^B, C | D2 D z |
+D2 D D | D E F D | D C E D | D2 C z |
+D2 D D | E F E D | C2 ^B, C | D2 D z |
+D2 D D | D E F D | C2 ^B, C | A,3 z |]
+V: T clef=bass
+A,2 ^G, A, | (B, =C) B, A, | G,2 F, G, | ^G,2 A, z |
+A,2 B, A, | G, G, A, G, | A, A, A, A, | A,2 A, z |
+A,2 ^G, A, | B, =C B, A, | G,2 F, G, | ^G,2 A, z |
+A,2 B, A, | G, G, A, A, | G,2 F, G, | (^E,2 F,) z |]
+V: B clef=bass
+D,2 D, D, | D,2 D, D, | A,,2 A,, A,, | D,2 D, z |
+F,2 ^E, F, | G, E, D, G, | F, E, C, D, | A,,2 A,, z |
+D,2 D, D, | D, D, D, D, | A,,2 A,, A,, | D,2 D, z |
+F,2 ^E, F, | G, E, D, D, | A,,2 A,, A,, | D,3 z |]

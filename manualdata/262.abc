@@ -1,0 +1,33 @@
+%abc-2.2
+T: 262 고통의 어머니
+C: 이순금 작사
+C: 새가톨릭성가편찬위원회 편곡
+M: 3/4
+L: 1/4
+Q: 1/4=64
+K: Bb
+%%score [(S A) (T B)]
+V: S clef=treble
+G B A | B3/2 A/ G | A G ^F | G2 z |
+w: 고 통 의 어 머 니 마 리 아 여
+B d c | d3/2 c/ B | c c ^c | d2 z |
+w: 그 깊 은 침 묵 을 나 는 알 리
+A B c | d3/2 G/ A | B A G | ^F2 D |
+w: 가 슴 에 새 기 신 구 원 의 뜻 오
+G B c | d/c/ B/A/ G | A G ^F | G2 z |]
+w: 아 들 의 고 ‐ 통 ‐ 을 나 누 셨 네
+V: A clef=treble
+G G G | ^F F D | E D D/C/ | (C B,) z |
+B, F G | F E D | E G G | (G ^F) z |
+A G G | ^F3/2 =E/ F | G E E | D2 D |
+D G G | ^F F G | E D D/C/ | (C B,) z |]
+V: T clef=bass
+B, D E | D C B, | C B, A, | G,2 z |
+F, B, B, | A, A, F, | G, C/B,/ A,/G,/ | A,2 z |
+D D C | A, D D | D C C/B,/ | (B, A,) D |
+D D C/G,/ | A,/E/ D/C/ B, | C B, A, | G,2 z |]
+V: B clef=bass
+G, G, C | D D, G, | C, D, D, | E,2 z |
+D, B,, E, | F, F, B,, | E, E, E, | D,2 z |
+^F, G, E, | D, D, D, | G, C, C, | D,2 D/C/ |
+B,/A,/ G,/F,/ E, | D, D, E, | C, D, D, | G,,2 z |]

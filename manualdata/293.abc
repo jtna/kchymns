@@ -1,0 +1,32 @@
+%abc-2.2
+T: 293 보호 천사
+C: 새가톨릭성가편찬위원회 편곡
+M: 3/4
+L: 1/4
+Q: 1/4=70
+K: G
+%%score [(S A) (T B)]
+V: S clef=treble
+D | G/ F/ G A | B G B | d/ B/ G B | A2 D |
+w: 주 께 서 보 내 주 신 하 늘 의 천 사 여 연
+G/ F/ G A | B G B | d/ B/ G E | D2 B |
+w: 약 한 우 리 들 을 보 호 해 주 소 서 우
+d/ c/ B d | c/B/ A c | B/A/ G B | A2 D | G/F/ G A |
+w: 리 를 보 호 하 ‐ 는 수 호 ‐ 천 사 여 모 든 ‐ 위 험
+B d d | A/c/ B A | B2 B | d/ B/ G A | G2 |]
+w: 에 서 지 켜 ‐ 주 시 고 늘 함 께 하 소 서
+V: A clef=treble
+D | D/ D/ D D | D D G | A/ G/ G G | (G F) D |
+D/ D/ D D | D D E | D/ D/ C ^C | D2 F |
+G/ G/ G F | E F E | D E D | D2 D | D D D |
+D =F F | E D D | D2 D | D/ D/ C C | B,2 |]
+V: T clef=bass
+B, | B,/ A,/ G, F, | G, B, D | D/ D/ D D | (D A,) F, |
+G,/ A,/ B, F, | G, B, G, | G,/ G,/ E, G, | F,2 A, |
+B,/ A,/ G,/A,/ B,/A,/ | G, F,/G,/ A,/G,/ | F, E,/F,/ G, | (G, F,) G, | B,/A,/ G, F, |
+G, G, ^G, | A, F, F, | G,2 G, | =F,/ F,/ E, _E, | D,2 |]
+V: B clef=bass
+G,, | G,,/ A,,/ B,, A,, | G,, G, G, | F,/ G,/ B, G, | D,2 D, |
+B,,/ A,,/ G,, D, | G,, G, E, | B,,/ G,,/ C, A,, | D,2 D, |
+G,/ G,/ E, B,, | C, D, A,, | B,, C, G,, | D,2 B,, | G,,/A,,/ B,, D, |
+G, B,, B,, | C, D, D, | G,,2 G,, | G,,/ G,,/ G,, G,, | G,,2 |]

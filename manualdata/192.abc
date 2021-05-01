@@ -1,0 +1,30 @@
+%abc-2.2
+T: 192 지존하신 성체 (Tantum Ergo)
+C: 그레고리오 성가
+C: 새가톨릭성가편찬위원회 편곡
+L: 1/8
+Q: 1/4=64
+%%score Melody [(S A) (T B)]
+V: Melody clef=treble
+E E F ED G G Ac c2 cd c c B A c (BA G2) |
+w: 지 존 하 신 ‐ 성 체 앞 ‐ 에 꿇 ‐ 어 경 배 드 리 세 ‐ ‐
+G A c B A G A G2 A B G G E A (A2 D2) |
+w: 묵 은 계 약 완 성 하 는 새 계 약 을 이 뤘 네 ‐
+E G G E G A A G2 A B G AG FE D E2 || EFE (D2 E2) |]
+w: 오 묘 하 온 성 체 신 비 믿 음 으 로 ‐ 알 ‐ 리 라 아 ‐ ‐ 멘 ‐
+V: S clef=treble
+EEF ED GG Ac c2 cdc cB Ac BA G2 |
+GAcB AGA G2 ABGG EA (A2 D2) |
+EGGE GAA G2 AB GAG FED E2 || EFE (D2 E2) |]
+V: A clef=treble
+C3- C2- C2 F2 E2 G3- G2 E2- E4 |
+E4- E3- E2 E4- E2 D4 |
+C4 E3- E2 E2- E3 A,3 C2 || C3 D2 C2 |]
+V: T clef=bass
+A,3- A,2 G,2 D2 C2 C3- C2- C2 G,A, B,2 |
+C4- C3 B,2 C4- C2 A,4 |
+G,4 C3 B,2 C2- C3 F,3 A,2 || A,2 G, F,2 E,2 |]
+V: B clef=bass
+A,3 E,2- E,2 D,2 A,2 E,3- E,2- E,2- E,4 |
+C,4- C,3 E,2 C,4- C,2 F,4 |
+E,4- E,3- E,2 C,2- C,3 D,3 A,,2 || A,,3- A,,4 |]

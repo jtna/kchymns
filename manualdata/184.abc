@@ -1,0 +1,25 @@
+%abc-2.2
+T: 184 구원을 위한 희생 (O Salutaris Hostia)
+C: 그레고리오 성가
+C: 새가톨릭성가편찬위원회 편곡
+L: 1/8
+Q: 1/4=70
+K: F
+%%score Melody [(S A) (T B)]
+V: Melody clef=treble
+F A G A B AG F F2 A A G A c =B c c2 |
+w: 구 원 의 희 생 되 ‐ 시 어 천 국 의 문 여 시 는 주
+c d c A B cB A G2 A F G A B AG F F2 || FGF (E2 F2) |]
+w: 원 수 들 이 괴 롭 ‐ 히 니 위 로 와 힘 주 옵 ‐ 소 서 아 ‐ ‐ 멘 ‐
+V: S clef=treble
+FAG AB AGF F2 AAG Ac =Bc c2 |
+cdcA BcBA G2 AFGA BAGF F2 || FGF (E2 F2) |]
+V: A clef=treble
+C3- C2 D3 C2 C3- C2 D2 E2 |
+F4- F E2 F D2 C4- C D3 C2 || C3- C4 ]
+V: T clef=bass
+A,3- A,2 B,3 A,2 A,3- A,2 G,2- G,2 |
+A,4 A, G,2 A, B,2 A,4- A, B,3 A,2 || A,3 G,2 A,2 |]
+V: B clef=bass
+F,3- F,2- F,3- F,2 E,3- E,2 D,2 C,2 |
+F,4- F,4- F,2 F,4- F,4- F,2 || F,3- F,4 |]

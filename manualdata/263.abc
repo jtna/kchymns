@@ -1,0 +1,19 @@
+%abc-2.2
+T: 263 십자가 길의 성모
+C: 그레고리오 성가
+C: 새가톨릭성가편찬위원회 편곡
+L: 1/8
+Q: 1/4=60
+K: F
+%%score Melody [(S A) (T B)]
+V: Melody clef=treble
+F G A G A c B A2 A G F E D E D C2 G F G A G F F2 || FGF (E2 F2) |]
+w: 주 예 수 님 높 이 달 린 십 자 곁 에 성 모 서 서 비 통 하 게 우 시 네 아 ‐ ‐ 멘 ‐
+V: S clef=treble
+FGAG AcB A2 AG FE DED C2 GFGA GF F2 || FGF (E2 F2) |]
+V: A clef=treble
+F4- F3- F2 E2 C2 B,3 C2 D4- D2 C2 || C3- C4 |]
+V: T clef=bass
+A,4 D3 C2 C4 F,3 E,2 G,4 B,2 A,2 || A,3 (G,2 A,2) |]
+V: B clef=bass
+F,4- F,3- F,2 C,4- C,3- C,2 B,,4- B,,2 F,2 || F,3- F,4 |]

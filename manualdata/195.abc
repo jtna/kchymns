@@ -1,0 +1,31 @@
+%abc-2.2
+T: 195 천주 성자 예수 흠숭합니다 (Adoro Te Devote)
+C: 그레고리오 성가
+C: 새가톨릭성가편찬위원회 편곡
+L: 1/8
+Q: 1/4=60
+K: D
+%%score Melody [(S A) (T B)]
+V: Melody clef=treble
+D F A A A AB A2 G F E D D2 D F A A AB A2
+w: 밀 떡 형 상 그 안 ‐ 에 감 추 어 계 신 천 주 성 자 예 ‐ 수
+G F E D D2 | A A Bc d dc A2 B A G F E2
+w: 흠 숭 합 니 다 내 온 마 ‐ 음 정 ‐ 성 다 기 울 여 도
+F A G F ED E2 F D E D D2 || DED (C2 D2) |]
+w: 주 를 알 기 에 ‐ 는 부 족 하 외 다 아 ‐ ‐ 멘 ‐
+V: S clef=treble
+DFAA AAB A2 GFED D2 DFAA AB A2
+GFED D2 | AA Bcd dc A2 BAGF E2
+FAGF ED E2 FDED D2 || DED (C2 D2) |]
+V: A clef=treble
+D4- D E2 F2 D2 B,2 A,2 D4 E2 F2
+D2 B,2 A,2 D2- D3- D2 E2 D4 E2
+D4 B,2- B,2 A,2 B,2 A,2 || A,3- A,4 |]
+V: T clef=bass
+F,4- F, G,2 A,2 B,A, G,2 F,2 F,4 G,2 A,2
+B,A, G,2 F,2 | F,2- F,3- F,2 A,2 F,2 G,A,- A,2
+A,2 B,A, G,2- G,2 F,2 G,2 F,2 || F,3 E,2 F,2 |]
+V: B clef=bass
+D,4- D,3- D,2 B,,4 D,2 D,4- D,2- D,2
+B,,4 D,2 | D,2- D,3 B,,2 C,2 D,4 C,2
+D,2 B,,2- B,,2 G,,2 A,,2 G,,2 D,2 || D,3- D,4 |]

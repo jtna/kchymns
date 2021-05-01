@@ -1,0 +1,57 @@
+%abc-2.2
+T: 278 모후이시며 (Salve Regina)
+C: 그레고리오 성가
+C: 새가톨릭성가편찬위원회 편곡
+L: 1/8
+Q: 1/4=80
+K: D
+%%score [(S A) (T B)]
+V: S clef=treble
+D F A B A2 B d c B A B A A2 d A B GG E2
+w: 모 후 이 시 며 사 랑 이 넘 친 어 머 니 우 리 의 생 ‐ 명
+F G A F F E D2 || A B c d A2 B c d c B A B A2 ||
+w: 기 쁨 희 망 이 시 여 당 신 우 러 러 하 와 의 그 자 손 들 이
+d A B G E F F A B d B A B A G F E F E D2 ||
+w: 눈 물 을 흘 리 며 부 르 짖 나 이 다 슬 픔 의 골 짜 기 에 서
+A B c d A B d c B A2 d A B G G E
+w: 우 리 들 의 보 호 자 성 모 님 불 쌍 한 저 희 를
+F G A G B A A G F E FE D2 ||
+w: 인 자 로 운 눈 으 로 굽 어 보 소 ‐ 서
+A B c d c A B A A B dc B A2
+w: 귀 양 살 이 끝 날 때 에 당 신 의 ‐ 아 들
+D A B d c B A F G FE D2 ||
+w: 우 리 주 예 수 님 뵙 게 하 소 ‐ 서
+FG A A F D D2 || AB c d c BA A2 ||
+w: 너 ‐ 그 러 우 시 고 자 ‐ 애 로 우 시 ‐ 며
+ddAB GG E F G A D G F E D D2 |]
+w: 오 ‐ ‐ ‐ 아 ‐ 름 다 우 신 동 정 마 리 아 님
+V: A clef=treble
+D6- D3- D2- D2 E2 D3- D2 E2
+D2 C2 B,2 A,2 || F4 E2 D4- D3 C2 ||
+D3 E2 D D3- D2 E D3 B,4 A,2 ||
+E3 D D3- D2 E2 D3- D3-
+D4- D2 D3 B,2 A,2 ||
+E3 F E4 F2- F3 E2
+D2- D3- D3 B,3 A,2 ||
+D2 C B,3 A,2 || E3 D2- D2 C2 ||
+D4 E3 D2 E B,3- B,2 A,2 |]
+V: T clef=bass
+F,3 G, F,2 G,3- G,2 F,2 E,2 F,3 G,2- G,2
+F,4 G,2 F,2 || A,4- A,2 F,4 G,3 E,2 ||
+A,3- A,2- A, B,3- B,2 C B,3 A, G,3 F,2 ||
+A,3 F, F,3- F,2 A,2 F,3 G,3-
+G,4 F,2 A, B, A,2 G,2 F,2 ||
+A, G,2 F, A,4- A,2- A,3- A,2
+F,2 G,3 (F,3 E,) G,2 F,2 ||
+A,3 G,3 F,2 || A,3 F,2 G,F, E,2 ||
+F,4 G,2 A,- A,3 G,3- G,2 F,2 |]
+V: B clef=bass
+D,6- D,3- D,2- D,2 C,2 B,,3- B,,2- B,,2
+A,,4 G,,2 D,2 || D,4 C,2 B,,3 A,, G,,3 A,,2 ||
+F,3 C,2 D, D,3- D,2 C, D,3- D,4 D,2 ||
+C,3 B,, A,,3 B,,2 C,2 B,,3- B,,3-
+B,,4 D,2 C, D,3- D,2- D,2 ||
+C, B,,3 C,4 D,2- D,3 C,2
+D,2- D,3- D,3- D,3- D,2 ||
+D,3- D,3- D,2 || C,3 B,,2 G,,2 A,,2 ||
+A,,4 B,,2 C, D,2 C, B,,3 G,,2 D,2 |]

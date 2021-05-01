@@ -1,0 +1,33 @@
+%abc-2.2
+T: 260 영광의 성모
+C: Choral
+C: 새가톨릭성가편찬위원회 편곡
+M: 6/8
+L: 1/8
+Q: 1/8=90
+K: Ab
+%%score [(S A) (T B)]
+V: S clef=treble
+E | c2 c d2 c | B2 c A2 A | G2 G AB c | d2 c B2 E |
+w: 영 광 의 성 모 마 리 아 빛 나 는 샛 ‐ 별 이 시 여 약
+c2 c ed c | B2 c A2 c | Be G B2 A | G2 F E2 E |
+w: 한 자 의 ‐ 힘 이 시 여 죄 인 ‐ 들 피 난 처 시 여 괴
+d2 c B2 A | G2 A B2 E | d2 c cB A | G2 A B2 E |
+w: 로 움 의 위 로 시 며 우 리 들 의 ‐ 도 움 이 여 영
+c2 c ed c | B2 c A2 A | AG F EA B | c2 B A2 |]
+w: 광 의 성 ‐ 모 마 리 아 우 리 ‐ 위 해 ‐ 비 옵 소 서
+V: A clef=treble
+E | E2 E F2 E | D2 E C2 E | E2 E E2 E | E2 E E2 E |
+E2 E _GF E | D2 E C2 E | E2 E =D2 D | E2 =D E2 E |
+E2 E E2 E | E2 E E2 E | E2 E E2 E | E2 E E2 E |
+E2 E _GF E | D2 E C2 E | FE D E2 F | E2 D C2 |]
+V: T clef=bass
+E, | A,2 A, A,2 A, | G,2 G, A,2 A, | B,2 B, A,G, A, | G,2 A, G,2 E, |
+A,2 A, A,2 A, | G,2 G, A,2 A, | G,2 G, F,2 B, | B,2 A, G,2 G, |
+G,2 A, G,2 F, | E,2 F, G,2 G, | G,2 A, A,G, F, | E,2 F, G,2 E, |
+A,2 A, A,2 A, | G,2 G, A,2 A, | A,2 A, A,2 A, | A,2 G, A,2 |]
+V: B clef=bass
+E, | A,,2 A,, A,,2 A,, | A,,2 A,, A,,2 C, | E,2 D, C,B,, A,, | E,2 E, E,2 E, |
+A,,2 A,, A,,2 A,, | A,,2 A,, A,,2 A,, | B,,2 B,, B,,2 B,, | B,,2 B,, E,2 E, |
+E,2 E, E,2 E, | E,2 E, E,2 E, | E,2 E, E,2 E, | E,2 E, E,2 E, |
+A,,2 A,, A,,2 A,, | A,,2 A,, A,,2 C, | D,E, F, C,2 D, | E,2 E, A,,2 |]
