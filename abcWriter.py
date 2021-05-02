@@ -309,12 +309,17 @@ class AbcWriter(converter.subConverters.SubConverter):
             measures = p.getElementsByClass('Measure')[p._repeatStart:end_measure]
             for m in measures:
                 ms = ''
+                bar = '|'
                 for n in m.notesAndRests:
                     ms = ms + self.make_note(n, obj)
                     if (vnum == 0) and n.lyric:
                         ws = ws + n.lyric + ' '
 
-                voices = voices + ms + '| '
+                if m.finalBarline:
+                    if m.finalBarline.type == 'double':
+                        bar = '||'
+
+                voices = voices + ms + bar + ' '
                 total += 1
                 x += 1
 
