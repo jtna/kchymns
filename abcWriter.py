@@ -255,8 +255,7 @@ class AbcWriter(converter.subConverters.SubConverter):
         if p:
             ts = p.flat.getElementsByClass('TimeSignature')
             if ts:
-                mstr = str(ts[0].numerator) + '/' + str(ts[0].denominator)
-                header = header + 'M: ' + mstr + '\n'
+                header = header + 'M: ' + ts[0].ratioString + '\n'
             else:
                 logging.warning(f"No time signature found in {p}")
 
@@ -307,9 +306,14 @@ class AbcWriter(converter.subConverters.SubConverter):
             ws = ''
             end_measure = None if not p._repeatEnd else (p._repeatEnd + 1)
             measures = p.getElementsByClass('Measure')[p._repeatStart:end_measure]
-            for m in measures:
+            for mnum, m in enumerate(measures):
                 ms = ''
                 bar = '|'
+                if (mnum > 0) and m.timeSignature:
+                    ms = '[M:' + m.timeSignature.ratioString + '] ' # no space between | and [M:
+                elif x > 0:
+                    ms = ms + ' '
+
                 for n in m.notesAndRests:
                     ms = ms + self.make_note(n, obj)
                     if (vnum == 0) and n.lyric:
@@ -319,7 +323,7 @@ class AbcWriter(converter.subConverters.SubConverter):
                     if m.finalBarline.type == 'double':
                         bar = '||'
 
-                voices = voices + ms + bar + ' '
+                voices = voices + ms + bar
                 total += 1
                 x += 1
 
@@ -334,7 +338,7 @@ class AbcWriter(converter.subConverters.SubConverter):
                 is_last = (m is measures[-1])
 
                 if is_newline or is_last:
-                    voices = voices[:-1] + (']\n' if is_last else '\n')
+                    voices = voices + (']\n' if is_last else '\n')
                     x = 0
                     y += 1
                     if ws:
