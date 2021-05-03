@@ -15,6 +15,7 @@ class AbcWriter(converter.subConverters.SubConverter):
     MEASURESPERLINE = 4
     UNIHYPHEN = '‐' # unicode hyphen
     metadata = {}
+    startOffset = 0
 
     def get_note_name(self, n, obj):
         try:
@@ -141,18 +142,30 @@ class AbcWriter(converter.subConverters.SubConverter):
         for i,p in enumerate(obj.parts):
             p._id = part_ids[i] if i<4 else p.id
 
+        # figure out where to start and end writing
+        startOff = self.startOffset
+        endOff = None
+
+        if self.startOffset == -1:
+            # search for a repeat in the first part
+            startOff = 0
+            p = next((pp for pp in obj.parts if not pp._disabled), None)
+            if p:
+                mnum = -1
+                for el in p.recurse():
+                    if type(el) is stream.Measure and len(el.notesAndRests) > 0:
+                        mnum += 1
+                    elif type(el) is bar.Repeat and el.direction == 'start':
+                        startOff = mnum
+                    elif type(el) is bar.Repeat and el.direction == 'end':
+                        # if repeats have different endings, ignore those
+                        endOff = mnum+1 # list slice is [:)
+                        break
+
         for p in obj.parts:
-            p._repeatStart = 0
-            p._repeatEnd = None
-            mnum = -1
-            for el in p.recurse():
-                if type(el) is stream.Measure:
-                    mnum += 1
-                elif type(el) is bar.Repeat and el.direction == 'start':
-                    p._repeatStart = mnum
-                elif type(el) is bar.Repeat and el.direction == 'end':
-                    p._repeatEnd = mnum
-                    break
+            p._startOffset = startOff
+            p._endOffset = endOff
+
         # local repeats often appear like this:
         # open:
         #   |Bar
@@ -304,8 +317,12 @@ class AbcWriter(converter.subConverters.SubConverter):
             y = 0 # current line
             total = 0 # total measures (measure.number is not set by nwcReader and all default to 0)
             ws = ''
-            end_measure = None if not p._repeatEnd else (p._repeatEnd + 1)
-            measures = p.getElementsByClass('Measure')[p._repeatStart:end_measure]
+
+            # empty measures (i.e. no notes and rests) are found just before/after a local repeat open/close
+            # not sure if this is a music21 parsing issue, or an issue with how the nwc was created
+            measures = [m for m in p.getElementsByClass('Measure') if len(m.notesAndRests) > 0]
+            measures = measures[p._startOffset:p._endOffset]
+
             for mnum, m in enumerate(measures):
                 ms = ''
                 bar = '|'
@@ -365,11 +382,15 @@ class AbcWriter(converter.subConverters.SubConverter):
         except FileNotFoundError:
             pass
 
+    def read_options(self, keywords):
+        self.startOffset = int(keywords['offset'])
+
     def write(self, obj, fmt, fp=None, subformats=None, **keywords):
         music = ''
         if fp is None:
             fp = environLocal.getTempFile('.abc')
 
+        self.read_options(keywords)
         self.read_metadata(fp)
         self.preprocess(obj)
 

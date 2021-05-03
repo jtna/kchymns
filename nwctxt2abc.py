@@ -1,7 +1,10 @@
 from music21 import converter
 import nwctxtReader, abcWriter
-import sys
-import os.path
+import sys, os.path, getopt
+
+def usage(scriptname):
+    print(f"Usage: {scriptname} [options] nwctxtfile")
+    print(f"  --off: measure offset to begin abcWriter. -1 tries to find a repeat")
 
 if __name__ == '__main__':
     converter.registerSubconverter(abcWriter.AbcWriter)
@@ -18,11 +21,27 @@ if __name__ == '__main__':
     # force ours
     c = nwctxtReader.ConverterNwctext()
 
-    if len(sys.argv) < 2:
-        print(f"Usage: {sys.argv[0]} nwctxtfile")
-        sys.exit(1)
+    try:
+        opts, args = getopt.getopt(sys.argv[1:], 'h', ['off='])
+    except getopt.GetoptError:
+        usage(sys.argv[0])
+        sys.exit(2)
 
-    infile = sys.argv[1]
+    if not args:
+        usage(sys.argv[0])
+        sys.exit(2)
+
+    moffset = -1 # default
+    for o, a in opts:
+        if o in ("-h"):
+            usage(sys.argv[0])
+            sys.exit()
+        elif o in ("--off"):
+            moffset = a
+        else:
+            assert False, "unhandled option"
+
+    infile = args[0]
     if not os.path.exists(infile):
         print(f"Error: {infile} doesn't exist")
         sys.exit(1)
@@ -33,7 +52,7 @@ if __name__ == '__main__':
     c.parseFile(infile)
     s = c.stream
 
-    s.write('abc', outfile)
+    s.write('abc', outfile, offset=moffset)
     print(f"Wrote {outfile}")
 
     exit(0)
