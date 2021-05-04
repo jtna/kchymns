@@ -259,18 +259,19 @@ class AbcWriter(converter.subConverters.SubConverter):
             for author in authors:
                 header = header + 'C: ' + author + '\n'
 
-        # key and time signatures are pulled from the first not-muted part
+        # key and time signatures are pulled from the first measure of the first not-muted part
         p = next((pp for pp in obj.parts if not pp._disabled), None)
 
         if not p:
             logging.warning(f"No part found in score")
 
         if p:
-            ts = p.flat.getElementsByClass('TimeSignature')
+            ts = p.getElementsByClass('Measure')[0].timeSignature
             if ts:
-                header = header + 'M: ' + ts[0].ratioString + '\n'
+                header = header + 'M: ' + ts.ratioString + '\n'
             else:
-                logging.warning(f"No time signature found in {p}")
+                pass
+                #logging.warning(f"No time signature found in {p}")
 
         lstr = str(fractions.Fraction(self.nuql/4).limit_denominator(32))
         header = header + 'L: ' + lstr + '\n' # L: note unit length
@@ -283,18 +284,15 @@ class AbcWriter(converter.subConverters.SubConverter):
             logging.warning(f"No tempo found in score")
 
         if p:
-            try:
-                ks = p.flat.getElementsByClass('KeySignature')[0]
+            ks = p.getElementsByClass('Measure')[0].keySignature
+            if ks:
                 kstr = ks.asKey().name
                 kstr = kstr.replace('major', '')
                 kstr = kstr.replace('-', 'b')
                 kstr = kstr.strip()
                 header = header + 'K: ' + kstr + '\n'
-            except IndexError:
-                pass
-                #logging.warning(f"No key signature found in {p}")
+                # TODO: are minor keys currently all converted to major?
 
-        # TODO: check all parts against the key and time signatures we've chosen
         return header
 
     def make_voices(self, obj):
