@@ -1,0 +1,28 @@
+%abc-2.2
+T: 414 사랑하는 사람은 누구나
+C: 원선오 작사/작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/4
+Q: 1/4=102
+K: F
+%%score [(S A) (T B)]
+V: S clef=treble
+F/ G/ | A3/2 ^G/ A3/2 G/ | A2 B A | D3 E/ F/ | G3/2 ^F/ G3/2 F/ |
+w: 사 랑 하 는 사 람 은 누 구 나 하 느 님 께 로 부
+G3/2- G/ A G | C3 D/ E/ | F G/- G/ A B | c3 B/ c/ |
+w: 터 ‐ 났 으 며 하 느 님 을 ‐ 압 니 다 하 느
+d d c B | A2 c F | G B A G | F3 |]
+w: 님 은 사 랑 이 시 기 때 문 입 니 다
+V: A clef=treble
+F/ F/ | F3/2 F/ F3/2 F/ | F2 F D | D3 C/ C/ | E3/2 E/ E3/2 E/ |
+D3/2- D/ E C | C3 B,/ C/ | D D/- D/ F G | (A G ^F) G/ G/ |
+F E F G | (F C) C C | D G F E | C3 |]
+V: T clef=bass
+A,/ B,/ | C =B, C B, | C2 B, D/C/ | B,3 G,/ A,/ | B, A, B, A, |
+B,- B, A, B, | (B, A,/G,/ A,) B,/ A,/ | F, D/- D/ C D | (F E _E) D/ D/ |
+B, B, C D | C2 C A, | B, D C B, | (A, B, A,) |]
+V: B clef=bass
+F,/ F,/ | F, F, F, F, | (F, _E,) D, F, | (G, ^F, G,) C,/ C,/ | C, C, C, C, |
+B,,- B,, C, C, | F,3 D,/ C,/ | B,, B,/- B,/ A, G, | (F, G, A,) B,/ B,/ |
+B, G, A, B, | F,2 E, F, | B,, B,, C, C, | F,3 |]

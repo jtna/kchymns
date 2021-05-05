@@ -1,0 +1,43 @@
+%abc-2.2
+T: 320 자비송 (미사곡 넷)
+C: 이문근 작곡
+C: 전례위원회 성음악분과 개작
+M: 2/4
+L: 1/8
+Q: 1/8=110
+K: Bb
+%%score [(S A) (T B)]
+V: S clef=treble
+D D3 | D D D2 | D G G2 | G4 ||
+w: 주 님 자 비 를 베 푸 소 서
+G G3 | B c B2 | A G G2 | D4 ||
+w: 주 님 자 비 를 베 푸 소 서
+d d c2 | d c B2 | A G G2 | D4 ||
+w: 그리 스도 님 자 비 를 베 푸 소 서
+D D D2 | D D D2 | D G G2 | G4 ||
+w: 그리 스도 님 자 비 를 베 푸 소 서
+G G3 | B c B2 | A G G2 | D4 ||
+w: 주 님 자 비 를 베 푸 소 서
+D D3 | D D D2 | D G G2 | G4 |]
+w: 주 님 자 비 를 베 푸 소 서
+V: A clef=treble
+A,2 A,2 | B, B, C2 | B, B, B,2 | B,4 ||
+D2 E2 | F F C2 | D D D2 | (D2 B,2) ||
+D D E2 | D D G2 | D D D2 | (D2 B,2) ||
+A, A, A,2 | B, B, C2 | B, B, B,2 | B,4 ||
+D2 E2 | F F C2 | D D D2 | (D2 B,2) ||
+A,2 A,2 | B, B, C2 | B, B, B,2 | B,4 |]
+V: T clef=bass
+F,2 F,2 | F, F, F,2 | F, F, E,2 | D,4 ||
+B,2 B,2 | B, B, G,2 | G, G, G,2 | G,4 ||
+B, B, A,2 | B, B, C2 | B, B, B,2 | G,4 ||
+F, F, F,2 | F, F, F,2 | F, F, E,2 | D,4 ||
+B,2 B,2 | B, B, G,2 | G, G, G,2 | G,4 ||
+F,2 F,2 | F, F, F,2 | F, F, E,2 | D,4 |]
+V: B clef=bass
+D,2 C,2 | B,, B,, A,,2 | G,, G,, G,,2 | G,,4 ||
+G,2 E,2 | D, D, E,2 | B,, B,, B,,2 | (B,,2 G,,2) ||
+G, G, C,2 | B,, B,, E,2 | G, G, G,2 | (B,,2 G,,2) ||
+D, D, C,2 | B,, B,, A,,2 | G,, G,, G,,2 | G,,4 ||
+G,2 E,2 | D, D, E,2 | B,, B,, B,,2 | (B,,2 G,,2) ||
+D,2 C,2 | B,, B,, A,,2 | G,, G,, G,,2 | G,,4 |]

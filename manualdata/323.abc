@@ -1,0 +1,73 @@
+%abc-2.2
+T: 323 주님의 기도 (미사곡 넷)
+C: 이문근 작곡
+C: 전례위원회 성음악분과 개작
+L: 1/8
+Q: 1/8=158
+K: G
+%%score Melody [(S A) (T B)]
+V: Melody clef=treble
+B, B, B, B, B, B, B, B, E E E E
+w: 하 느 님 의 자 녀 되 어 구 세 주 의
+E E E E D D D D C2 B,2 ||
+w: 분 부 대 로 삼 가 아 뢰 오 니
+[M:2/4] B, B, B,2 | B, B, B, B, | E E E2- | E4 |
+w: 하 늘 에 계 신 우 리 아 버 지 _
+E E E E | E E E2 | E E E2 | E E E2 | E4 |
+w: 아 버 지 의 이 름 이 거 룩 히 빛 나 시 며
+E E E E | E E E2 | E E G2 | G A A A | A G G G |
+w: 아 버 지 의 나 라 가 오 시 며 아 버 지 의 뜻 이 하 늘
+G E E2 | E2 B,2 | B, B, B, B, | B, B, B,2 | B, E E2- | E4 |
+w: 에 서 와 같 이 땅 에 서 도 이 루 어 지 소 서 _
+B,2 B,2 | B, B, B, B, | B, B, B,2 | B, B, B,2 | E E E2- | E4 |
+w: 오 늘 저 희 에 게 일 용 할 양 식 을 주 시 고 _
+E E E E | E E E E | E4 | E E E2 | E E E E | (E2 G2) |
+w: 저 희 에 게 잘 못 한 이 를 저 희 가 용 서 하 오 니 ‐
+G A A A | A G G G | (G2 E2) | E E E2 | E E E2 |
+w: 저 희 죄 를 용 서 하 시 고 ‐ 저 희 를 유 혹 에
+E E E2 | E B, B, B, | B,4 | B, B, B,2 | B, E E2 | E4 |]
+w: 빠 지 지 않 게 하 시 고 악 에 서 구 하 소 서
+V: S clef=treble
+x12
+x12 ||
+[M:2/4] B,B, B,2 | B,B,B,B, | EE E2- | E4 |
+EEEE | EE E2 | EE E2 | EE E2 | E4 |
+EEEE | EE E2 | EE G2 | GAAA | AGGG |
+GE E2 | E2 B,2 | B,B,B,B, | B,B, B,2 | B,E E2- | E4 |
+B,2 B,2 | B,B,B,B, | B,B, B,2 | B,B, B,2 | EE E2- | E4 |
+EEEE | EEEE | E4 | EE E2 | EEEE | (E2 G2) |
+GAAA | AGGG | (G2 E2) | EE E2 | EE E2 |
+EE E2 | EB,B,B, | B,4 | B,B, B,2 | B,E E2 | E4 |]
+V: A clef=treble
+x12
+x12 ||
+[M:2/4] B,4- | B,4- | B,4 | A,2 B,2 |
+C4- | C4 | D4- | D4 | C4 |
+B,4 | G,4- | G,4 || C4 | D4 |
+D2 C2 | B,4 | A,4 | A,4 | B,2 (C2 || B,4) |
+B,4- | B,4- | B,4- | B,4- | B,4 || A,2 B,2 |
+C4- | C4- | C4 | B,4 | G,4- | G,4 |
+C4 | D4- | D4 | C4 | B,4 |
+G,4 | F,4- | F,4 | G,4- | G,4 | ^G,4 |]
+V: T clef=bass
+x12
+x12 ||
+[M:2/4] G,4 | F,4 | G,4 | E,4- |
+E,4 | A,4 | B,4 | A,4 | E,4- |
+E,4- | E,4- | E,4- | E,4 | G,4- |
+G,4- | G,4 | F,4 | F,4 | G,4- | G,4 |
+G,4- | G,4 | F,4- | F,4 | G,4 | E,4 |
+E,4 | F,4 | E,4- | E,4- | E,4- | E,4- |
+E,4 | G,4- | G,4- | G,4- | G,4 |
+E,4- | E,4 | D,4- | D,4 | C,4 | B,,4 |]
+V: B clef=bass
+x12
+x12 ||
+[M:2/4] E,4 | D,4 | C,4- | C,2 B,,2 |
+A,,4- | A,,4- | A,,4- | A,,4- | A,,4 |
+G,,4 | E,,4 | E,2 D,2 | C,4 | B,,4 |
+E,4- | E,4- | E,4- | E,4- | E,4- | E,4 |
+E,4- | E,4 | D,4- | D,4 | C,4- | C,2 B,,2 |
+A,,4- | A,,4 | A,,4 | G,,4 | E,,4 | E,2 D,2 |
+C,4 | B,,4 | E,4- | E,4- | E,4 |
+E,,4- | E,,4- | E,,4- | E,,4- | E,,4- | E,,4 |]

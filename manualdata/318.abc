@@ -1,0 +1,72 @@
+%abc-2.2
+T: 318 주님의 기도 (미사곡 셋)
+C: 이문근 작곡
+C: 전례위원회 성음악분과 개작
+L: 1/8
+Q: 1/4=90
+K: F
+%%score [(S A) (T B)]
+V: S clef=treble
+F16 ||
+w: 하느님의~자녀~되어~구세주의~분부대로~삼가~아뢰오니
+[M:2/4] F F F F | F4 | F F F F | G4 |
+w: 하 늘 에 계 신 우 리 아 버 지
+G G G G | A A A2 | B2 A G | F E D2 | C4 |
+w: 아 버 지 의 이 름 이 거 룩 히 빛 나 시 며
+C C C C | C C C2 | D2 D2 | D4 |
+w: 아 버 지 의 나 라 가 오 시 며
+F F F F | G2 G2 | A A B A | G A G2 |
+w: 아 버 지 의 뜻 이 하 늘 에 서 와 같 이
+F F F F | D C D2 | F2 G2 | F4 |
+w: 땅 에 서 도 이 루 어 지 소 서
+z2 F F | G G G G | A A A2 | B2 A G |
+w: 오 늘 저 희 에 게 일 용 할 양 식 을
+FE D2 | C4 | C C C C | D D D D |
+w: 주 ‐ 시 고 저 희 에 게 잘 못 한 이
+D4 | F F F2 | F F F F | G4 |
+w: 를 저 희 가 용 서 하 오 니
+G G G G | F G A A | A4 | A A A2 |
+w: 저 희 죄 를 용 서 하 시 고 저 희 를
+A B A2 | G A G2 | F F F F |
+w: 유 혹 에 빠 지 지 않 게 하 시
+F4 | D C D2 | F2 G G | F4 |]
+w: 고 악 에 서 구 하 소 서
+V: A clef=treble
+x16 ||
+[M:2/4] C C C C | C4 | F F F F | (F2 ED) |
+E E G G | G G F2 | F2 D D | A, A, A,2 | G,4 |
+A, A, A, A, | A, A, A,2 | A,2 A,2 | (G,2 A,B,) |
+A, A, C C | B,2 B,2 | C C C C | C C C2 |
+C C B, B, | A, A, A,2 | A,2 B,2 | A,4 |
+z2 F F | F F E E | F F F2 | F2 D D |
+A,2 A,2 | G,4 | A, A, A, A, | A, A, A, A, |
+(G,2 A,B,) | A, A, A,2 | C C C C | B,4 |
+C C C C | C C C C | C4 | F F F2 |
+C C C2 | C C C2 | C C C C |
+(C2 B,2) | A, A, A,2 | A,2 B, B, | A,4 |]
+V: T clef=bass
+x16 ||
+[M:2/4] A, A, A, A, | (A,2 G,2) | A, A, A, A, | C4 |
+C C C C | C C C2 | B,2 F, F, | F, F, F,2 | E,4 |
+F, F, F, F, | F, F, F,2 | F,2 F,2 | D,4 |
+C, C, F, F, | F,2 E,2 | F, F, F, F, | F, F, E,2 |
+F, F, F, F, | A, A, A,G, | F,E, D,2 | C,4 |
+z2 A, A, | G, G, C C | C C C2 | B,2 F, F, |
+F,2 F,2 | E,4 | F, F, F, F, | F, F, F, F, |
+D,4 | C, C, C,2 | F, F, F, F, | (F,2 E,D,) |
+E, E, E, E, | F, F, F, F, | (F,2 G,2) | F, F, E,2 |
+F, F, F,2 | F, F, E,2 | F, F, F, F, |
+F,4 | A, A, A,G, | F,E, D, D, | C,4 |]
+V: B clef=bass
+x16 ||
+[M:2/4] F, F, F, F, | (F,2 E,2) | D, D, D, D, | C,4 |
+C, C, E, E, | F, F, F,2 | D,2 D, D, | D, D, B,,2 | C,4 |
+F, F, F, F, | F, F, F,2 | B,,2 B,,2 | B,,4 |
+F,, F,, A,, A,, | G,,2 G,,2 | F,, F,, F,, F,, | C, C, C,2 |
+D, D, D, D, | F, F, F,E, | D,C, B,,2 | F,,4 |
+z2 F, F, | C, C, C, C, | F, F, F,2 | D,2 D, D, |
+D,2 B,,2 | C,4 | F, F, F, F, | B,, B,, B,, B,, |
+B,,4 | F,, F,, F,,2 | A,, A,, A,, A,, | G,,4 |
+C, C, C, C, | A,, A,, A,, A,, | A,,4 | A,, A,, G,,2 |
+F,, F,, F,,2 | C, C, C,2 | D, D, D, D, |
+D,4 | F, F, F,E, | D,C, B,, B,, | F,,4 |]

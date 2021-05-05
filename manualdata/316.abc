@@ -1,0 +1,133 @@
+%abc-2.2
+T: 316 대영광송 (미사곡 셋)
+C: 이문근 작곡
+C: 전례위원회 성음악분과 개작
+M: 2/4
+L: 1/8
+Q: 1/4=60
+K: F
+%%score [(S A) (T B)]
+V: S clef=treble
+F G A A | A A A2 | A A G A | F2 F2 ||
+w: 하 늘 높 은 데 서 는 하 느 님 께 영 광
+F G A A | A A A A | A A A A |
+w: 땅 에 서 는 주 님 께 서 사 랑 하 시
+A2 A A | A2 G A | F2 F2 ||
+w: 는 사 람 들 에 게 평 화
+C2 C C | F4 | F F F2 | ED C2 | C4 ||
+w: 주 하 느 님 하 늘 의 임 ‐ 금 님
+C C C C | F F E2 | D2 D2 | C4 ||
+w: 전 능 하 신 아 버 지 하 느 님
+A A G2 | F G A A | A4 | B2 B2 |
+w: 주 님 을 기 리 나 이 다 찬 미
+AG F E | F4 || A A G2 | F G A A |
+w: 하 ‐ 나 이 다 주 님 을 흠 숭 하 나
+A2 A2 | B2 B2 | AG F E | F4 ||
+w: 이 다 찬 양 하 ‐ 나 이 다
+c3 B | A2 G2 | F2 E D | C4 | F2 F2 |
+w: 주 님 영 광 크 시 오 니 감 사
+G2 G A | F4 || (c3 B) | A2 G2 | F2 ED | C4 |
+w: 하 나 이 다 외 ‐ 아 들 주 예 ‐ 수
+F4 | (G2 A2) | F4 || C C C C | F2 F F |
+w: 그리 스도 ‐ 님 주 하 느 님 성 부 의
+G2 G2 | A4 || C2 C2 | F2 F2 | G2 G2 | A4 ||
+w: 아 드 님 하 느 님 의 어 린 양
+C C C C | F4 | F F E D | C2 C2 |
+w: 세 상 의 죄 를 없 애 시 는 주 님
+F G A A | A A G2 | G A F2 | F4 ||
+w: 저 희 에 게 자 비 를 베 푸 소 서
+C C C C | F4 | F F E D | C2 C2 |
+w: 세 상 의 죄 를 없 애 시 는 주 님
+F G A2 | A A G2 | G A F F | F4 ||
+w: 저 희 의 기 도 를 들 어 주 소 서
+C2 C2 | F F F F | F F E D | C2 C2 |
+w: 성 부 오 른 편 에 앉 아 계 신 주 님
+F G A A | A A G2 | G A F2 | F4 ||
+w: 저 희 에 게 자 비 를 베 푸 소 서
+c3 B | A2 G2 | F2 ED | C4 |
+w: 홀 로 거 룩 하 시 ‐ 고
+c3 B | A2 G2 | F2 ED | C4 |
+w: 홀 로 주 님 이 시 ‐ 며
+c3 B | A A G2 | F2 E2 | D D C2 |
+w: 홀 로 높 으 신 예 수 그리 스도 님
+G4 | A2 A2 | GF E2 | G G G2 |
+w: 성 령 과 함 ‐ 께 아 버 지
+A2 A2 | GF E2 | G G G G |
+w: 하 느 님 ‐ 의 영 광 안 에
+A2 B2 | A G F2 | F4 | F4 |]
+w: 계 시 나 이 다 아 멘
+V: A clef=treble
+x4 | x4 | x4 | x4 ||
+A, A, A, A, | C C C C | C C C C |
+C2 D D | E2 D D | C2 C2 ||
+C2 C C | D4 | A, A, A,2 | C2 C2 | C4 ||
+A, A, A, A, | A, A, C2 | B,2 B,2 | G,4 ||
+C C C2 | D D D D | E4 | D2 D2 |
+F2 C C | C4 || C C C2 | A, A, A, A, |
+C2 C2 | D2 D2 | F2 C C | C4 ||
+C2 C2 | C2 C2 | A,2 C C | C4 | A,2 A,2 |
+C2 D D | C4 || C4 | C2 C2 | A,2 C2 | C4 |
+A,4 | D4 | C4 || C C C C | C2 D D |
+D2 DE | F4 || A,2 A,2 | A,2 A,2 | D2 D2 | C4 ||
+C C C C | (A,2 =B,2) | C C C C | G,2 G,2 |
+C C C C | D D E2 | D D D2 | C4 ||
+C C C C | (A,2 =B,2) | C C C C | G,2 G,2 |
+C C C2 | D D E2 | D D D D | C4 ||
+C2 C2 | A, A, =B, B, | C C C C | G,2 G,2 |
+C C C C | D D E2 | D D D2 | C4 ||
+C2 C2 | C2 C2 | A,2 C2 | C4 |
+C2 C2 | C2 C2 | A,2 C2 | C4 |
+C2 C2 | C C C2 | A,2 C2 | B, B, A,2 |
+D4 | C2 C2 | C2 C2 | D D C2 |
+C2 C2 | C2 C2 | D D C C |
+C2 D2 | C C C2 | B,4 | A,4 |]
+V: T clef=bass
+x4 | x4 | x4 | x4 ||
+F, F, F, F, | F, F, F, F, | F, F, F, F, |
+F,2 F, F, | A,2 B, B, | B,2 A,2 ||
+A,2 A, A, | A,4 | F, F, F,2 | G,2 F,2 | E,4 ||
+F, F, F, F, | F, F, F,2 | F,2 F,2 | E,4 ||
+F, F, G,2 | A, A, F, F, | (E,2 D,E,) | F,2 F,2 |
+F,2 G, G, | A,4 || F, F, E,2 | F, F, F, F, |
+E,2 D,E, | F,2 F,2 | F,2 G, G, | A,4 ||
+A,2 G,2 | F,2 E,2 | F,2 G, G, | (F,2 E,2) | F,2 F,2 |
+E,2 G, G, | A,4 || (A,2 G,2) | F,2 E,2 | F,2 G,2 | (F,2 E,2) |
+F,4 | B,4 | A,4 || A, A, A, A, | A,2 B, B, |
+B,2 B,2 | C4 || F,2 F,2 | F,2 F,2 | D,2 D,E, | F,4 ||
+G, G, G, G, | F,4 | G, G, F, F, | F,2 E,2 |
+A, A, A, G, | F, F, G,2 | G, G, B,2 | A,4 ||
+G, G, G, G, | F,4 | G, G, F, F, | F,2 E,2 |
+A, A, A,G, | F, F, G,2 | G, G, B, B, | A,4 ||
+G,2 G,2 | F, F, F, F, | G, G, F, F, | F,2 E,2 |
+A, A, A, G, | F, F, G,2 | G, G, B,2 | A,4 ||
+A,2 G,2 | F,2 E,2 | F,2 G,F, | E,G,CB, |
+A,2 G,2 | F,2 E,2 | F,2 G,2 | E,G,CB, |
+A,2 G,2 | F, F, E,2 | F,2 G,2 | G, G, E,2 |
+(D,2 E,2) | F,2 F,2 | E,2 G,2 | G, G, E,2 |
+F,2 F,2 | E,2 G,2 | G, G, E, E, |
+F,2 F,2 | F, F, A,G, | (F,E, D,2) | C,4 |]
+V: B clef=bass
+x4 | x4 | x4 | x4 ||
+F,, F,, F,, F,, | F,, F,, F,, F,, | F, F, F, F, |
+E,2 D, D, | C,2 B,, B,, | F,2 F,2 ||
+F,2 F, F, | D,4 | D, D, D,2 | C,2 C,2 | C,4 ||
+F,, F,, F,, F,, | F,, F,, A,,2 | B,,2 B,,2 | C,4 ||
+F, F, E,2 | D, D, D, D, | C,4 | B,,2 B,,2 |
+D,2 C, C, | F,4 || F,, F,, C,2 | D, D, D, D, |
+C,2 C,2 | B,,2 B,,2 | D,2 C, C, | F,4 ||
+F,2 E,2 | F,2 C,2 | D,2 C, C, | C,4 | D,2 D,2 |
+C,2 B,, B,, | F,4 || (F,2 E,2) | F,2 C,2 | D,2 C,2 | C,4 |
+D,4 | B,,4 | F,4 || F, F, F, F, | F,2 B, B, |
+G,2 G,2 | F,4 || F,,2 A,,2 | D,2 D,2 | B,,2 B,,2 | F,,4 ||
+E, E, E, E, | D,4 | C, C, C, C, | C,2 C,2 |
+F, F, F, E, | D, D, D,C, | B,, B,, B,,2 | F,4 ||
+E, E, E, E, | D,4 | C, C, C, C, | C,2 C,2 |
+F, F, F,E, | D, D, D,C, | B,, B,, B,, B,, | F,4 ||
+E,2 E,2 | D, D, D, D, | C, C, C, C, | C,2 C,2 |
+F, F, F, E, | D, D, D,C, | B,, B,, B,,2 | F,4 ||
+F,2 E,2 | F,2 C,2 | D,2 C,2 | C,4 |
+F,2 E,2 | F,2 C,2 | D,2 C,2 | C,4 |
+F,2 E,2 | F, F, C,2 | D,2 C,2 | G,, G,, A,,2 |
+(B,,2 C,2) | F,,2 A,,2 | C,2 C,2 | B,, B,, C,2 |
+F,,2 A,,2 | C,2 C,2 | B,, B,, C, C, |
+F,,2 B,,2 | F, F, F,E, | (D,C, B,,2) | F,,4 |]

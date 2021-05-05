@@ -1,0 +1,33 @@
+%abc-2.2
+T: 324 하느님의 어린양 (미사곡 넷)
+C: 이문근 작곡
+C: 전례위원회 성음악분과 개작
+M: 2/4
+L: 1/8
+Q: 1/8=130
+K: Bb
+%%score [(S A) (T B)]
+V: S clef=treble
+F F F F | F F F2 | B B B2 | B2 B2 |
+w: 하 느 님 의 어 린 양 세 상 의 죄 를
+B B c d | c2 G2 ||[M:6/8] B B B F G A | G6 |
+w: 없 애 시 는 주 님 자 비 를 베 푸 소 서
+[M:2/4] F F F F | F F F2 | B B B2 | B2 B2 |
+w: 하 느 님 의 어 린 양 세 상 의 죄 를
+B B c d | c2 G2 ||[M:6/8] B B B FG A | G6 |]
+w: 없 애 시 는 주 님 평 화 를 주 ‐ 소 서
+V: A clef=treble
+D D D D | C C C2 | D D GE | F2 F2 |
+G G G G | G2 G2 ||[M:6/8] F F F D D D | D6 |
+[M:2/4] D D D D | C C C2 | D D GE | F2 F2 |
+G G G G | G2 G2 ||[M:6/8] F F F D2 D | D6 |]
+V: T clef=bass
+B, B, B, B, | C C C2 | B, B, B,2 | B,2 B,2 |
+B, B, G, G, | C2 C2 ||[M:6/8] F, F, G, A, A, A, | B,6 |
+[M:2/4] B, B, B, B, | C C C2 | B, B, B,2 | B,2 B,2 |
+B, B, G, G, | C2 C2 ||[M:6/8] F, F, G, A,2 A, | B,6 |]
+V: B clef=bass
+B, B, B, B, | A, A, A,2 | G, G, E,2 | D,2 D,2 |
+E, E, E, E, | E,2 E,2 ||[M:6/8] D, D, D, D, D, D, | G,6 |
+B, B, B, B, || A, A, A,2 | G, G, E,2 | D,2 D,2 |
+E, E, E, E, | E,2 E,2 ||[M:6/8] D, D, D, D,2 D, | G,6 |]
