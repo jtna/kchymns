@@ -97,7 +97,7 @@
 
         var cursorControl = new CursorControl();
 
-        var idx = 328;
+        var idx = 90;
 
         var synthControl; // visual widget that allows the user to control playback
         var visualObj; // result of renderAbc()
@@ -220,6 +220,10 @@
 <body onload="load()">
 <div class="container">
     <main>
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            This demo now has a proper home @ <a href="https://graduale-coreanum.web.app" style="color:white">graduale-coreanum.web.app</a>
+          </div>
         <div class="navbutton-wrapper">
             <button class="prev">&lt; PREV</button>
             <input type="text" id="numbox" pattern="[0-9]{1,3}" style="text-align:center" onfocus="this.value=''" onkeypress="numboxEnter(this)"/>
