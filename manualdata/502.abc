@@ -1,0 +1,28 @@
+%abc-2.2
+T: 502 주의 빵을 서로 나누세
+C: 흑인 영가
+C: 새가톨릭성가편찬위원회 편곡
+M: 2/2
+L: 1/4
+Q: 1/2=58
+K: D
+%%score [(S A) (T B)]
+V: S clef=treble
+A, B, | D2 D2 | D F E E | D4- | D2 D F | A2 A2 |
+w: 주 의 빵 을 서 로 나 누 세 _ 주 의 빵 을
+A c B B | A4- | A2 D F | A2 A A | A2 B A |
+w: 서 로 나 누 세 _ 주 님 의 계 명 을 지 키
+G E/F/ G G | G2 A G | F2 F2 | (E D) E2 | D4- | D2 |]
+w: 려 하 ‐ 는 자 여 주 의 빵 을 나 ‐ 누 세 _
+V: A clef=treble
+A, A, | A,2 D2 | D D C C | D4- | D2 D D | D2 G2 |
+F F ^G G | (E F G E | F2) D D | C2 E G | F2 ^D D |
+E E E E | (E D) C C | (D C) B,2 | (B, B,) C2 | A,4- | A,2 |]
+V: T clef=bass
+G, G, | F,2 G,2 | A, A, A, A, | (A,2 B,2 | A,2) B, B, | A,2 C2 |
+D D D D | (C2 A,2 | A,2) A, A, | A,2 A, A, | D2 F, B, |
+B, B, B, B, | A,2 E, E, | D,2 D,2 | A,- A,2 G, | (G,2 E, G, | F,2) |]
+V: B clef=bass
+C, C, | D,2 E,2 | F, F, G, G, | (F,2 G,2 | F,2) B, B, | F,2 E,2 |
+D, D, E, E, | (A,2 C,2 | D, E,) F, F, | G,2 C, C, | (D, C,) B,, B,, |
+E, E, D, D, | (C, B,,) A,, ^A,, | (B,, A,,) (G,, ^G,,) | A,,- A,, A,,2 | D,4- | D,2 |]

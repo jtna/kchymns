@@ -1,0 +1,58 @@
+%abc-2.2
+T: 461 엠마우스
+C: 성염 작사
+C: 원선오 작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/8
+Q: 1/4=85
+K: Eb
+%%score [(S A) (T B)]
+V: S clef=treble
+z2 C2 G2 F2 | E C2 E F E3 | G8 |
+w: 서 산 에 노 을 이 고 우 나
+z2 C2 G2 F2 | E C2 E D D B, B, | C8 |
+w: 누 리 는 어 둠 에 잠 겼 사 오 니
+z2 G2 c2 B2 | A F3 B B B A | G8 |
+w: 우 리 와 함 께 주 여 드 시 어
+z2 D2 G2 F2 | E C3 D D D B, | C6 z2 ||
+w: 이 밤 을 쉬 어 가 시 옵 소 서
+G G2 F G G2 F | G G E E F4 | F F2 E F F2 E |
+w: 주 님 의 길 만 을 재 촉 하 시 면 어 느 세 월 에 또
+F F E D E4 | c c2 c c c2 c | c c B A G4 |
+w: 뵈 오 리 이 까 누 추 한 집 이 나 따 스 하 오 니
+c c2 c d2 d2 | e d c e d4 |
+w: 이 밤 을 쉬 어 가 시 옵 소 서
+e e2 e d2 d2 | c c c c =B4 |]
+w: 이 밤 을 쉬 어 가 시 옵 소 서
+V: A clef=treble
+z2 C2 G2 F2 | E C2 E F E3 | E2 E2 D D C B, |
+C2 C2 G2 F2 | E C2 E D D B, B, | C8 |
+z2 C2 G2 =E2 | C C3 F F D D | E8 |
+z2 D2 D2 D2 | C G,3 B, B, B, B, | G,6 z2 ||
+E E2 F E E2 F | E E B, B, D4 | D D2 C D D2 C |
+C C B, B, (B,2 C2) | E E2 E F F2 F | F F D D E4 |
+E E2 E F2 F2 | E F G G G4 |
+G G2 G F2 F2 | G G A A G4 |]
+V: T clef=bass
+z2 C,2 G,2 G,2 | G, E,2 G, A, A,3 | G,2 G,2 F, F, E, D, |
+w: * * * * * * * * * * 노 을 이 고 우
+E,2 C,2 G,2 G,2 | G, E,2 G, B, B, F, F, | E,8 |
+w: 나
+z2 G,2 G,2 G,2 | F,2 A,2 F, F, B, B, | B,8 |
+z2 =B,2 B,2 G,2 | G,2 E,2 G, G, G, F, | E,6 z2 ||
+B, B, B,2 G, G, B,2 | B, B, G, G, B,4 | =B, B, C2 B, B, C2 |
+A, A, B, A, G,4 | A, A, A,2 A, A, A,2 | A, A, B, B, (B,2 _D2) |
+C A, A,2 A,2 A,2 | B, B, C C (C2 =B,2) |
+C C C2 A,2 A,2 | C C E E (E2 D2) |]
+V: B clef=bass
+C,4 =B,,2 B,,2 | C, C,2 C, C, C,3 | C,8 |
+z2 C,2 =B,,2 B,,2 | C, C,2 C, B,, B,, D, D, | C,2 E, E,/ E,/ D, D, C, B,, |
+w: * * * * * * * * * * * * 어 둠 에 잠 겼 사 오
+C,2 E,2 =E,2 C,2 | F,2 F,2 D, D, B,, B,, | (E,2 D,2 E,2 F,2 |
+w: 니
+G,2) G,,2 G,,2 =B,,2 | C,2 C,2 B,, B,, B,, D, | C,6 z2 ||
+E, E, D,2 C, C, D,2 | E, E, E, E, (B,,2 A,2) | G, G, A,2 G, G, A,2 |
+F, F, B,, B,, (E,2 C,B,,) | A,, A, G,2 F, F, E,2 | D, D, B,, B,, E,4 |
+A, A, G,2 F,2 F,2 | G, F, E, G, G,4 |
+C, D, E,2 F,2 F,2 | E, E, F, F, G,4 |]

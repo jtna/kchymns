@@ -1,0 +1,33 @@
+%abc-2.2
+T: 415 사랑이 없으면
+C: 원선오 작사/작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/4
+Q: 1/4=100
+K: Bb
+%%score [(S A) (T B)]
+V: S clef=treble
+d/ B F/ G B ||[M:2/4] B2 ||[M:4/4] G3/4 ^F/4 G3/4 A/4 B B |
+w: 사 랑 이 없 으 면 나 는 아 무 것 도
+B2 A B | c4 | d/ B F/ G B ||[M:2/4] B2 ||
+w: 아 닙 니 다 사 랑 이 없 으 면
+[M:4/4] G3/4 ^F/4 G3/4 A/4 B B | B2 B A | B3 z ||
+w: 나 는 아 무 것 도 아 닙 니 다
+D F G/ F F/ | B G F2 | D/F/ G/ F/ B B | G2 A B | c4 |]
+w: 온 갖 심 오 한 진 리 를 전 ‐ 할 수 있 다 하 더 라 도
+V: A clef=treble
+D/ D D/ E E ||[M:2/4] D2 ||[M:4/4] E3/4 E/4 E3/4 E/4 =F F |
+=E2 E G | (F3 _E) | D/ D D/ E E ||[M:2/4] D2 ||
+[M:4/4] E3/4 E/4 E3/4 E/4 =F F | G2 F E | D3 z ||
+B, D D/ D D/ | E E C2 | B,/D/ D/ D/ D D | G2 F =E | _E4 |]
+V: T clef=bass
+B,/ B, B,/ B, B, ||[M:2/4] B,2 ||[M:4/4] B,3/4 B,/4 B,3/4 B,/4 B, B, |
+C2 C B, | (B, A, G, A,) | B,/ B, B,/ B, B, ||[M:2/4] B,2 ||
+[M:4/4] B,3/4 B,/4 B,3/4 B,/4 B, B, | (B, C) (D C) | B,3 z ||
+F, B, G,/ B, B,/ | B, B, A,2 | B, B,/ B,/ B, D | C2 C B, | (B, A, G, A,) |]
+V: B clef=bass
+B,,/ B,, B,,/ E, G, ||[M:2/4] B,,2 ||[M:4/4] E,3/4 E,/4 E,3/4 E,/4 D, D, |
+C,2 C, C, | F,4 | B,,/ B,, B,,/ E, G, ||[M:2/4] B,,2 ||
+[M:4/4] E,3/4 E,/4 E,3/4 E,/4 D, D, | E,2 F,2 | B,,3 z ||
+B,, B,, B,,/ B,, B,,/ | G,, E, (F, F,,) | B,, B,,/ A,,/ G,, G,/F,/ | =E,2 F, _G, | F,4 |]

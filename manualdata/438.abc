@@ -1,0 +1,32 @@
+%abc-2.2
+T: 438 주께 감사드리자
+C: 미국 성가
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/4
+Q: 1/4=106
+%%score [(S A) (T B)]
+V: S clef=treble
+G3/2 A/ G3/2 F/ | E D C2 | c3/2 c/ d3/2 d/ | B A G2 |
+w: 주 께 감 사 드 리 자 세 상 만 들 어 주 심
+G3/2 A/ G3/2 F/ | E D C2 | F2 E3/2 C/ | D3 z |
+w: 주 께 감 사 드 리 자 이 땅 주 심
+G3/2 A/ G3/2 F/ | E D C2 | c3/2 e/ d3/2 c/ | B A G2 |
+w: 주 께 감 사 드 리 자 우 리 구 원 하 심 을
+A F E/ D/ C/ E/ | G3 A | F2 E/ D/ C/ B,/ | C3 z |]
+w: 우 리 형 제 되 시 는 그리 스도 우 리 주 님 께
+V: A clef=treble
+E3/2 F/ D3/2 D/ | C B, C2 | C3/2 E/ F D | D D D2 |
+C3/2 C/ E3/2 D/ | C B, C2 | C2 C3/2 C/ | B,3 z |
+C3/2 C/ C3/2 D/ | C B, C2 | C F ^F3/2 F/ | D D (D =F) |
+E C C/ B,/ C/ C/ | D3 E | (D A,) C/ B,/ G,/ G,/ | G,3 z |]
+V: T clef=bass
+C C B, B, | G, G, E,2 | E, A, A, A, | G, A, B,2 |
+C C C G, | G, F, E,2 | (F, A,/F,/) G, E, | (G,3 F,) |
+E, F, E, G, | G, G,/F,/ E,2 | F, C A, A, | G, ^F, G,2 |
+C A, G,/ G,/ G,/ G,/ | (G,2 F,) E, | F,2 G,/ G,/ G,/ F,/ | E,3 z |]
+V: B clef=bass
+C, F, G, G,, | C, G,, (C, B,,) | A,, A,/G,/ F, ^F, | G, ^F, (G, =F,) |
+E, F, C, B,, | C, G,, (C, _B,,) | (A,, F,,/A,,/) C, C, | G,,4 |
+C, F,, C, B,, | C, G,, (C, _B,,) | A,, A,, D, D, | G,, D,/C,/ B,,2 |
+A,, A,, C,/ D,/ E,/ C,/ | B,,3 ^C, | D,2 G,,/ G,,/ G,,/ G,,/ | C,3 z |]

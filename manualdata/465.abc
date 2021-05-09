@@ -1,0 +1,33 @@
+%abc-2.2
+T: 465 구원의 희생
+C: Lucien Deiss 작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 6/8
+L: 1/8
+Q: 1/8=158
+K: F
+%%score [(S A) (T B)]
+V: S clef=treble
+C | F2 A G A B | A3- A2 A | c c A F G A | G3- G2 C |
+w: 하 늘 의 문 을 여 는 _ 오 구 원 의 희 생 이 여 _ 신
+c2 A B c d | c3- c2 c | A G F G F D | F3- F2 ||
+w: 앙 과 사 랑 으 로 _ 하 나 되 게 하 옵 소 서 _
+A16 GA FG G2 |
+w: 나~언제나~주님을~찬미 하 ‐ 리 ‐ 니
+G16 AG FG D2 C2 ||
+w: 내~입에~그~찬미가~항상 있 ‐ 으 ‐ 리 라
+V: A clef=treble
+C | C2 F E F G | F3- F2 F | F F E D E F | E3- E2 C |
+F2 F F F F | (F3 E2) E | D D D D B, B, | (B,3 A,2) ||
+F16 E2 D2 E2 |
+D16- D4 B,A, G,2 ||
+V: T clef=bass
+A, | A,2 C C C C | C3- C2 C | C C C A, C C | C3- C2 C |
+C2 C B, A, B,/A,/ | G,3- G,2 G, | F, G, A, B, D, G, | (F,E,D, C,2) ||
+C16- C2 A,2 G,2 |
+G,16 F,G,A,G, F,2 E,2 ||
+V: B clef=bass
+F, | F,2 F, C C, E, | F,3- F,2 F, | A,, A,, C, D, C, F, | C3- C2 C |
+A,2 F,/E,/ D, C, B,, | C,3- C,2 C, | D, D, C, B,, B,, B,, | F,,3- F,,2 ||
+F,16 C,4- C,2 |
+B,,16- B,,4- B,,2 C,2 ||

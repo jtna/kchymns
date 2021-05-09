@@ -1,0 +1,53 @@
+%abc-2.2
+T: 428 무엇을 먹을까
+C: 원선오 작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/8
+Q: 1/4=102
+K: G
+%%score [(S A) (T B)]
+V: S clef=treble
+D2 G2 A2 | B3 B B4- | B2 F2 G2 A2 | A3 A A4- |
+w: 무 엇 을 먹 을 까 _ 무 엇 을 마 실 까
+A2 E2 F2 G2 | G3 G G4- | G2 A A G2 A2 | B8 |
+w: _ 무 엇 을 입 을 까 _ 걱 정 마 시 오
+z2 c2 c2 B2 | A3 A A4- | A2 B2 B2 A2 | G3 G G4- |
+w: 아 버 지 께 서 는 _ 이 모 든 것 들 이
+G2 A A A2 G2 | F3 F F4- | F2 D D F2 A A | G8 |
+w: _ 필 요 하 다 는 것 을 _ 알 고 계 십 니 다
+z2 G G A2 B2 | (c4 E4) | c4 c B A c | B4 D4 |
+w: 여 러 분 은 먼 ‐ 저 하 느 님 의 나 라
+B4 B A G B | (A4 D4) | A4 A G F A | G8 |
+w: 와 하 느 님 의 뜻 ‐ 을 찾 으 십 시 오
+z2 G2 A2 B2 | c4 E4 | c4 c B A c | B4 D4 |
+w: 그 러 면 이 모 든 물 질 적 인 것 들
+B4 B A G B | A4 D4 | A4 A G F A | G8- | G2 |]
+w: 도 여 러 분 은 덧 붙 여 받 게 됩 니 다 _
+V: A clef=treble
+B,2 D2 D2 | D3 D E4 | D4 E2 E2 | E3 E E4- |
+E2 E2 D2 D2 | D2 D2 E4- | E2 E E E2 E2 | ^D8 |
+E4 E2 E2 | E3 E E4 | D4 F2 F2 | E3 E E4- |
+E2 E E E2 E2 | D3 D D4- | D2 D D D2 F F | (D4 E4 |
+D2) D D D2 D2 | C8 | E4 D D D D | D4 D4 |
+D4 ^D D D D | (E2 C2 D4) | C4 D D D F | (D4 E4 |
+D2) D2 D2 D2 | C4 C4 | E4 D D D D | D4 D4 |
+D4 ^D D D D | (E2 C2) D4 | C4 D D D F | (D4 E4 | D2) |]
+V: T clef=bass
+G,2 G,2 F,2 | G,3 G, G,4 | B,4 B,2 B,2 | C3 C (C2 B,2) |
+A,4 A,2 A,2 | B,2 B,2 C4- | C2 C C CB, A,2 | (F,4 B,2 A,2) |
+^G,4 G,2 G,2 | A,3 A, (A,2 G,2) | F,4 D2 DC | B,3 B, (B,4 |
+C2) C C C2 C2 | A,3 A, (A,4 | B,2) F, F, A,2 C C | (B,4 C4 |
+B,2) B, B, A,2 G,2 | G,8 | (A,2 G,2) F, F, F, F, | G,4 (G,2 F,2) |
+G,4 F, F, F, F, | (E,4 G,4) | (E,2 G,2) F, G, A, C | (B,4 C4 |
+B,2) B,2 A,2 G,2 | G,4 G,4 | (A,2 G,2) F, F, F, F, | G,4 (G,2 F,2) |
+G,4 F, F, F, F, | E,4 G,4 | (E,2 G,2) F, G, A, C | (B,4 C4 | B,2) |]
+V: B clef=bass
+G,,2 B,,2 A,,2 | (G,,2 G,) F, (E,2 D,C,) | B,,4 E,2 E,2 | A,,3 A,, (A,,2 B,,2) |
+^C,4 D,2 D,2 | G,,2 =F,2 (E,2 D,2 | C,2) C, C, C,2 C,2 | B,,8 |
+E,4 E,2 D,2 | C,3 C, (C,2 ^C,2) | D,4 D,2 D,2 | E,3 E, (E,2 D,2 |
+C,2) C, C, C,2 C,2 | D,3 D, (D,2 C,2 | B,,2) D, D, D,2 D, D, | G,8- |
+G,2 G, G, F,2 =F,2 | (E,4 C,2 B,,2) | A,,4 D, D, D, D, | G,,4 (B,,2 A,,2) |
+G,,4 B,, B,, B,, B,, | (C,2 A,,2 B,,4) | A,,4 D, D, D, D, | G,8- |
+G,2 G,2 F,2 =F,2 | E,4 (C,2 B,,2) | A,,4 D, D, D, D, | G,,4 (B,,2 A,,2) |
+G,,4 B,, B,, B,, B,, | (C,2 A,,2) B,,4 | A,,4 D, D, D, D, | G,8- | G,2 |]

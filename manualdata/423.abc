@@ -1,0 +1,48 @@
+%abc-2.2
+T: 423 천년도 당신 눈에는
+C: 원선오 작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 3/4
+L: 1/4
+Q: 1/4=88
+K: D
+%%score [(S A) (T B)]
+V: S clef=treble
+D D3/2 D/ | E E3/2 E/ | F F2- | F3 |
+w: 천 년 도 당 신 눈 에 는 _
+E2 E/ F/ | G2 F/ E/ | D3- | D3 |
+w: 지 나 간 어 제 같 고 _
+D D3/2 D/ | E E3/2 E/ | F F2- | F3 |
+w: 마 치 한 토 막 밤 과 도 _
+E2 E/F/ | G2 F/ E/ | D3- | D2 d |
+w: 비 슷 ‐ 하 나 이 다 _ 주
+B3 | B c d | A3 | G A B | F2 F |
+w: 여 당 신 만 은 영 원 히 계 시
+E2 E | A3- | A2 d | B3 | B c d |
+w: 나 이 다 _ 주 여 당 신 만
+A3 | G A B | F2 F | E2 E | D3- | D2 z |]
+w: 은 영 원 히 계 시 나 이 다 _
+V: A clef=treble
+A, A,3/2 B,/ | C C3/2 C/ | D D2- | D3 |
+C2 C/ D/ | D2 D/ C/ | (A,2 B, | A,3) |
+A, A,3/2 B,/ | C C3/2 C/ | D D2- | D3 |
+C2 C/D/ | D2 D/ C/ | (A,2 B, | A,2) D |
+G3 | G G F | (E2 D) | D D D | D2 B, |
+(B, C) C | (D2 C | D2) D | G3 | G G F |
+(E2 D) | D D D | D2 =C | B,2 C | A,3- | A,2 z |]
+V: T clef=bass
+F, F,3/2 F,/ | A, A,3/2 A,/ | A, (A, B, | A,2 ^G,) |
+A,2 A,/ A,/ | G,2 A,/ G,/ | (F,2 G, | F,3) |
+F, F,3/2 F,/ | A, A,3/2 A,/ | A, (A, =C | B,2 A,) |
+A,2 A,/A,/ | G,2 A,/ G,/ | (F,2 G, | F,2) A, |
+D3 | G, A, A, | (A,2 F,) | G, F, G, | A,2 A, |
+(G, A,) A, | A,3- | A,2 A, | D3 | G, A, A, |
+(A,2 F,) | G, F, G, | A,2 A, | G,2 G, | (G,2 E, | F,2) z |]
+V: B clef=bass
+D, (D, C,/) B,,/ | A,, A,,3/2 A,,/ | D, D,2- | D,3 |
+A,,2 A,,/ A,,/ | B,,2 A,,/ A,,/ | D,3- | D,3 |
+D, (D, C,/) B,,/ | A,, A,,3/2 A,,/ | D, D,2- | D,3 |
+A,,2 A,,/A,,/ | B,,2 A,,/ A,,/ | D,3- | D,2 F, |
+(G,2 F,) | E, E, D, | (C,2 =C,) | B,, A,, G,, | D,2 ^D, |
+(E, A,,) G, | (F,2 G, | F,2) F, | (G,2 F,) | E, E, D, |
+(C,2 =C,) | B,, A,, G,, | D,2 ^D, | E,2 A,, | D,3- | D,2 z |]

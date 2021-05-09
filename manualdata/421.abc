@@ -1,0 +1,33 @@
+%abc-2.2
+T: 421 나는 세상의 빛입니다
+C: 원선오 작사/작곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 4/4
+L: 1/8
+Q: 1/4=86
+K: D
+%%score [(S A) (T B)]
+V: S clef=treble
+D E | F2 E F G2 F E | D6 F G | A2 G A B2 A G |
+w: 나 는 세 상 의 빛 입 니 다 나 를 따 르 는 사 람 들
+A6 F G | A A G A B B AG | A6 B c |
+w: 은 어 둠 속 을 걷 지 아 니 하 ‐ 고 생 명
+d6 B2 | c6 A B | c6 A A | B6 G A |
+w: 의 빛 을 얻 을 것 입 니 다 생 명
+B6 G2 | A6 F D | G4 F2 E2 | D6 |]
+w: 의 빛 을 얻 을 것 입 니 다
+V: A clef=treble
+D D | D2 E D C2 D C | A,6 D D | D2 D D D2 D D |
+(D2 CB, C2) D E | F F G F G G FG | F6 F F |
+F6 G2 | (G2 CD E2) E E | E6 F F | (F2 B,C D2) D D |
+D6 E2 | (E2 A,B, C2) D D | D4 D2 C2 | A,6 |]
+V: T clef=bass
+F, G, | A,2 A, A, A,2 A, G, | (G,2 F,E, F,2) A, A, | A,2 A, A, G,2 A, B, |
+A,6 D D | D D D D D D D2 | (D2 CB, C2) B, B, |
+B,6 D2 | G,6 A, A, | A,6 C C | F,6 G, G, |
+G,6 B,2 | A,6 A, F, | G,4 A,2 G,2 | (G,2 E,2 F,2) |]
+V: B clef=bass
+D, D, | D,2 D, D, A,,2 A,, A,, | D,6 D, E, | F,2 F, F, G,2 G, G, |
+F,6 B, B, | =C C B, A, G, G, D,E, | F,6 D, C, |
+(B,,2 B,2 A,2) G,F, | E,6 C, B,, | (A,,2 A,2 G,2) F, E, | D,6 B,, A,, |
+(G,,2 G,2 F,2) E,D, | C,6 =C, C, | (B,,2 _B,,2) A,,2 A,,2 | D,6 |]

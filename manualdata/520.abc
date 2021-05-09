@@ -1,0 +1,33 @@
+%abc-2.2
+T: 520 오늘 이 세상 떠난
+C: 샬트르 성 바오로 수녀회 선곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 6/8
+L: 1/8
+Q: 3/8=28
+K: G
+%%score [(S A) (T B)]
+V: S clef=treble
+B, | E2 F G2 F | E3 B,2 G | F2 A G2 F | E3- E2 B, |
+w: 오 늘 이 세 상 떠 난 이 영 혼 보 소 서 _ 주
+E2 F G2 A | B2 c B2 B | c2 c d2 c | B3- B2 B |
+w: 님 을 믿 고 살 아 온 그 보 람 주 소 서 _ 주
+A2 A A2 A | G3 G2 G | F2 F B2 B | E3- E2 B |
+w: 님 의 품 에 받 아 위 로 해 주 소 서 _ 주
+A2 A A2 A | G3 G2 G | F2 F B2 B | E3- E2 |]
+w: 님 의 품 에 받 아 위 로 해 주 소 서 _
+V: A clef=treble
+B, | B,2 C E2 C | (B,2 C) B,2 B, | ^D2 D D2 B, | B,3- B,2 B, |
+C2 C D2 D | B,2 F G2 E | E2 E D2 F | (GFE^D2) E |
+E2 E ^D2 D | E3 E2 E | ^D2 D B,2 B, | (B,2 C B,2) E |
+E2 E ^D2 D | E3 E2 E | ^D2 D D2 D | B,3- B,2 |]
+V: T clef=bass
+G, | G,2 A, B,2 A, | G,3 F,2 E, | B,2 B, B,2 A, | (A,3 G,2) G, |
+G,2 A, B,2 A, | G,2 A, G,2 G, | A,2 A, A,2 A, | (G,3 B,2 G,) |
+A,2 A, B,2 B, | B,3 B,2 B, | B,2 B, B,2 A, | (A,3 G,2) G, |
+A,2 A, B,2 B, | B,3 B,2 B, | B,2 B, B,2 A, | (A,3 G,2) |]
+V: B clef=bass
+E, | E,2 E, E,2 E, | E,3 ^D,2 E, | B,,2 B,, B,,2 ^D, | E,3- E,2 E,/D,/ |
+C,B,, A,, G,,G, F, | E,2 ^D, E,2 E, | A,,A, G, F,E, D, | (E,3 B,,2) E, |
+C,2 C, B,,2 B,, | E,G,F, E,^D, E, | B,,2 B,, ^D,2 D, | E,3- E,2 E,/D,/ |
+C,2 C, B,,2 B,, | E,G,F, E,^D, E, | B,,2 B,, B,,2 B,, | E,3- E,2 |]

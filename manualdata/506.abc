@@ -1,0 +1,28 @@
+%abc-2.2
+T: 506 사랑으로 오신 주여
+C: 성 바오로 딸 수도회 선곡
+C: 새가톨릭성가편찬위원회 편곡
+M: 6/4
+L: 1/4
+Q: 1/4=106
+K: D
+%%score [(S A) (T B)]
+V: S clef=treble
+A, | D2 F A2 F | B2 G A2 B |
+w: 사 랑 으 로 오 신 주 여 인
+A2 D G2 F | E3 D2 A | d2 A B2 B |
+w: 류 구 원 하 신 주 성 체 안 에 계
+A2 ^G A2 A | F2 D G2 F | E3 D2 z |]
+w: 신 주 여 찬 미 드 리 나 이 다
+V: A clef=treble
+A, | A,2 D D2 D | D2 D D2 D |
+D2 D E2 D | C3 D2 D | F2 F G2 G |
+E2 E E2 E | D2 D D2 D | C3 A,2 z |]
+V: T clef=bass
+A, | F,2 A, F,2 A, | G,2 B, A,2 G, |
+A,2 A, B,2 A,/`B,/ | A,3 A,2 A, | A,2 D D2 D |
+C2 D C2 C | B,2 F, B,2 B, | (A,2 G,) F,2 z |]
+V: B clef=bass
+A,/`G,/ | D,2 D, D,2 D, | G,2 G, F,2 G, |
+F,2 F, E,2 F,/`G,/ | (A,2 G,) F,2 F, | D,2 D, G,2 G, |
+A,2 E, A,2 A,, | B,,2 B,, G,,2 G,, | A,,3 D,2 z |]
